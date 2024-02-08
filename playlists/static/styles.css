@@ -1,0 +1,8 @@
+body{
+    background-image: linear-gradient(to right, #cdffd8, #94b9ff);
+    font-family: "Nunito", sans-serif;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
