@@ -1,4 +1,22 @@
 # sound-central-playlists
+GETTING STARTED
+
+to start, clone the repo using visual studio code.
+once project is open in vs code,
+run a terminal and cd to main directory
+
+Activate the virtual enviornment is this command.
+
+.venv\Scripts\activate
+
+Now that you are in your virtual enviornment
+start the server by running
+
+python manage.py runserver (and enter a port number here, default is 8000)
+
+
+
+
 
 ⭐🦄Bitches🦄⭐
 💣💣💣💣☢️🗡️Do not remove this or else🗡️☢️ 💣💣💣💣
