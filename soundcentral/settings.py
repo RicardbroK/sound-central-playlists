@@ -80,6 +80,17 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'ricardomssql':{
+        'ENGINE':'mssql',  
+        'NAME':'soundcentral',           
+        'USER':'DjangoUser',                       # Username "john"
+        'PASSWORD':'EZpassword1',                 # Password "johnpw"
+        'HOST':'192.168.0.4',
+        'PORT':'',                           
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        }
     }
 }
 

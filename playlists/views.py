@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 def home(request):
-   return render(request, 'home.html')
+   return render(request, 'playlists/home.html')
 
 def view_playlist(request):
    return HttpResponse('Viewing playlist here')
