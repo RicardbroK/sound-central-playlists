@@ -4,7 +4,7 @@
 
 {% block content %}
  <!-- Create a div with class "container" to wrap the heading -->
- <div class="container">
+<div class="container position-absolute top-50 start-50 translate-middle">
     <!-- Create a div with class "row" to create a grid row -->
     <div class="row">
         <!-- Create a div with class "col" to create a grid column -->
@@ -13,14 +13,14 @@
             <h1 class="text-center">SoundCentral</h1>
         </div>
     </div>
-    <div class="container">
-        <!-- Create a form element with class "form-inline" to make the input and button on the same line -->
-        <form class="form-inline">
-            <!-- Create an input element with class "form-control" and type "text" to create a text field -->
-            <input type="text" class="form-control" placeholder="Enter a public playlist link">
-            <!-- Create a button element with class "btn btn-primary" and type "submit" to create a button -->
-            <button type="submit" class="btn btn-primary">Go</button>
-        </form>
-    </div>
+    <!-- Create a form element with class "form-inline" to make the input and button on the same line -->
+    <form action='' method='get' class="row input-group">
+        <!-- Create an input element with class "form-control" and type "text" to create a text field -->
+        <input type="text" name='playlisturl' class="form-control col-auto" placeholder="Enter a public playlist link">
+        <!-- Create a button element with class "btn btn-primary" and type "submit" to create a button -->
+        <button type="submit" class="btn btn-primary col-auto">Go</button>
+    </form>
 </div>
+
+<h1>Submitted url is {{ request.GET.playlisturl }}</h1>
 {% endblock %}
