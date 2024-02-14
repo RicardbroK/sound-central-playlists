@@ -47,11 +47,12 @@ class Album(models.Model):
     album_id = models.AutoField(primary_key=True)
     artists = models.ManyToManyField(Artist)
     album_name = models.CharField(max_length=255)
+    album_art = models.URLField(blank=True, default='') #Stores the album art from Spotify ATM
     release_date = models.DateField()
     total_tracks = models.IntegerField(blank=True, default=0)
     spotify_album_uri = models.URLField(blank=True, default='')  # Store Spotify URI for direct linking
     apple_music_album_uri = models.URLField(blank=True, default='')  # Store Apple Music URI for direct linking
-    youtube_music_album_uri = models.URLField(blank=True, default='')  # Store Youtube Music URI for direct linking
+    youtube_music_album_uri = models.URLField(blank=True, default='')  # Store YouTube Music URI for direct linking
 
     def __str__(self):
         return f"{self.album_name} - (ID: {self.album_id})"

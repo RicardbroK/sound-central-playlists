@@ -13,6 +13,7 @@ class GenreSerializer(serializers.ModelSerializer):
         model = Genre
         fields = ['genre_id', 'name']
 
+
 class ArtistSerializer(serializers.ModelSerializer):
     class Meta:
         model = Artist
@@ -25,7 +26,7 @@ class AlbumSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Album
-        fields = ['album_id', 'artists', 'album_name', 'release_date', 'total_tracks', 'spotify_album_uri',
+        fields = ['album_id', 'artists', 'album_name', 'album_art', 'release_date', 'total_tracks', 'spotify_album_uri',
                   'apple_music_album_uri', 'youtube_music_album_uri']
 
 
