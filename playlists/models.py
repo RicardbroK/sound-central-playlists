@@ -61,7 +61,7 @@ class Album(models.Model):
 # linking table for artists and albums
 
 class Track(models.Model):
-    track_id = models.AutoField(primary_key=True)
+    track_id = models.CharField(primary_key=True , length=12)
     album_id = models.ForeignKey(Album, on_delete=models.CASCADE)  # Link to Album
     artists = models.ManyToManyField(Artist)
     track_name = models.CharField(max_length=255)

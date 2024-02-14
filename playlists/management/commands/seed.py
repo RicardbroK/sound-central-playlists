@@ -18,7 +18,8 @@ class Command(BaseCommand):
             album, _ = Album.objects.get_or_create(
                 album_name=item['album']['album_name'],
                 release_date=item['album']['release_date'],
-                total_tracks=item['album']['total_tracks']
+                total_tracks=item['album']['total_tracks'],
+                album_art=item['album']['album_art']
             )
 
             track, _ = Track.objects.get_or_create(
@@ -28,5 +29,3 @@ class Command(BaseCommand):
                 track_number=item['track_number'],
                 album_name=album
             )
-
-
