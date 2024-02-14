@@ -1,0 +1,6 @@
+.idea/
+dockerfile.yaml
+.env
+__pycache__/
+.cache*
+playlists/migrations/

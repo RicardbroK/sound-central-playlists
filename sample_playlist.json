@@ -1,0 +1,4466 @@
+[
+    {
+        "track_name": "This Could Be Us",
+        "track_id": "USUM71417486",
+        "duration_ms": 206306,
+        "explicit": true,
+        "spotify_track_uri": "4jTiyLlOJVJj3mCr7yfPQD",
+        "track_number": 5,
+        "artists": [
+            "7iZtZyCzp3LItcw1wtPI3D"
+        ],
+        "artists_names": [
+            "Rae Sremmurd"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2734ca3fb4517ff722918877460",
+        "album_id": 6900000000000000000,
+        "album_name": "SremmLife",
+        "album_total_tracks": 11,
+        "release_date": "2015-01-06"
+    },
+    {
+        "track_name": "Peaches (feat. Daniel Caesar & Giveon)",
+        "track_id": "USUM72102636",
+        "duration_ms": 198081,
+        "explicit": true,
+        "spotify_track_uri": "4iJyoBOLtHqaGxP12qzhQI",
+        "track_number": 12,
+        "artists": [
+            "1uNFoZAHBGtllmzznpCI3s",
+            "20wkVLutqVOYrc0kxFs7rA",
+            "4fxd5Ee7UefO4CUXgwJ7IP"
+        ],
+        "artists_names": [
+            "Justin Bieber",
+            "Daniel Caesar",
+            "Giveon"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273e6f407c7f3a0ec98845e4431",
+        "album_id": 6900000000000000001,
+        "album_name": "Justice",
+        "album_total_tracks": 16,
+        "release_date": "2021-03-19"
+    },
+    {
+        "track_name": "What You Know Bout Love",
+        "track_id": "USUM72013339",
+        "duration_ms": 160000,
+        "explicit": true,
+        "spotify_track_uri": "1tkg4EHVoqnhR6iFEXb60y",
+        "track_number": 15,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000002,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "Lemonade (feat. Gunna, Don Toliver & NAV)",
+        "track_id": "QZJ842000368",
+        "duration_ms": 195428,
+        "explicit": true,
+        "spotify_track_uri": "7hxHWCCAIIxFLCzvDgnQHX",
+        "track_number": 17,
+        "artists": [
+            "6MPCFvOQv5cIGfw3jODMF0",
+            "2hlmm7s2ICUX0LVIhVFlZQ",
+            "4Gso3d4CscCijv0lmajZWs",
+            "7rkW85dBwwrJtlHRDkJDAC"
+        ],
+        "artists_names": [
+            "Internet Money",
+            "Gunna",
+            "Don Toliver",
+            "NAV"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2739ca0c952f130e28025209cf0",
+        "album_id": 6900000000000000003,
+        "album_name": "B4 The Storm",
+        "album_total_tracks": 17,
+        "release_date": "2020-08-28"
+    },
+    {
+        "track_name": "Martin & Gina",
+        "track_id": "USQX92002595",
+        "duration_ms": 132832,
+        "explicit": true,
+        "spotify_track_uri": "1VLtjHwRWOVJiE5Py7JxoQ",
+        "track_number": 3,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273339f780dfdbc38558ea0761d",
+        "album_id": 6900000000000000004,
+        "album_name": "THE GOAT",
+        "album_total_tracks": 16,
+        "release_date": "2020-05-15"
+    },
+    {
+        "track_name": "i n t e r l u d e",
+        "track_id": "QMJMT2103619",
+        "duration_ms": 133021,
+        "explicit": true,
+        "spotify_track_uri": "08LwMWf5Tcfsd752EPzFV0",
+        "track_number": 9,
+        "artists": [
+            "6l3HvQ5sa6mXTsMTB19rO5"
+        ],
+        "artists_names": [
+            "J. Cole"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27310e6745bb2f179dd3616b85f",
+        "album_id": 6900000000000000005,
+        "album_name": "The Off-Season",
+        "album_total_tracks": 12,
+        "release_date": "2021-05-14"
+    },
+    {
+        "track_name": "Already Best Friends (feat. Chris Brown)",
+        "track_id": "USAT22007708",
+        "duration_ms": 197031,
+        "explicit": true,
+        "spotify_track_uri": "4RKJRRd4VJfZWiqQTYsleE",
+        "track_number": 6,
+        "artists": [
+            "2LIk90788K0zvyj2JJVwkJ",
+            "7bXgB6jMjp9ATFy66eO08Z"
+        ],
+        "artists_names": [
+            "Jack Harlow",
+            "Chris Brown"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273aeb14ead136118a987246b63",
+        "album_id": 6900000000000000006,
+        "album_name": "Thats What They All Say",
+        "album_total_tracks": 15,
+        "release_date": "2020-12-11"
+    },
+    {
+        "track_name": "RAPSTAR",
+        "track_id": "USSM12101640",
+        "duration_ms": 165925,
+        "explicit": true,
+        "spotify_track_uri": "18vXApRmJSgQ6wG2ll9AOg",
+        "track_number": 2,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273a493e05c99d8ec5e8020ff2b",
+        "album_id": 6900000000000000007,
+        "album_name": "Hall of Fame",
+        "album_total_tracks": 20,
+        "release_date": "2021-06-11"
+    },
+    {
+        "track_name": "Levitating (feat. DaBaby)",
+        "track_id": "GBAHT2000942",
+        "duration_ms": 203064,
+        "explicit": false,
+        "spotify_track_uri": "5nujrmhLynf4yMoMtj8AQF",
+        "track_number": 12,
+        "artists": [
+            "6M2wZ9GZgrQXHCFfjv46we",
+            "4r63FhuTkUYltbVAg5TQnk"
+        ],
+        "artists_names": [
+            "Dua Lipa",
+            "DaBaby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2732172b607853fa89cefa2beb4",
+        "album_id": 6900000000000000008,
+        "album_name": "Future Nostalgia",
+        "album_total_tracks": 13,
+        "release_date": "2020-03-27"
+    },
+    {
+        "track_name": "For The Night (feat. Lil Baby & DaBaby)",
+        "track_id": "USUM72013355",
+        "duration_ms": 190476,
+        "explicit": true,
+        "spotify_track_uri": "0PvFJmanyNQMseIFrU708S",
+        "track_number": 3,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "5f7VJjfbwm532GiveGC0ZK",
+            "4r63FhuTkUYltbVAg5TQnk"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Lil Baby",
+            "DaBaby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000009,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "Big Gangsta",
+        "track_id": "USAT21902781",
+        "duration_ms": 243462,
+        "explicit": true,
+        "spotify_track_uri": "03ERnTvSV5fy8WAyvA4uNP",
+        "track_number": 1,
+        "artists": [
+            "1gPhS1zisyXr5dHTYZyiMe"
+        ],
+        "artists_names": [
+            "Kevin Gates"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f8a9c2fe71ac2eb53524392b",
+        "album_id": 6900000000000000010,
+        "album_name": "Big Gangsta",
+        "album_total_tracks": 1,
+        "release_date": "2021-03-26"
+    },
+    {
+        "track_name": "Wants and Needs (feat. Lil Baby)",
+        "track_id": "USUG12101042",
+        "duration_ms": 192956,
+        "explicit": true,
+        "spotify_track_uri": "65OVbaJR5O1RmwOQx0875b",
+        "track_number": 2,
+        "artists": [
+            "3TVXtAsR1Inumwj472S9r4",
+            "5f7VJjfbwm532GiveGC0ZK"
+        ],
+        "artists_names": [
+            "Drake",
+            "Lil Baby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738b20e4631fa15d3953528bbc",
+        "album_id": 6900000000000000011,
+        "album_name": "Scary Hours 2",
+        "album_total_tracks": 3,
+        "release_date": "2021-03-05"
+    },
+    {
+        "track_name": "Whoopty",
+        "track_id": "USA2P2031043",
+        "duration_ms": 123262,
+        "explicit": true,
+        "spotify_track_uri": "1t9WgS8FN0534tLBRwbaxO",
+        "track_number": 4,
+        "artists": [
+            "7arQA31aZVS8yS6zUveWzb"
+        ],
+        "artists_names": [
+            "CJ"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273cf9f1a140f453983a6e3a229",
+        "album_id": 6900000000000000012,
+        "album_name": "Loyalty Over Royalty",
+        "album_total_tracks": 8,
+        "release_date": "2021-02-19"
+    },
+    {
+        "track_name": "Hello (feat. A Boogie Wit da Hoodie)",
+        "track_id": "USUM72014370",
+        "duration_ms": 190534,
+        "explicit": true,
+        "spotify_track_uri": "2r6OAV3WsYtXuXjvJ1lIDi",
+        "track_number": 30,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "31W5EY0aAly4Qieq6OFu6I"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "A Boogie Wit da Hoodie"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27346e1307c35579c3483ea7b03",
+        "album_id": 6900000000000000013,
+        "album_name": "Shoot For The Stars Aim For The Moon (Deluxe)",
+        "album_total_tracks": 34,
+        "release_date": "2020-07-20"
+    },
+    {
+        "track_name": "Goosebumps - Remix",
+        "track_id": "USSM12100202",
+        "duration_ms": 162802,
+        "explicit": true,
+        "spotify_track_uri": "5uEYRdEIh9Bo4fpjDd4Na9",
+        "track_number": 1,
+        "artists": [
+            "0Y5tJX1MQlPlqiwlOH1tJY",
+            "2o08sCWF5yyo2G4DCiT7T9"
+        ],
+        "artists_names": [
+            "Travis Scott",
+            "HVME"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2739109b0425fb5b36284a24891",
+        "album_id": 6900000000000000014,
+        "album_name": "Goosebumps (Remix)",
+        "album_total_tracks": 1,
+        "release_date": "2021-01-15"
+    },
+    {
+        "track_name": "After Party",
+        "track_id": "USAT22001223",
+        "duration_ms": 167915,
+        "explicit": true,
+        "spotify_track_uri": "527k23H0A4Q0UJN3vGs0Da",
+        "track_number": 4,
+        "artists": [
+            "4Gso3d4CscCijv0lmajZWs"
+        ],
+        "artists_names": [
+            "Don Toliver"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27345190a074bef3e8ce868b60c",
+        "album_id": 6900000000000000015,
+        "album_name": "Heaven Or Hell",
+        "album_total_tracks": 12,
+        "release_date": "2020-03-13"
+    },
+    {
+        "track_name": "Element",
+        "track_id": "USUM72002041",
+        "duration_ms": 135746,
+        "explicit": true,
+        "spotify_track_uri": "57BGVV6wcyhbn3hsjlqEZB",
+        "track_number": 7,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27362a57823eced1cb4fd93b2c1",
+        "album_id": 6900000000000000016,
+        "album_name": "Meet The Woo 2",
+        "album_total_tracks": 13,
+        "release_date": "2020-02-07"
+    },
+    {
+        "track_name": "Body (Remix) [feat. ArrDee, E1 (3x3), ZT (3x3), Bugzy Malone, Buni, Fivio Foreign & Darkoo]",
+        "track_id": "GBAHS2100229",
+        "duration_ms": 278085,
+        "explicit": true,
+        "spotify_track_uri": "6uvMKqNlrSvcC4NaKnrwjZ",
+        "track_number": 1,
+        "artists": [
+            "7b79bQFziJFedJb75k6hFt",
+            "3FoFW2AoUGRHBacC6i4x4p",
+            "7m0BsF0t3K9WQFgKoPejfk",
+            "63ebc5zUpJ36aoTDQJHa9B",
+            "2uIRmVaCVpHQjaVgph5clS",
+            "4Dokdwa3WB7ilQ2c2qvIBL",
+            "5AiY4bxeXerLXx03JADdQv",
+            "14CHVeJGrR5xgUGQFV5BVM",
+            "4QSTyDpxsKmv3UfavVUImR"
+        ],
+        "artists_names": [
+            "Tion Wayne",
+            "Russ Millions",
+            "ArrDee",
+            "E1 (3x3)",
+            "ZT (3x3)",
+            "Bugzy Malone",
+            "Buni",
+            "Fivio Foreign",
+            "Darkoo"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273b8ea4b876287cbbb519ac0fc",
+        "album_id": 6900000000000000017,
+        "album_name": "Body (Remix) [feat. ArrDee, E1 (3x3), ZT (3x3), Bugzy Malone, Buni, Fivio Foreign & Darkoo]",
+        "album_total_tracks": 1,
+        "release_date": "2021-04-22"
+    },
+    {
+        "track_name": "Fair Trade (with Travis Scott)",
+        "track_id": "USUG12104402",
+        "duration_ms": 291175,
+        "explicit": true,
+        "spotify_track_uri": "40iJIUlhi6renaREYGeIDS",
+        "track_number": 6,
+        "artists": [
+            "3TVXtAsR1Inumwj472S9r4",
+            "0Y5tJX1MQlPlqiwlOH1tJY"
+        ],
+        "artists_names": [
+            "Drake",
+            "Travis Scott"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273cd945b4e3de57edd28481a3f",
+        "album_id": 6900000000000000018,
+        "album_name": "Certified Lover Boy",
+        "album_total_tracks": 21,
+        "release_date": "2021-09-03"
+    },
+    {
+        "track_name": "She Make It Clap",
+        "track_id": "TCAFL2178806",
+        "duration_ms": 111549,
+        "explicit": true,
+        "spotify_track_uri": "0kswxxNV4DLBqJeMIqFh5n",
+        "track_number": 1,
+        "artists": [
+            "6GMYJwaziB4ekv1Y6wCDWS"
+        ],
+        "artists_names": [
+            "Soulja Boy"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27307049eb0e5309d1dcdef1599",
+        "album_id": 6900000000000000019,
+        "album_name": "She Make It Clap",
+        "album_total_tracks": 1,
+        "release_date": "2021-04-15"
+    },
+    {
+        "track_name": "Mood Swings (feat. Lil Tjay)",
+        "track_id": "USUM72013632",
+        "duration_ms": 213333,
+        "explicit": true,
+        "spotify_track_uri": "5rZlwNFl01HqLWBQGryKSm",
+        "track_number": 13,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "6jGMq4yGs7aQzuGsMgVgZR"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Lil Tjay"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000020,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "PRACTICE",
+        "track_id": "USUM72015072",
+        "duration_ms": 122586,
+        "explicit": true,
+        "spotify_track_uri": "4Z5FyQlevoHoa5FsIVKZju",
+        "track_number": 2,
+        "artists": [
+            "4r63FhuTkUYltbVAg5TQnk"
+        ],
+        "artists_names": [
+            "DaBaby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273e818d05b79be19f4d49f1ebf",
+        "album_id": 6900000000000000021,
+        "album_name": "BLAME IT ON BABY (DELUXE)",
+        "album_total_tracks": 24,
+        "release_date": "2020-08-04"
+    },
+    {
+        "track_name": "Dior",
+        "track_id": "USUM71914275",
+        "duration_ms": 216386,
+        "explicit": true,
+        "spotify_track_uri": "79s5XnCN4TJKTVMSmOx8Ep",
+        "track_number": 6,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738fe5d04b06aff90f9fe796f5",
+        "album_id": 6900000000000000022,
+        "album_name": "Meet The Woo",
+        "album_total_tracks": 9,
+        "release_date": "2019-07-26"
+    },
+    {
+        "track_name": "Real Shit (with benny blanco)",
+        "track_id": "USUG12002600",
+        "duration_ms": 183782,
+        "explicit": true,
+        "spotify_track_uri": "3uVPLtkmDu8pDkYEAVqbgS",
+        "track_number": 1,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz",
+            "5CiGnKThu5ctn9pBxv7DGa"
+        ],
+        "artists_names": [
+            "Juice WRLD",
+            "benny blanco"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273147c68fd1aca248ed8847dcb",
+        "album_id": 6900000000000000023,
+        "album_name": "Real Shit (with benny blanco)",
+        "album_total_tracks": 1,
+        "release_date": "2020-12-02"
+    },
+    {
+        "track_name": "Got It On Me",
+        "track_id": "USUM72013361",
+        "duration_ms": 164579,
+        "explicit": true,
+        "spotify_track_uri": "25zlnOAzbVoOzIeXSvQFf1",
+        "track_number": 17,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000024,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "Burn The Hoods",
+        "track_id": "USUM72013628",
+        "duration_ms": 102960,
+        "explicit": true,
+        "spotify_track_uri": "34PhB0kHT00utubP3aTau8",
+        "track_number": 1,
+        "artists": [
+            "2rhFzFmezpnW82MNqEKVry"
+        ],
+        "artists_names": [
+            "Ski Mask The Slump God"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273610d7118f18ce95848e43470",
+        "album_id": 6900000000000000025,
+        "album_name": "Burn The Hoods",
+        "album_total_tracks": 1,
+        "release_date": "2020-07-24"
+    },
+    {
+        "track_name": "24 (feat. Lil Baby)",
+        "track_id": "USUYG1327132",
+        "duration_ms": 182857,
+        "explicit": true,
+        "spotify_track_uri": "0xUvi7wldroBzaZCengPa5",
+        "track_number": 13,
+        "artists": [
+            "3Rx4PJ7SP6unkOk5elPUK7",
+            "5f7VJjfbwm532GiveGC0ZK"
+        ],
+        "artists_names": [
+            "Money Man",
+            "Lil Baby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273d9cbe9b9bec4732330a17c7e",
+        "album_id": 6900000000000000026,
+        "album_name": "Epidemic (Deluxe)",
+        "album_total_tracks": 20,
+        "release_date": "2020-08-21"
+    },
+    {
+        "track_name": "Get Back",
+        "track_id": "USUM72002036",
+        "duration_ms": 108160,
+        "explicit": true,
+        "spotify_track_uri": "3DWjFSDEQ9IWz1mj449fB7",
+        "track_number": 3,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27362a57823eced1cb4fd93b2c1",
+        "album_id": 6900000000000000027,
+        "album_name": "Meet The Woo 2",
+        "album_total_tracks": 13,
+        "release_date": "2020-02-07"
+    },
+    {
+        "track_name": "OUT WEST (feat. Young Thug)",
+        "track_id": "USSM11914988",
+        "duration_ms": 157712,
+        "explicit": true,
+        "spotify_track_uri": "6gi6y1xwmVszDWkUqab1qw",
+        "track_number": 5,
+        "artists": [
+            "7A8S43ryYdbWpJKeHRZRcq",
+            "0Y5tJX1MQlPlqiwlOH1tJY",
+            "50co4Is1HCEo8bhOyUWKpn"
+        ],
+        "artists_names": [
+            "JACKBOYS",
+            "Travis Scott",
+            "Young Thug"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273dfc2f59568272de50a257f2f",
+        "album_id": 6900000000000000028,
+        "album_name": "JACKBOYS",
+        "album_total_tracks": 7,
+        "release_date": "2019-12-27"
+    },
+    {
+        "track_name": "Moonwalking in Calabasas (feat. Blueface) - Remix",
+        "track_id": "CA5KR2079526",
+        "duration_ms": 170232,
+        "explicit": true,
+        "spotify_track_uri": "73xjJ1TIE6WP3HNKczQE4F",
+        "track_number": 11,
+        "artists": [
+            "0WK3H9OErSn5zKOkOV5egm",
+            "3Fl1V19tmjt57oBdxXKAjJ"
+        ],
+        "artists_names": [
+            "DDG",
+            "Blueface"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2739ea849484864329633574323",
+        "album_id": 6900000000000000029,
+        "album_name": "Die 4 Respect",
+        "album_total_tracks": 11,
+        "release_date": "2021-06-15"
+    },
+    {
+        "track_name": "Whats Poppin (feat. DaBaby, Tory Lanez & Lil Wayne) [Remix] - Bonus Track",
+        "track_id": "USAT22007702",
+        "duration_ms": 227478,
+        "explicit": true,
+        "spotify_track_uri": "0ZLuW8uOXdFNWcI40C0OC2",
+        "track_number": 15,
+        "artists": [
+            "2LIk90788K0zvyj2JJVwkJ",
+            "2jku7tDXc6XoB6MO2hFuqg",
+            "4r63FhuTkUYltbVAg5TQnk",
+            "55Aa2cqylxrFIXC767Z865"
+        ],
+        "artists_names": [
+            "Jack Harlow",
+            "Tory Lanez",
+            "DaBaby",
+            "Lil Wayne"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273aeb14ead136118a987246b63",
+        "album_id": 6900000000000000030,
+        "album_name": "Thats What They All Say",
+        "album_total_tracks": 15,
+        "release_date": "2020-12-11"
+    },
+    {
+        "track_name": "NO BYSTANDERS",
+        "track_id": "USSM11806663",
+        "duration_ms": 218283,
+        "explicit": true,
+        "spotify_track_uri": "6OaVWaGfhXn70ZJfdVcabn",
+        "track_number": 6,
+        "artists": [
+            "0Y5tJX1MQlPlqiwlOH1tJY"
+        ],
+        "artists_names": [
+            "Travis Scott"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273072e9faef2ef7b6db63834a3",
+        "album_id": 6900000000000000031,
+        "album_name": "ASTROWORLD",
+        "album_total_tracks": 17,
+        "release_date": "2018-08-03"
+    },
+    {
+        "track_name": "Enjoy Yourself (feat. Karol G)",
+        "track_id": "USUM72013349",
+        "duration_ms": 197938,
+        "explicit": true,
+        "spotify_track_uri": "3NWrHCwvyII4fTx05PN3IO",
+        "track_number": 12,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "790FomKkXshlbRYZFtlgla"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "KAROL G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000032,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "F.N",
+        "track_id": "USSM11904899",
+        "duration_ms": 224000,
+        "explicit": true,
+        "spotify_track_uri": "0RLLvYBopDwooCyvnTwgYu",
+        "track_number": 3,
+        "artists": [
+            "6jGMq4yGs7aQzuGsMgVgZR"
+        ],
+        "artists_names": [
+            "Lil Tjay"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273b9fe16b21ea333150c0f50f6",
+        "album_id": 6900000000000000033,
+        "album_name": "True 2 Myself",
+        "album_total_tracks": 17,
+        "release_date": "2019-10-11"
+    },
+    {
+        "track_name": "AP - Music from the film Boogie",
+        "track_id": "USUM72102409",
+        "duration_ms": 171891,
+        "explicit": true,
+        "spotify_track_uri": "17vGPZ5EsdvtgAOCD4FLWI",
+        "track_number": 1,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273910d332c82ea0e868127f9a0",
+        "album_id": 6900000000000000034,
+        "album_name": "AP (Music from the film Boogie)",
+        "album_total_tracks": 1,
+        "release_date": "2021-02-26"
+    },
+    {
+        "track_name": "Unbothered",
+        "track_id": "USUM71820945",
+        "duration_ms": 138426,
+        "explicit": true,
+        "spotify_track_uri": "5hwUsRKvnO5yThjVrxHQVt",
+        "track_number": 5,
+        "artists": [
+            "2rhFzFmezpnW82MNqEKVry"
+        ],
+        "artists_names": [
+            "Ski Mask The Slump God"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273e62c8561e3b1bd9ad952ce01",
+        "album_id": 6900000000000000035,
+        "album_name": "STOKELEY",
+        "album_total_tracks": 13,
+        "release_date": "2018-11-30"
+    },
+    {
+        "track_name": "SOLVED THE PROBLEM",
+        "track_id": "USUYG1264692",
+        "duration_ms": 117073,
+        "explicit": true,
+        "spotify_track_uri": "3gahizdt1kEi5ovjCn6eql",
+        "track_number": 6,
+        "artists": [
+            "1iJdyDcY98X3GMnUesl7tf"
+        ],
+        "artists_names": [
+            "Comethazine"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273b1c47eba72c0d865d66703c0",
+        "album_id": 6900000000000000036,
+        "album_name": "BAWSKEE 3.5",
+        "album_total_tracks": 12,
+        "release_date": "2019-07-26"
+    },
+    {
+        "track_name": "A92 x Fumez The Engineer - Plugged In Freestyle",
+        "track_id": "SE5752002626",
+        "duration_ms": 240000,
+        "explicit": true,
+        "spotify_track_uri": "0goOUCNL6MYrqSVvGhvsxw",
+        "track_number": 1,
+        "artists": [
+            "0ksX396B3t2Gt8kwr0BJZk",
+            "5uWT1NONby2BqNCu42fdDc",
+            "3z9G13I73VCCZgf2j7i8q2"
+        ],
+        "artists_names": [
+            "Fumez The Engineer",
+            "A92",
+            "Offica"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273fa8f766d175a19b47e163cc4",
+        "album_id": 6900000000000000037,
+        "album_name": "A92 x Fumez The Engineer - Plugged In Freestyle",
+        "album_total_tracks": 1,
+        "release_date": "2020-10-08"
+    },
+    {
+        "track_name": "Walk Em Down (feat. Roddy Ricch)",
+        "track_id": "USWB12000247",
+        "duration_ms": 173288,
+        "explicit": true,
+        "spotify_track_uri": "1Z0cZI0UzNbP9L8MzzGxqf",
+        "track_number": 6,
+        "artists": [
+            "0ErzCpIMyLcjPiwT4elrtZ",
+            "757aE44tKEUQEqRuT6GnEB"
+        ],
+        "artists_names": [
+            "NLE Choppa",
+            "Roddy Ricch"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273d4ee870db20a5a50b8714260",
+        "album_id": 6900000000000000038,
+        "album_name": "Top Shotta",
+        "album_total_tracks": 20,
+        "release_date": "2020-08-10"
+    },
+    {
+        "track_name": "Ric Flair Drip (with Metro Boomin)",
+        "track_id": "QZ45A1700064",
+        "duration_ms": 172800,
+        "explicit": true,
+        "spotify_track_uri": "7sO5G9EABYOXQKNPNiE9NR",
+        "track_number": 3,
+        "artists": [
+            "4DdkRBBYG6Yk9Ka8tdJ9BW",
+            "0iEtIxbK0KxaSlF7G42ZOp"
+        ],
+        "artists_names": [
+            "Offset",
+            "Metro Boomin"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2730db43130a9aaa7bae56967ed",
+        "album_id": 6900000000000000039,
+        "album_name": "Without Warning",
+        "album_total_tracks": 10,
+        "release_date": "2017-10-30"
+    },
+    {
+        "track_name": "21",
+        "track_id": "USQX92002597",
+        "duration_ms": 163797,
+        "explicit": true,
+        "spotify_track_uri": "3JKgcAa7r07ocVWcV8bS0H",
+        "track_number": 6,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273339f780dfdbc38558ea0761d",
+        "album_id": 6900000000000000040,
+        "album_name": "THE GOAT",
+        "album_total_tracks": 16,
+        "release_date": "2020-05-15"
+    },
+    {
+        "track_name": "Sum More",
+        "track_id": "QZ4JX1760829",
+        "duration_ms": 191160,
+        "explicit": true,
+        "spotify_track_uri": "4novMmedjP9sZpTKO2SCr8",
+        "track_number": 8,
+        "artists": [
+            "5f7VJjfbwm532GiveGC0ZK",
+            "6icQOAFXDZKsumw3YXyusw"
+        ],
+        "artists_names": [
+            "Lil Baby",
+            "Lil Yachty"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735067cc9332e2fdc69ea7b7a9",
+        "album_id": 6900000000000000041,
+        "album_name": "Too Hard",
+        "album_total_tracks": 16,
+        "release_date": "2017-12-01"
+    },
+    {
+        "track_name": "family ties (with Kendrick Lamar)",
+        "track_id": "USSM12105949",
+        "duration_ms": 252262,
+        "explicit": true,
+        "spotify_track_uri": "3QFInJAm9eyaho5vBzxInN",
+        "track_number": 10,
+        "artists": [
+            "5SXuuuRpukkTvsLuUknva1",
+            "2YZyLoL8N0Wb9xBt1NhZWg"
+        ],
+        "artists_names": [
+            "Baby Keem",
+            "Kendrick Lamar"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2731bfa23b13d0504fb90c37b39",
+        "album_id": 6900000000000000042,
+        "album_name": "The Melodic Blue",
+        "album_total_tracks": 16,
+        "release_date": "2021-09-10"
+    },
+    {
+        "track_name": "Gangstas",
+        "track_id": "USUM72013354",
+        "duration_ms": 160000,
+        "explicit": true,
+        "spotify_track_uri": "1hg3RlqFZXJb5YgRoK9qmF",
+        "track_number": 5,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000043,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "Show Out (with Skepta & Pop Smoke)",
+        "track_id": "USUM72023842",
+        "duration_ms": 174960,
+        "explicit": true,
+        "spotify_track_uri": "5CFJRZRq6sdKKtRwNPWbYv",
+        "track_number": 8,
+        "artists": [
+            "0fA0VVWsXO9YnASrzqfmYu",
+            "2p1fiYHYiXz9qi0JJyxBzN",
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Kid Cudi",
+            "Skepta",
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2736ff25c2481eeaf6e7284d461",
+        "album_id": 6900000000000000044,
+        "album_name": "Man On The Moon III: The Chosen",
+        "album_total_tracks": 18,
+        "release_date": "2020-12-11"
+    },
+    {
+        "track_name": "NEVER LEFT",
+        "track_id": "USUM72107053",
+        "duration_ms": 168727,
+        "explicit": true,
+        "spotify_track_uri": "0soNGRgFn7aq1T4LXtFDMb",
+        "track_number": 3,
+        "artists": [
+            "4Ga1P7PMIsmqEZqhYZQgDo"
+        ],
+        "artists_names": [
+            "Lil Tecca"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f156ced88fa6920e86ddf11f",
+        "album_id": 6900000000000000045,
+        "album_name": "We Love You Tecca 2",
+        "album_total_tracks": 20,
+        "release_date": "2021-08-27"
+    },
+    {
+        "track_name": "Headshot (feat. Polo G & Fivio Foreign)",
+        "track_id": "USSM12101091",
+        "duration_ms": 144349,
+        "explicit": true,
+        "spotify_track_uri": "4eNOLmx8r2IJAVKvBBL1jv",
+        "track_number": 7,
+        "artists": [
+            "6jGMq4yGs7aQzuGsMgVgZR",
+            "6AgTAQt8XS6jRWi4sX7w49",
+            "14CHVeJGrR5xgUGQFV5BVM"
+        ],
+        "artists_names": [
+            "Lil Tjay",
+            "Polo G",
+            "Fivio Foreign"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735af0305457ff290e06dcc4c2",
+        "album_id": 6900000000000000046,
+        "album_name": "Destined 2 Win",
+        "album_total_tracks": 21,
+        "release_date": "2021-04-02"
+    },
+    {
+        "track_name": "Back in Blood (feat. Lil Durk)",
+        "track_id": "USAT22007048",
+        "duration_ms": 184489,
+        "explicit": true,
+        "spotify_track_uri": "7JuHVG3qQKQKxC4doneXVW",
+        "track_number": 1,
+        "artists": [
+            "5F1aAS1duwlzExnPs3l2Xe",
+            "3hcs9uc56yIGFCSy9leWe7"
+        ],
+        "artists_names": [
+            "Pooh Shiesty",
+            "Lil Durk"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27332c5d1e207364562fe2160b7",
+        "album_id": 6900000000000000047,
+        "album_name": "Back In Blood (feat. Lil Durk)",
+        "album_total_tracks": 1,
+        "release_date": "2020-11-06"
+    },
+    {
+        "track_name": "Shoota (feat. Lil Uzi Vert)",
+        "track_id": "USUM71804149",
+        "duration_ms": 153800,
+        "explicit": true,
+        "spotify_track_uri": "2BJSMvOGABRxokHKB0OI8i",
+        "track_number": 6,
+        "artists": [
+            "699OTQXzgjhIYAHMy9RyPD",
+            "4O15NlyKLIASxsJ0PrXPfz"
+        ],
+        "artists_names": [
+            "Playboi Carti",
+            "Lil Uzi Vert"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273a1e867d40e7bb29ced5c0194",
+        "album_id": 6900000000000000048,
+        "album_name": "Die Lit",
+        "album_total_tracks": 19,
+        "release_date": "2018-05-11"
+    },
+    {
+        "track_name": "Beat Box 2 (feat. Pooh Shiesty)",
+        "track_id": "USA2P2043560",
+        "duration_ms": 181087,
+        "explicit": true,
+        "spotify_track_uri": "4viLFSt63lJgCEZMfJwxI4",
+        "track_number": 2,
+        "artists": [
+            "3Y2MLcrD3ZQXRXmtn4fZQx",
+            "5F1aAS1duwlzExnPs3l2Xe"
+        ],
+        "artists_names": [
+            "SpotemGottem",
+            "Pooh Shiesty"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738622cd01e1ba371f05500a0b",
+        "album_id": 6900000000000000049,
+        "album_name": "Final Destination",
+        "album_total_tracks": 13,
+        "release_date": "2020-12-18"
+    },
+    {
+        "track_name": "GATTI",
+        "track_id": "USSM11915307",
+        "duration_ms": 181144,
+        "explicit": true,
+        "spotify_track_uri": "40mjsnRjCpycdUw3xhS20g",
+        "track_number": 7,
+        "artists": [
+            "7A8S43ryYdbWpJKeHRZRcq",
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "0Y5tJX1MQlPlqiwlOH1tJY"
+        ],
+        "artists_names": [
+            "JACKBOYS",
+            "Pop Smoke",
+            "Travis Scott"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273dfc2f59568272de50a257f2f",
+        "album_id": 6900000000000000050,
+        "album_name": "JACKBOYS",
+        "album_total_tracks": 7,
+        "release_date": "2019-12-27"
+    },
+    {
+        "track_name": "Need It (feat. YoungBoy Never Broke Again)",
+        "track_id": "USUG12000098",
+        "duration_ms": 195680,
+        "explicit": true,
+        "spotify_track_uri": "1cMMVJ4FDqhCci9efd1BU6",
+        "track_number": 19,
+        "artists": [
+            "6oMuImdp5ZcFhWP0ESe6mG",
+            "7wlFDEWiM5OoIAt8RSli8b"
+        ],
+        "artists_names": [
+            "Migos",
+            "YoungBoy Never Broke Again"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f89d00155b6a066650e5460d",
+        "album_id": 6900000000000000051,
+        "album_name": "Culture III",
+        "album_total_tracks": 19,
+        "release_date": "2021-06-11"
+    },
+    {
+        "track_name": "Blastoff (feat. Juice Wrld & Trippie Redd)",
+        "track_id": "QZJ842000389",
+        "duration_ms": 174729,
+        "explicit": true,
+        "spotify_track_uri": "7dH9TPjTWQ60wOJkmYay8a",
+        "track_number": 9,
+        "artists": [
+            "6MPCFvOQv5cIGfw3jODMF0",
+            "6Xgp2XMz1fhVYe7i6yNAax",
+            "5fMUXHkw8R8eOP2RNVYEZX",
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Internet Money",
+            "Trippie Redd",
+            "Diplo",
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2739ca0c952f130e28025209cf0",
+        "album_id": 6900000000000000052,
+        "album_name": "B4 The Storm",
+        "album_total_tracks": 17,
+        "release_date": "2020-08-28"
+    },
+    {
+        "track_name": "Bad Boy (with Young Thug)",
+        "track_id": "USUG12002097",
+        "duration_ms": 157355,
+        "explicit": true,
+        "spotify_track_uri": "43CIWpJaJHRcI4mUSjqgc2",
+        "track_number": 1,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz",
+            "50co4Is1HCEo8bhOyUWKpn"
+        ],
+        "artists_names": [
+            "Juice WRLD",
+            "Young Thug"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2730bda1f6aa92d42f44d621db6",
+        "album_id": 6900000000000000053,
+        "album_name": "Bad Boy (with Young Thug)",
+        "album_total_tracks": 1,
+        "release_date": "2021-01-15"
+    },
+    {
+        "track_name": "Solid (feat. Drake)",
+        "track_id": "QMCE32100237",
+        "duration_ms": 215693,
+        "explicit": true,
+        "spotify_track_uri": "6rTInqW3YECMkQsBEHw4sd",
+        "track_number": 4,
+        "artists": [
+            "1xr2G8Hlx4QWmT9HaUbmoO",
+            "50co4Is1HCEo8bhOyUWKpn",
+            "2hlmm7s2ICUX0LVIhVFlZQ",
+            "3TVXtAsR1Inumwj472S9r4"
+        ],
+        "artists_names": [
+            "Young Stoner Life",
+            "Young Thug",
+            "Gunna",
+            "Drake"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2737939ff11c32b23060cc22bb5",
+        "album_id": 6900000000000000054,
+        "album_name": "Slime Language 2",
+        "album_total_tracks": 23,
+        "release_date": "2021-04-16"
+    },
+    {
+        "track_name": "Hotel Lobby",
+        "track_id": "USUM72014365",
+        "duration_ms": 151011,
+        "explicit": true,
+        "spotify_track_uri": "5xKXcU8tpSYz7C7wrMMYec",
+        "track_number": 20,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27346e1307c35579c3483ea7b03",
+        "album_id": 6900000000000000055,
+        "album_name": "Shoot For The Stars Aim For The Moon (Deluxe)",
+        "album_total_tracks": 34,
+        "release_date": "2020-07-20"
+    },
+    {
+        "track_name": "Lonely (with Lil Wayne)",
+        "track_id": "USUM72116498",
+        "duration_ms": 154432,
+        "explicit": true,
+        "spotify_track_uri": "6pmNoWKk0r6zfIjWneJRxR",
+        "track_number": 1,
+        "artists": [
+            "4r63FhuTkUYltbVAg5TQnk",
+            "55Aa2cqylxrFIXC767Z865"
+        ],
+        "artists_names": [
+            "DaBaby",
+            "Lil Wayne"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27322ff72d81de2ce4398322255",
+        "album_id": 6900000000000000056,
+        "album_name": "Lonely (with Lil Wayne)",
+        "album_total_tracks": 1,
+        "release_date": "2021-09-09"
+    },
+    {
+        "track_name": "Flex (feat. Juice WRLD)",
+        "track_id": "USQX92002596",
+        "duration_ms": 163902,
+        "explicit": true,
+        "spotify_track_uri": "2QqJTIlGKRLJC3onkavYEz",
+        "track_number": 4,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49",
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Polo G",
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273339f780dfdbc38558ea0761d",
+        "album_id": 6900000000000000057,
+        "album_name": "THE GOAT",
+        "album_total_tracks": 16,
+        "release_date": "2020-05-15"
+    },
+    {
+        "track_name": "Through Da Storm",
+        "track_id": "USQX91901170",
+        "duration_ms": 195586,
+        "explicit": true,
+        "spotify_track_uri": "3NqCEpT8xsHdzpiRlM1kpS",
+        "track_number": 3,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273ae8b07ecdcf7aadefe00264f",
+        "album_id": 6900000000000000058,
+        "album_name": "Die A Legend",
+        "album_total_tracks": 14,
+        "release_date": "2019-06-07"
+    },
+    {
+        "track_name": "All the Smoke (feat. Gunna & Wiz Khalifa)",
+        "track_id": "USSM12006558",
+        "duration_ms": 211237,
+        "explicit": true,
+        "spotify_track_uri": "3McTpsUQfEDrlNd2ikro2E",
+        "track_number": 1,
+        "artists": [
+            "1MXZ0hsGic96dWRDKwAwdr",
+            "2hlmm7s2ICUX0LVIhVFlZQ",
+            "137W8MRPWKqSmrBGDBFSop"
+        ],
+        "artists_names": [
+            "Tyla Yaweh",
+            "Gunna",
+            "Wiz Khalifa"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273a9978d85a1eaab72e5178867",
+        "album_id": 6900000000000000059,
+        "album_name": "All the Smoke (feat. Gunna & Wiz Khalifa)",
+        "album_total_tracks": 1,
+        "release_date": "2020-12-18"
+    },
+    {
+        "track_name": "Epidemic",
+        "track_id": "USSM12005752",
+        "duration_ms": 177272,
+        "explicit": true,
+        "spotify_track_uri": "1SjBcdzWbs79UTCrH4qXJf",
+        "track_number": 5,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273a493e05c99d8ec5e8020ff2b",
+        "album_id": 6900000000000000060,
+        "album_name": "Hall of Fame",
+        "album_total_tracks": 20,
+        "release_date": "2021-06-11"
+    },
+    {
+        "track_name": "Ballin' (with Roddy Ricch)",
+        "track_id": "USUM71911808",
+        "duration_ms": 180434,
+        "explicit": true,
+        "spotify_track_uri": "3QzAOrNlsabgbMwlZt7TAY",
+        "track_number": 9,
+        "artists": [
+            "0YinUQ50QDB7ZxSCLyQ40k",
+            "757aE44tKEUQEqRuT6GnEB"
+        ],
+        "artists_names": [
+            "Mustard",
+            "Roddy Ricch"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27393b1e96fad758869d0974162",
+        "album_id": 6900000000000000061,
+        "album_name": "Perfect Ten",
+        "album_total_tracks": 10,
+        "release_date": "2019-06-28"
+    },
+    {
+        "track_name": "WHAT'S GOOD (feat. Delawou)",
+        "track_id": "AUWA02000025",
+        "duration_ms": 229999,
+        "explicit": true,
+        "spotify_track_uri": "7iI3XCX2s1Kkxv0QXPdCrp",
+        "track_number": 1,
+        "artists": [
+            "4hd0k0g3b2MLUiw0gPAsee",
+            "09ncWvqVNRg92iWAnzn3Gt"
+        ],
+        "artists_names": [
+            "Jaecy",
+            "Delawou"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273b3ae51b14584536f2ad3186d",
+        "album_id": 6900000000000000062,
+        "album_name": "WHAT'S GOOD (feat. Delawou)",
+        "album_total_tracks": 1,
+        "release_date": "2020-02-11"
+    },
+    {
+        "track_name": "p r i d e . i s . t h e . d e v i l (with Lil Baby)",
+        "track_id": "QMJMT2103642",
+        "duration_ms": 218210,
+        "explicit": true,
+        "spotify_track_uri": "5W8jRrZ6tWrTrqnKRtIQBf",
+        "track_number": 7,
+        "artists": [
+            "6l3HvQ5sa6mXTsMTB19rO5",
+            "5f7VJjfbwm532GiveGC0ZK"
+        ],
+        "artists_names": [
+            "J. Cole",
+            "Lil Baby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27310e6745bb2f179dd3616b85f",
+        "album_id": 6900000000000000063,
+        "album_name": "The Off-Season",
+        "album_total_tracks": 12,
+        "release_date": "2021-05-14"
+    },
+    {
+        "track_name": "Welcome To The Party",
+        "track_id": "USUM71910037",
+        "duration_ms": 214960,
+        "explicit": true,
+        "spotify_track_uri": "0fIffclhgJC5h8AdMMVvkp",
+        "track_number": 2,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738fe5d04b06aff90f9fe796f5",
+        "album_id": 6900000000000000064,
+        "album_name": "Meet The Woo",
+        "album_total_tracks": 9,
+        "release_date": "2019-07-26"
+    },
+    {
+        "track_name": "Go Stupid",
+        "track_id": "USQX92000261",
+        "duration_ms": 165726,
+        "explicit": true,
+        "spotify_track_uri": "4PklAHGXT5ityno3IA8SKd",
+        "track_number": 5,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49",
+            "44IvvHRk2XF243QLA2VOa8",
+            "0ErzCpIMyLcjPiwT4elrtZ",
+            "0NWbwDZY1VkRqFafuQm6wk"
+        ],
+        "artists_names": [
+            "Polo G",
+            "Stunna 4 Vegas",
+            "NLE Choppa",
+            "Mike WiLL Made-It"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273339f780dfdbc38558ea0761d",
+        "album_id": 6900000000000000065,
+        "album_name": "THE GOAT",
+        "album_total_tracks": 16,
+        "release_date": "2020-05-15"
+    },
+    {
+        "track_name": "Turks (with Gunna & ft. Travis Scott)",
+        "track_id": "USUM72003472",
+        "duration_ms": 161319,
+        "explicit": true,
+        "spotify_track_uri": "7IMwEtpAiJanqF6vQteZN2",
+        "track_number": 4,
+        "artists": [
+            "7rkW85dBwwrJtlHRDkJDAC",
+            "2hlmm7s2ICUX0LVIhVFlZQ",
+            "0Y5tJX1MQlPlqiwlOH1tJY"
+        ],
+        "artists_names": [
+            "NAV",
+            "Gunna",
+            "Travis Scott"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27336f15d38804d5bdd29b9fc7a",
+        "album_id": 6900000000000000066,
+        "album_name": "Good Intentions",
+        "album_total_tracks": 18,
+        "release_date": "2020-05-08"
+    },
+    {
+        "track_name": "Still Trappin' (with King Von)",
+        "track_id": "USUM72024651",
+        "duration_ms": 172185,
+        "explicit": true,
+        "spotify_track_uri": "43BlKpJcSrC9AsJ3F1DKg9",
+        "track_number": 6,
+        "artists": [
+            "3hcs9uc56yIGFCSy9leWe7",
+            "6QtgPSJPSzcnn7dPZ4VINp"
+        ],
+        "artists_names": [
+            "Lil Durk",
+            "King Von"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273e67a56591cf8bcfcb1450980",
+        "album_id": 6900000000000000067,
+        "album_name": "The Voice",
+        "album_total_tracks": 16,
+        "release_date": "2020-12-24"
+    },
+    {
+        "track_name": "Paranoia (feat. Gunna & Young Thug)",
+        "track_id": "USUM72014360",
+        "duration_ms": 212658,
+        "explicit": true,
+        "spotify_track_uri": "3QqJ44HiM84iyZS0G2IKIP",
+        "track_number": 29,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "2hlmm7s2ICUX0LVIhVFlZQ",
+            "50co4Is1HCEo8bhOyUWKpn"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Gunna",
+            "Young Thug"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27346e1307c35579c3483ea7b03",
+        "album_id": 6900000000000000068,
+        "album_name": "Shoot For The Stars Aim For The Moon (Deluxe)",
+        "album_total_tracks": 34,
+        "release_date": "2020-07-20"
+    },
+    {
+        "track_name": "Dark Knight Dummo",
+        "track_id": "QMEU31724288",
+        "duration_ms": 256161,
+        "explicit": true,
+        "spotify_track_uri": "4apiNNK0jp9uqn3JDG9My1",
+        "track_number": 9,
+        "artists": [
+            "6Xgp2XMz1fhVYe7i6yNAax",
+            "0Y5tJX1MQlPlqiwlOH1tJY"
+        ],
+        "artists_names": [
+            "Trippie Redd",
+            "Travis Scott"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273d959c12f4de683c39a1bafe3",
+        "album_id": 6900000000000000069,
+        "album_name": "LIFE'S A TRIP",
+        "album_total_tracks": 14,
+        "release_date": "2018-08-10"
+    },
+    {
+        "track_name": "War (feat. Lil Tjay) - Bonus",
+        "track_id": "USUM71919421",
+        "duration_ms": 221826,
+        "explicit": true,
+        "spotify_track_uri": "2hYN1IVp5LGIsi5MpzcjVz",
+        "track_number": 13,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "6jGMq4yGs7aQzuGsMgVgZR"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Lil Tjay"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27362a57823eced1cb4fd93b2c1",
+        "album_id": 6900000000000000070,
+        "album_name": "Meet The Woo 2",
+        "album_total_tracks": 13,
+        "release_date": "2020-02-07"
+    },
+    {
+        "track_name": "Iced Out Audemars (feat. Lil Wayne) - Remix",
+        "track_id": "USUM72020400",
+        "duration_ms": 196056,
+        "explicit": true,
+        "spotify_track_uri": "07IqDUGyRrOcVUo51nhj4F",
+        "track_number": 1,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "55Aa2cqylxrFIXC767Z865"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Lil Wayne"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273537a7c7b9396bde74ef3092c",
+        "album_id": 6900000000000000071,
+        "album_name": "Iced Out Audemars (Remix)",
+        "album_total_tracks": 1,
+        "release_date": "2020-10-15"
+    },
+    {
+        "track_name": "Coffin",
+        "track_id": "USUG12001669",
+        "duration_ms": 89535,
+        "explicit": true,
+        "spotify_track_uri": "5vDNippoMr52KpXBO9b9KQ",
+        "track_number": 3,
+        "artists": [
+            "6icQOAFXDZKsumw3YXyusw"
+        ],
+        "artists_names": [
+            "Lil Yachty"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273789e7bbd2cc0ae4085b4d59f",
+        "album_id": 6900000000000000072,
+        "album_name": "Lil Boat 3.5",
+        "album_total_tracks": 27,
+        "release_date": "2020-11-27"
+    },
+    {
+        "track_name": "Splash (feat. Moneybagg Yo)",
+        "track_id": "USUYG1371569",
+        "duration_ms": 173161,
+        "explicit": true,
+        "spotify_track_uri": "3GW3dMxqIbl14cZtpLRQBy",
+        "track_number": 1,
+        "artists": [
+            "5LHRHt1k9lMyONurDHEdrp",
+            "3tJoFztHeIJkJWMrx0td2f"
+        ],
+        "artists_names": [
+            "Tyga",
+            "Moneybagg Yo"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273473c0c209ab5d57796561013",
+        "album_id": 6900000000000000073,
+        "album_name": "Splash (feat. Moneybagg Yo)",
+        "album_total_tracks": 1,
+        "release_date": "2021-06-11"
+    },
+    {
+        "track_name": "Many Men (Wish Death)",
+        "track_id": "USIR10300018",
+        "duration_ms": 256226,
+        "explicit": true,
+        "spotify_track_uri": "2I9foKseoFQh07p6sD2voE",
+        "track_number": 4,
+        "artists": [
+            "3q7HBObVc0L8jNeTe5Gofh"
+        ],
+        "artists_names": [
+            "50 Cent"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f7f74100d5cc850e01172cbf",
+        "album_id": 6900000000000000074,
+        "album_name": "Get Rich Or Die Tryin'",
+        "album_total_tracks": 19,
+        "release_date": "2003-02-06"
+    },
+    {
+        "track_name": "What You Know Bout Love",
+        "track_id": "USUM72013339",
+        "duration_ms": 160000,
+        "explicit": true,
+        "spotify_track_uri": "1tkg4EHVoqnhR6iFEXb60y",
+        "track_number": 15,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000075,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "Martin & Gina",
+        "track_id": "USQX92002595",
+        "duration_ms": 132832,
+        "explicit": true,
+        "spotify_track_uri": "1VLtjHwRWOVJiE5Py7JxoQ",
+        "track_number": 3,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273339f780dfdbc38558ea0761d",
+        "album_id": 6900000000000000076,
+        "album_name": "THE GOAT",
+        "album_total_tracks": 16,
+        "release_date": "2020-05-15"
+    },
+    {
+        "track_name": "Zim Zimma",
+        "track_id": "QMBZ92095290",
+        "duration_ms": 239702,
+        "explicit": true,
+        "spotify_track_uri": "7g9DNzAU2QP88rE4BgIJpp",
+        "track_number": 4,
+        "artists": [
+            "6C1ohJrd5VydigQtaGy5Wa"
+        ],
+        "artists_names": [
+            "Joyner Lucas"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273953123ac7505d0945553732f",
+        "album_id": 6900000000000000077,
+        "album_name": "Evolution",
+        "album_total_tracks": 12,
+        "release_date": "2020-10-23"
+    },
+    {
+        "track_name": "RAPSTAR",
+        "track_id": "USSM12101640",
+        "duration_ms": 165925,
+        "explicit": true,
+        "spotify_track_uri": "18vXApRmJSgQ6wG2ll9AOg",
+        "track_number": 2,
+        "artists": [
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273a493e05c99d8ec5e8020ff2b",
+        "album_id": 6900000000000000078,
+        "album_name": "Hall of Fame",
+        "album_total_tracks": 20,
+        "release_date": "2021-06-11"
+    },
+    {
+        "track_name": "How You Feel? (Freestyle) (feat. Lil Yachty & Ski Mask The Slump God)",
+        "track_id": "USUYG1265753",
+        "duration_ms": 135022,
+        "explicit": true,
+        "spotify_track_uri": "67cpn8ZBO7QU67jky8Fh47",
+        "track_number": 2,
+        "artists": [
+            "1m7LSAMIB1BErIHYSOn32W",
+            "4e5oZygHeeRoTXc00gYWiu",
+            "6icQOAFXDZKsumw3YXyusw",
+            "2rhFzFmezpnW82MNqEKVry"
+        ],
+        "artists_names": [
+            "DJ Scheme",
+            "Danny Towers",
+            "Lil Yachty",
+            "Ski Mask The Slump God"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f2effc054ae243d0669ce179",
+        "album_id": 6900000000000000079,
+        "album_name": "Preseason EP",
+        "album_total_tracks": 3,
+        "release_date": "2019-07-30"
+    },
+    {
+        "track_name": "Nobody Special (with Future)",
+        "track_id": "USUM72106156",
+        "duration_ms": 169500,
+        "explicit": true,
+        "spotify_track_uri": "4rVL3jnYkUdRNZbzcPaYvR",
+        "track_number": 17,
+        "artists": [
+            "220xv2aB3dsGxaJI1gGs7l",
+            "1RyvyyTE3xzB2ZywiAwp0i"
+        ],
+        "artists_names": [
+            "Hotboii",
+            "Future"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273174a4bd7dfba84ac93de14c5",
+        "album_id": 6900000000000000080,
+        "album_name": "Life Of A Hotboii",
+        "album_total_tracks": 17,
+        "release_date": "2021-12-10"
+    },
+    {
+        "track_name": "10 Freaky Girls (with 21 Savage)",
+        "track_id": "USUG11802481",
+        "duration_ms": 208293,
+        "explicit": true,
+        "spotify_track_uri": "0AluA5RNsa4Cx6XRhf2hWZ",
+        "track_number": 6,
+        "artists": [
+            "0iEtIxbK0KxaSlF7G42ZOp",
+            "1URnnhqYAYcrqrcwql10ft"
+        ],
+        "artists_names": [
+            "Metro Boomin",
+            "21 Savage"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2732887f8c05b5a9f1cb105be29",
+        "album_id": 6900000000000000081,
+        "album_name": "NOT ALL HEROES WEAR CAPES (Deluxe)",
+        "album_total_tracks": 26,
+        "release_date": "2018-11-06"
+    },
+    {
+        "track_name": "Who Want Smoke?? (feat. G Herbo, Lil Durk & 21 Savage)",
+        "track_id": "USRC12101071",
+        "duration_ms": 279573,
+        "explicit": true,
+        "spotify_track_uri": "7ACW7VpgoKmfM1sKo15UhX",
+        "track_number": 9,
+        "artists": [
+            "0Njy6yR9LykNKYg9yE23QN",
+            "5QdEbQJ3ylBnc3gsIASAT5",
+            "3hcs9uc56yIGFCSy9leWe7",
+            "1URnnhqYAYcrqrcwql10ft"
+        ],
+        "artists_names": [
+            "Nardo Wick",
+            "G Herbo",
+            "Lil Durk",
+            "21 Savage"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27304791a385c035c1642c80b8f",
+        "album_id": 6900000000000000082,
+        "album_name": "Who is Nardo Wick?",
+        "album_total_tracks": 18,
+        "release_date": "2021-12-03"
+    },
+    {
+        "track_name": "We Paid (feat. 42 Dugg)",
+        "track_id": "USUG12000092",
+        "duration_ms": 181929,
+        "explicit": true,
+        "spotify_track_uri": "6gxKUmycQX7uyMwJcweFjp",
+        "track_number": 26,
+        "artists": [
+            "5f7VJjfbwm532GiveGC0ZK",
+            "45gHcnDnMC15sgx3VL7ROG"
+        ],
+        "artists_names": [
+            "Lil Baby",
+            "42 Dugg"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27376a4577dd654bf457a4ad1f8",
+        "album_id": 6900000000000000083,
+        "album_name": "My Turn (Deluxe)",
+        "album_total_tracks": 26,
+        "release_date": "2020-05-01"
+    },
+    {
+        "track_name": "Way Out (feat. Big Sean)",
+        "track_id": "USAT22007707",
+        "duration_ms": 168906,
+        "explicit": true,
+        "spotify_track_uri": "57VeLYXrvNxe8Vs18K2M9W",
+        "track_number": 5,
+        "artists": [
+            "2LIk90788K0zvyj2JJVwkJ",
+            "0c173mlxpT3dSFRgMO8XPh"
+        ],
+        "artists_names": [
+            "Jack Harlow",
+            "Big Sean"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273aeb14ead136118a987246b63",
+        "album_id": 6900000000000000084,
+        "album_name": "Thats What They All Say",
+        "album_total_tracks": 15,
+        "release_date": "2020-12-11"
+    },
+    {
+        "track_name": "Out Of Love (feat. Internet Money)",
+        "track_id": "USUM72007332",
+        "duration_ms": 153626,
+        "explicit": true,
+        "spotify_track_uri": "0IJA9KP6rT55jrP1YpTdhx",
+        "track_number": 19,
+        "artists": [
+            "4Ga1P7PMIsmqEZqhYZQgDo",
+            "6MPCFvOQv5cIGfw3jODMF0"
+        ],
+        "artists_names": [
+            "Lil Tecca",
+            "Internet Money"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2732026d0048432d395f6f715b5",
+        "album_id": 6900000000000000085,
+        "album_name": "Virgo World",
+        "album_total_tracks": 19,
+        "release_date": "2020-09-18"
+    },
+    {
+        "track_name": "ROLLIN N CONTROLLIN FREESTYLE",
+        "track_id": "USUYG1329885",
+        "duration_ms": 191208,
+        "explicit": true,
+        "spotify_track_uri": "1xqRKo0SDFDO5Jy8yEVD0X",
+        "track_number": 1,
+        "artists": [
+            "22hWz22JAmIhIEp0u1X01L"
+        ],
+        "artists_names": [
+            "DUSTY LOCANE"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27327431077bb9eefc88c3565eb",
+        "album_id": 6900000000000000086,
+        "album_name": "ROLLIN N CONTROLLIN FREESTYLE",
+        "album_total_tracks": 1,
+        "release_date": "2020-08-07"
+    },
+    {
+        "track_name": "Sum 2 Prove",
+        "track_id": "USUG11902886",
+        "duration_ms": 205760,
+        "explicit": true,
+        "spotify_track_uri": "5f4Hy5mw5SRaUgXX9c6P5S",
+        "track_number": 13,
+        "artists": [
+            "5f7VJjfbwm532GiveGC0ZK"
+        ],
+        "artists_names": [
+            "Lil Baby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f46a9ad551acbdab8f72fd89",
+        "album_id": 6900000000000000087,
+        "album_name": "My Turn",
+        "album_total_tracks": 20,
+        "release_date": "2020-02-28"
+    },
+    {
+        "track_name": "Glock In My Lap",
+        "track_id": "USSM12006061",
+        "duration_ms": 193591,
+        "explicit": true,
+        "spotify_track_uri": "6pcywuOeGGWeOQzdUyti6k",
+        "track_number": 3,
+        "artists": [
+            "1URnnhqYAYcrqrcwql10ft",
+            "0iEtIxbK0KxaSlF7G42ZOp"
+        ],
+        "artists_names": [
+            "21 Savage",
+            "Metro Boomin"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273aa57907bf0cb2ca0c8cc74bc",
+        "album_id": 6900000000000000088,
+        "album_name": "SAVAGE MODE II",
+        "album_total_tracks": 15,
+        "release_date": "2020-10-02"
+    },
+    {
+        "track_name": "Leaked",
+        "track_id": "USSM11809245",
+        "duration_ms": 220240,
+        "explicit": true,
+        "spotify_track_uri": "0W64NfLrIsRTAFObko6uJx",
+        "track_number": 10,
+        "artists": [
+            "6jGMq4yGs7aQzuGsMgVgZR"
+        ],
+        "artists_names": [
+            "Lil Tjay"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273b9fe16b21ea333150c0f50f6",
+        "album_id": 6900000000000000089,
+        "album_name": "True 2 Myself",
+        "album_total_tracks": 17,
+        "release_date": "2019-10-11"
+    },
+    {
+        "track_name": "Mannequin (feat. Lil Tjay)",
+        "track_id": "USUM72002025",
+        "duration_ms": 160560,
+        "explicit": true,
+        "spotify_track_uri": "4ogUNsrAiv68W9LnD6mJJm",
+        "track_number": 9,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "6jGMq4yGs7aQzuGsMgVgZR"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Lil Tjay"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273cd90e898c070ef21812ab363",
+        "album_id": 6900000000000000090,
+        "album_name": "Meet The Woo 2 (Deluxe)",
+        "album_total_tracks": 16,
+        "release_date": "2020-02-12"
+    },
+    {
+        "track_name": "War (feat. Lil Tjay) - Bonus",
+        "track_id": "USUM71919421",
+        "duration_ms": 221813,
+        "explicit": true,
+        "spotify_track_uri": "1wXN2YC8tTGK5J1wOn55TO",
+        "track_number": 13,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "6jGMq4yGs7aQzuGsMgVgZR"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Lil Tjay"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273cd90e898c070ef21812ab363",
+        "album_id": 6900000000000000091,
+        "album_name": "Meet The Woo 2 (Deluxe)",
+        "album_total_tracks": 16,
+        "release_date": "2020-02-12"
+    },
+    {
+        "track_name": "The Woo (feat. 50 Cent & Roddy Ricch)",
+        "track_id": "USUM72013367",
+        "duration_ms": 201600,
+        "explicit": true,
+        "spotify_track_uri": "1H7KnK26kc1YyellpbINEn",
+        "track_number": 10,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "3q7HBObVc0L8jNeTe5Gofh",
+            "757aE44tKEUQEqRuT6GnEB"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "50 Cent",
+            "Roddy Ricch"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377ada0863603903f57b34369",
+        "album_id": 6900000000000000092,
+        "album_name": "Shoot For The Stars Aim For The Moon",
+        "album_total_tracks": 19,
+        "release_date": "2020-07-03"
+    },
+    {
+        "track_name": "GO (feat. Juice WRLD)",
+        "track_id": "USSM12003703",
+        "duration_ms": 181688,
+        "explicit": true,
+        "spotify_track_uri": "2rPHUAeUPbNgTmK18FPTiZ",
+        "track_number": 7,
+        "artists": [
+            "2tIP7SsRs7vjIcLrU85W8J",
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "The Kid LAROI",
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273891f0552bed344dc2bfe322f",
+        "album_id": 6900000000000000093,
+        "album_name": "F*CK LOVE",
+        "album_total_tracks": 15,
+        "release_date": "2020-07-24"
+    },
+    {
+        "track_name": "APOLOGIZE",
+        "track_id": "QM6P41938942",
+        "duration_ms": 213473,
+        "explicit": true,
+        "spotify_track_uri": "4MQIDIQjNWkUvpXe5Je7TO",
+        "track_number": 14,
+        "artists": [
+            "5SXuuuRpukkTvsLuUknva1"
+        ],
+        "artists_names": [
+            "Baby Keem"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273683757f1fd40a7f7ef64bec1",
+        "album_id": 6900000000000000094,
+        "album_name": "DIE FOR MY BITCH",
+        "album_total_tracks": 14,
+        "release_date": "2019-07-19"
+    },
+    {
+        "track_name": "PLASTIC",
+        "track_id": "USSM12003492",
+        "duration_ms": 181015,
+        "explicit": true,
+        "spotify_track_uri": "7FngYjFnEU6fRYWTZbwoq9",
+        "track_number": 1,
+        "artists": [
+            "4a0UMM2QrKP5ESk1P8373s"
+        ],
+        "artists_names": [
+            "Unghetto"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2733bf761709bcf1d00dbd39f0c",
+        "album_id": 6900000000000000095,
+        "album_name": "PLASTIC",
+        "album_total_tracks": 1,
+        "release_date": "2020-05-29"
+    },
+    {
+        "track_name": "UGLY (feat. Lil Baby)",
+        "track_id": "TCAFI2004324",
+        "duration_ms": 194285,
+        "explicit": true,
+        "spotify_track_uri": "0PJ4dXVkpNAtoOZsEjqktc",
+        "track_number": 1,
+        "artists": [
+            "1z7b1Pr1rSlvWRzsW3HOrS",
+            "5f7VJjfbwm532GiveGC0ZK"
+        ],
+        "artists_names": [
+            "Russ",
+            "Lil Baby"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273bab7aca600960d7003f4e99a",
+        "album_id": 6900000000000000096,
+        "album_name": "UGLY (feat. Lil Baby)",
+        "album_total_tracks": 1,
+        "release_date": "2021-01-08"
+    },
+    {
+        "track_name": "Papi Chulo",
+        "track_id": "QM4TX2039607",
+        "duration_ms": 161667,
+        "explicit": true,
+        "spotify_track_uri": "6Juv5N0dNU1imms9c9u1dA",
+        "track_number": 1,
+        "artists": [
+            "5zfEatKLDdRkgbw6sdLBAQ",
+            "2p1fiYHYiXz9qi0JJyxBzN"
+        ],
+        "artists_names": [
+            "Octavian",
+            "Skepta"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735c6f5a61cfefe5e0bc20f131",
+        "album_id": 6900000000000000097,
+        "album_name": "Papi Chulo",
+        "album_total_tracks": 1,
+        "release_date": "2020-03-13"
+    },
+    {
+        "track_name": "The Race - Remix",
+        "track_id": "USQX91702635",
+        "duration_ms": 211875,
+        "explicit": true,
+        "spotify_track_uri": "7d19457woBxmPRCq255YqM",
+        "track_number": 9,
+        "artists": [
+            "2ODbg2404zUzTi02qIPEjB",
+            "1URnnhqYAYcrqrcwql10ft",
+            "5yPzzu25VzEk8qrGTLIrE1"
+        ],
+        "artists_names": [
+            "Tay-K",
+            "21 Savage",
+            "Young Nudy"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273fbfeb7ded12a79fbd98f99e8",
+        "album_id": 6900000000000000098,
+        "album_name": "#SantanaWorld (+)",
+        "album_total_tracks": 10,
+        "release_date": "2017-12-14"
+    },
+    {
+        "track_name": "Swervin (feat. Veysel)",
+        "track_id": "USAT21904192",
+        "duration_ms": 186382,
+        "explicit": true,
+        "spotify_track_uri": "4j9XbTUB40qVOHqapA6EMz",
+        "track_number": 1,
+        "artists": [
+            "31W5EY0aAly4Qieq6OFu6I",
+            "4VuARVJiWGsH2msKTdsKdQ"
+        ],
+        "artists_names": [
+            "A Boogie Wit da Hoodie",
+            "Veysel"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735d7f05dead64066d04e94cb2",
+        "album_id": 6900000000000000099,
+        "album_name": "Swervin (feat. Veysel)",
+        "album_total_tracks": 1,
+        "release_date": "2019-06-14"
+    },
+    {
+        "track_name": "Life Changed",
+        "track_id": "USSM12101543",
+        "duration_ms": 180024,
+        "explicit": true,
+        "spotify_track_uri": "5zskkaTSsSsdyeeJxKiTpj",
+        "track_number": 17,
+        "artists": [
+            "6jGMq4yGs7aQzuGsMgVgZR"
+        ],
+        "artists_names": [
+            "Lil Tjay"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735af0305457ff290e06dcc4c2",
+        "album_id": 6900000000000000100,
+        "album_name": "Destined 2 Win",
+        "album_total_tracks": 21,
+        "release_date": "2021-04-02"
+    },
+    {
+        "track_name": "Perkys Calling",
+        "track_id": "USSM12001870",
+        "duration_ms": 246360,
+        "explicit": true,
+        "spotify_track_uri": "05nB8pRwwbKA2fsKK1nOyE",
+        "track_number": 10,
+        "artists": [
+            "1RyvyyTE3xzB2ZywiAwp0i"
+        ],
+        "artists_names": [
+            "Future"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738a66b2b14cd2bc612a7f38fa",
+        "album_id": 6900000000000000101,
+        "album_name": "Purple Reign",
+        "album_total_tracks": 12,
+        "release_date": "2016-01-17"
+    },
+    {
+        "track_name": "REVOFEV",
+        "track_id": "USUM71022468",
+        "duration_ms": 183173,
+        "explicit": false,
+        "spotify_track_uri": "0Epl79nHvdyTdZRAiWpJah",
+        "track_number": 2,
+        "artists": [
+            "0fA0VVWsXO9YnASrzqfmYu"
+        ],
+        "artists_names": [
+            "Kid Cudi"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27359e842b6a3566a141f27f815",
+        "album_id": 6900000000000000102,
+        "album_name": "Man On The Moon II: The Legend Of Mr. Rager",
+        "album_total_tracks": 17,
+        "release_date": "2010-11-09"
+    },
+    {
+        "track_name": "Tequila Shots",
+        "track_id": "USUM72023838",
+        "duration_ms": 193293,
+        "explicit": true,
+        "spotify_track_uri": "30KctD1WsHKTIYczXjip5a",
+        "track_number": 2,
+        "artists": [
+            "0fA0VVWsXO9YnASrzqfmYu"
+        ],
+        "artists_names": [
+            "Kid Cudi"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2736ff25c2481eeaf6e7284d461",
+        "album_id": 6900000000000000103,
+        "album_name": "Man On The Moon III: The Chosen",
+        "album_total_tracks": 18,
+        "release_date": "2020-12-11"
+    },
+    {
+        "track_name": "Pursuit Of Happiness (Nightmare)",
+        "track_id": "USUM70981907",
+        "duration_ms": 295293,
+        "explicit": true,
+        "spotify_track_uri": "5iSEsR6NKjlC9SrIJkyL3k",
+        "track_number": 13,
+        "artists": [
+            "0fA0VVWsXO9YnASrzqfmYu",
+            "0SwO7SWeDHJijQ3XNS7xEE",
+            "57dN52uHvrHOxijzpIgu3E"
+        ],
+        "artists_names": [
+            "Kid Cudi",
+            "MGMT",
+            "Ratatat"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273aab2c3c3f1f3207137d915c9",
+        "album_id": 6900000000000000104,
+        "album_name": "Man On The Moon: The End Of Day",
+        "album_total_tracks": 15,
+        "release_date": "2009-09-15"
+    },
+    {
+        "track_name": "Erase Me - Main",
+        "track_id": "USUM71020517",
+        "duration_ms": 192253,
+        "explicit": true,
+        "spotify_track_uri": "6XkuklKiHYVTlVvWlTgQYP",
+        "track_number": 8,
+        "artists": [
+            "0fA0VVWsXO9YnASrzqfmYu",
+            "5K4W6rqBFWDnAN6FQUkS6x"
+        ],
+        "artists_names": [
+            "Kid Cudi",
+            "Kanye West"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27359e842b6a3566a141f27f815",
+        "album_id": 6900000000000000105,
+        "album_name": "Man On The Moon II: The Legend Of Mr. Rager",
+        "album_total_tracks": 17,
+        "release_date": "2010-11-09"
+    },
+    {
+        "track_name": "Invincible",
+        "track_id": "USUM72002003",
+        "duration_ms": 127546,
+        "explicit": true,
+        "spotify_track_uri": "792HwhrdO3ErRKL5yRe4Ge",
+        "track_number": 1,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj"
+        ],
+        "artists_names": [
+            "Pop Smoke"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27362a57823eced1cb4fd93b2c1",
+        "album_id": 6900000000000000106,
+        "album_name": "Meet The Woo 2",
+        "album_total_tracks": 13,
+        "release_date": "2020-02-07"
+    },
+    {
+        "track_name": "Took Her To The O",
+        "track_id": "USUYG1296663",
+        "duration_ms": 196179,
+        "explicit": true,
+        "spotify_track_uri": "7fEoXCZTZFosUFvFQg1BmW",
+        "track_number": 2,
+        "artists": [
+            "6QtgPSJPSzcnn7dPZ4VINp"
+        ],
+        "artists_names": [
+            "King Von"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738649220140846c7edf7f1978",
+        "album_id": 6900000000000000107,
+        "album_name": "Levon James",
+        "album_total_tracks": 16,
+        "release_date": "2020-03-06"
+    },
+    {
+        "track_name": "Run It Up (feat. Offset & Moneybagg Yo)",
+        "track_id": "USSM12101540",
+        "duration_ms": 232048,
+        "explicit": true,
+        "spotify_track_uri": "1dg3qy5DjoJodawfOCgrTP",
+        "track_number": 14,
+        "artists": [
+            "6jGMq4yGs7aQzuGsMgVgZR",
+            "4DdkRBBYG6Yk9Ka8tdJ9BW",
+            "3tJoFztHeIJkJWMrx0td2f"
+        ],
+        "artists_names": [
+            "Lil Tjay",
+            "Offset",
+            "Moneybagg Yo"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735af0305457ff290e06dcc4c2",
+        "album_id": 6900000000000000108,
+        "album_name": "Destined 2 Win",
+        "album_total_tracks": 21,
+        "release_date": "2021-04-02"
+    },
+    {
+        "track_name": "Lemonade - Remix",
+        "track_id": "QZJ842000547",
+        "duration_ms": 181495,
+        "explicit": true,
+        "spotify_track_uri": "57FNYz14MjKVoRTbxtv4A1",
+        "track_number": 4,
+        "artists": [
+            "6MPCFvOQv5cIGfw3jODMF0",
+            "4Gso3d4CscCijv0lmajZWs",
+            "757aE44tKEUQEqRuT6GnEB"
+        ],
+        "artists_names": [
+            "Internet Money",
+            "Don Toliver",
+            "Roddy Ricch"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273647dcecd4700db10d49606ef",
+        "album_id": 6900000000000000109,
+        "album_name": "B4 The Storm (Complete Edition)",
+        "album_total_tracks": 35,
+        "release_date": "2020-10-23"
+    },
+    {
+        "track_name": "Twin Nem (feat. Lil Durk)",
+        "track_id": "USUYG1274316",
+        "duration_ms": 175533,
+        "explicit": true,
+        "spotify_track_uri": "6z1nMCq1HJSZ78u2jYtrDT",
+        "track_number": 5,
+        "artists": [
+            "6QtgPSJPSzcnn7dPZ4VINp",
+            "3hcs9uc56yIGFCSy9leWe7"
+        ],
+        "artists_names": [
+            "King Von",
+            "Lil Durk"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2737155e10eafd9c0aa6ff2a707",
+        "album_id": 6900000000000000110,
+        "album_name": "Grandson, Vol. 1",
+        "album_total_tracks": 13,
+        "release_date": "2019-09-20"
+    },
+    {
+        "track_name": "In The Fire",
+        "track_id": "GBUM72104337",
+        "duration_ms": 423909,
+        "explicit": true,
+        "spotify_track_uri": "3mtaSob1BQO4HMSA8lWKRt",
+        "track_number": 4,
+        "artists": [
+            "6Ip8FS7vWT1uKkJSweANQK"
+        ],
+        "artists_names": [
+            "Dave"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273da5b9c1eb275d48e14d25f3e",
+        "album_id": 6900000000000000111,
+        "album_name": "We're All Alone In This Together",
+        "album_total_tracks": 12,
+        "release_date": "2021-07-22"
+    },
+    {
+        "track_name": "Famous Hoes",
+        "track_id": "USWB11903266",
+        "duration_ms": 135460,
+        "explicit": true,
+        "spotify_track_uri": "35Xf2ABjPzUXKz19akd7Jj",
+        "track_number": 1,
+        "artists": [
+            "0ErzCpIMyLcjPiwT4elrtZ"
+        ],
+        "artists_names": [
+            "NLE Choppa"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2733ae711b1307b647a1d59f3e8",
+        "album_id": 6900000000000000112,
+        "album_name": "Famous Hoes",
+        "album_total_tracks": 1,
+        "release_date": "2019-12-10"
+    },
+    {
+        "track_name": "Mama Cry",
+        "track_id": "QMCE31801937",
+        "duration_ms": 231297,
+        "explicit": true,
+        "spotify_track_uri": "2fSW54bA6x2iWePU7rpCiP",
+        "track_number": 6,
+        "artists": [
+            "1cNDP5yjU5vjeR8qMf4grg"
+        ],
+        "artists_names": [
+            "YNW Melly"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2730f5397dc6aa91374897182e0",
+        "album_id": 6900000000000000113,
+        "album_name": "I AM YOU",
+        "album_total_tracks": 15,
+        "release_date": "2018-08-03"
+    },
+    {
+        "track_name": "Mojo So Dope",
+        "track_id": "USUM71025500",
+        "duration_ms": 210586,
+        "explicit": true,
+        "spotify_track_uri": "6hPSal3ragmfUt1I5mKZjn",
+        "track_number": 6,
+        "artists": [
+            "0fA0VVWsXO9YnASrzqfmYu"
+        ],
+        "artists_names": [
+            "Kid Cudi"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27359e842b6a3566a141f27f815",
+        "album_id": 6900000000000000114,
+        "album_name": "Man On The Moon II: The Legend Of Mr. Rager",
+        "album_total_tracks": 17,
+        "release_date": "2010-11-09"
+    },
+    {
+        "track_name": "Outside (Better Days)",
+        "track_id": "USUYG1368583",
+        "duration_ms": 148715,
+        "explicit": true,
+        "spotify_track_uri": "26BMsCXJpD7eYtP7ufhApC",
+        "track_number": 1,
+        "artists": [
+            "3Fl1V19tmjt57oBdxXKAjJ",
+            "6bS1ddLkqrK5Jl6GyKK4j2"
+        ],
+        "artists_names": [
+            "Blueface",
+            "OG Bobby Billions"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27358df3f3a32e26d138bf8ad12",
+        "album_id": 6900000000000000115,
+        "album_name": "Outside (Better Days)",
+        "album_total_tracks": 1,
+        "release_date": "2021-06-02"
+    },
+    {
+        "track_name": "BGC",
+        "track_id": "QZES82185655",
+        "duration_ms": 141878,
+        "explicit": true,
+        "spotify_track_uri": "6Xls57cmjSsNNNGAKPRLL9",
+        "track_number": 1,
+        "artists": [
+            "3Fl1V19tmjt57oBdxXKAjJ",
+            "0WK3H9OErSn5zKOkOV5egm"
+        ],
+        "artists_names": [
+            "Blueface",
+            "DDG"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f3ff0f51277c176667057664",
+        "album_id": 6900000000000000116,
+        "album_name": "BGC",
+        "album_total_tracks": 1,
+        "release_date": "2021-04-10"
+    },
+    {
+        "track_name": "Disrespectful",
+        "track_id": "USCM51900375",
+        "duration_ms": 152400,
+        "explicit": true,
+        "spotify_track_uri": "6rC06yWehxOD8mN7fxGNMb",
+        "track_number": 3,
+        "artists": [
+            "3Fl1V19tmjt57oBdxXKAjJ"
+        ],
+        "artists_names": [
+            "Blueface"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273e186bb6ef785e65fa3ad989b",
+        "album_id": 6900000000000000117,
+        "album_name": "Dirt Bag",
+        "album_total_tracks": 8,
+        "release_date": "2019-08-09"
+    },
+    {
+        "track_name": "Lean Wit Me",
+        "track_id": "USUG11800945",
+        "duration_ms": 175755,
+        "explicit": true,
+        "spotify_track_uri": "3oDkdAySo1VQQG0ptV7uwa",
+        "track_number": 7,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f7db43292a6a99b21b51d5b4",
+        "album_id": 6900000000000000118,
+        "album_name": "Goodbye & Good Riddance",
+        "album_total_tracks": 17,
+        "release_date": "2018-12-10"
+    },
+    {
+        "track_name": "Riot",
+        "track_id": "USAT22000783",
+        "duration_ms": 166457,
+        "explicit": true,
+        "spotify_track_uri": "16U1C1VQYroAaCvqZq2oO8",
+        "track_number": 12,
+        "artists": [
+            "7d3WFRME3vBY2cgoP38RDo"
+        ],
+        "artists_names": [
+            "Lil Skies"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27370c6a1dbd36b1fc18e4bacd5",
+        "album_id": 6900000000000000119,
+        "album_name": "Unbothered",
+        "album_total_tracks": 14,
+        "release_date": "2021-01-22"
+    },
+    {
+        "track_name": "TPL x Fumez The Engineer - Plugged In Freestyle",
+        "track_id": "SE6QE2074976",
+        "duration_ms": 217714,
+        "explicit": true,
+        "spotify_track_uri": "2oW5T6viRcUuE6Ttk6TJ9B",
+        "track_number": 1,
+        "artists": [
+            "0ksX396B3t2Gt8kwr0BJZk",
+            "25A5LqeSK0yH4ks5fGxbI2",
+            "3AFt30387waHIjjDL63XeI",
+            "6xNUn9epduXbZmCgsxutSx"
+        ],
+        "artists_names": [
+            "Fumez The Engineer",
+            "Sava",
+            "OTP",
+            "BM X MINI"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2734cbd0294841417f4c42d5d4c",
+        "album_id": 6900000000000000120,
+        "album_name": "TPL x Fumez The Engineer - Plugged In Freestyle",
+        "album_total_tracks": 1,
+        "release_date": "2020-10-01"
+    },
+    {
+        "track_name": "Cabaret",
+        "track_id": "TCACT1630776",
+        "duration_ms": 185202,
+        "explicit": true,
+        "spotify_track_uri": "6fcL88TZ5Feq7Rlj2O6sgC",
+        "track_number": 9,
+        "artists": [
+            "2NjfafEappzvGGGDdMRJMP"
+        ],
+        "artists_names": [
+            "Azizi Gibson"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273118ae7915b42ec083a382e7b",
+        "album_id": 6900000000000000121,
+        "album_name": "A New Life",
+        "album_total_tracks": 13,
+        "release_date": "2016-11-07"
+    },
+    {
+        "track_name": "FGE Cypher, Pt. 3",
+        "track_id": "TCACW1795784",
+        "duration_ms": 340597,
+        "explicit": true,
+        "spotify_track_uri": "47JeI0gw7h93O7etXl6s4L",
+        "track_number": 3,
+        "artists": [
+            "3YSYh7GHgZo7UkjmFNejQY",
+            "5RZCkYxaMvpxxzVf0Ocykd",
+            "74dMZMvy8P27oPqnprnvBb",
+            "2U2PNHpVgh96ofQdrEpjOR"
+        ],
+        "artists_names": [
+            "No Fatigue",
+            "Talley Of 300",
+            "Montana of 300",
+            "$avage"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27342722f72efc17a91c7562034",
+        "album_id": 6900000000000000122,
+        "album_name": "No Surrender No Retreat",
+        "album_total_tracks": 14,
+        "release_date": "2017-02-10"
+    },
+    {
+        "track_name": "Broke In A Minute",
+        "track_id": "USUM72002126",
+        "duration_ms": 132023,
+        "explicit": true,
+        "spotify_track_uri": "4xqIYGwwZTEem9U8A42SPF",
+        "track_number": 7,
+        "artists": [
+            "2jku7tDXc6XoB6MO2hFuqg"
+        ],
+        "artists_names": [
+            "Tory Lanez"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27353af8d1a7654351c6a03b5fe",
+        "album_id": 6900000000000000123,
+        "album_name": "The New Toronto 3",
+        "album_total_tracks": 16,
+        "release_date": "2020-04-10"
+    },
+    {
+        "track_name": "Fge Cypher (feat. $Avage & No Fatigue)",
+        "track_id": "TCACJ1592539",
+        "duration_ms": 364727,
+        "explicit": true,
+        "spotify_track_uri": "0oPKi455b9ejRX7NCrYHju",
+        "track_number": 10,
+        "artists": [
+            "74dMZMvy8P27oPqnprnvBb",
+            "5RZCkYxaMvpxxzVf0Ocykd",
+            "2U2PNHpVgh96ofQdrEpjOR",
+            "3YSYh7GHgZo7UkjmFNejQY"
+        ],
+        "artists_names": [
+            "Montana of 300",
+            "Talley Of 300",
+            "$avage",
+            "No Fatigue"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273c0607d83b515bf9c3c0cbc9f",
+        "album_id": 6900000000000000124,
+        "album_name": "Gunz n Roses",
+        "album_total_tracks": 15,
+        "release_date": "2015-12-02"
+    },
+    {
+        "track_name": "Fge Cypher, Pt. 2 (feat. Talley of 300, $Avage, J Real & No Fatigue)",
+        "track_id": "TCACO1612058",
+        "duration_ms": 389370,
+        "explicit": true,
+        "spotify_track_uri": "4EYmOVR702Dqdip61yINJW",
+        "track_number": 6,
+        "artists": [
+            "74dMZMvy8P27oPqnprnvBb",
+            "5RZCkYxaMvpxxzVf0Ocykd",
+            "2U2PNHpVgh96ofQdrEpjOR",
+            "74rg4Lwrhj429pM3H43D8Y",
+            "3YSYh7GHgZo7UkjmFNejQY"
+        ],
+        "artists_names": [
+            "Montana of 300",
+            "Talley Of 300",
+            "$avage",
+            "J-Real",
+            "No Fatigue"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273baee4cc78d57af7d6d221e52",
+        "album_id": 6900000000000000125,
+        "album_name": "Fire in the Church",
+        "album_total_tracks": 17,
+        "release_date": "2016-05-20"
+    },
+    {
+        "track_name": "Outside (Better Days)",
+        "track_id": "USUYG1368583",
+        "duration_ms": 148715,
+        "explicit": true,
+        "spotify_track_uri": "26BMsCXJpD7eYtP7ufhApC",
+        "track_number": 1,
+        "artists": [
+            "3Fl1V19tmjt57oBdxXKAjJ",
+            "6bS1ddLkqrK5Jl6GyKK4j2"
+        ],
+        "artists_names": [
+            "Blueface",
+            "OG Bobby Billions"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27358df3f3a32e26d138bf8ad12",
+        "album_id": 6900000000000000126,
+        "album_name": "Outside (Better Days)",
+        "album_total_tracks": 1,
+        "release_date": "2021-06-02"
+    },
+    {
+        "track_name": "Way Out (feat. Big Sean)",
+        "track_id": "USAT22007568",
+        "duration_ms": 168906,
+        "explicit": true,
+        "spotify_track_uri": "6rLi6PyWXu1rPlShuIZpj6",
+        "track_number": 1,
+        "artists": [
+            "2LIk90788K0zvyj2JJVwkJ",
+            "0c173mlxpT3dSFRgMO8XPh"
+        ],
+        "artists_names": [
+            "Jack Harlow",
+            "Big Sean"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f73acccafa15627518fbb7e1",
+        "album_id": 6900000000000000127,
+        "album_name": "Way Out (feat. Big Sean)",
+        "album_total_tracks": 1,
+        "release_date": "2020-12-09"
+    },
+    {
+        "track_name": "durag activity (with Travis Scott)",
+        "track_id": "USSM12101860",
+        "duration_ms": 225020,
+        "explicit": true,
+        "spotify_track_uri": "4JJcP0Rv9AgyPD6ZGaC8EE",
+        "track_number": 1,
+        "artists": [
+            "5SXuuuRpukkTvsLuUknva1",
+            "0Y5tJX1MQlPlqiwlOH1tJY"
+        ],
+        "artists_names": [
+            "Baby Keem",
+            "Travis Scott"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27377fd541561004220c4615b7a",
+        "album_id": 6900000000000000128,
+        "album_name": "durag activity (with Travis Scott)",
+        "album_total_tracks": 1,
+        "release_date": "2021-04-30"
+    },
+    {
+        "track_name": "30 (feat. Bizzy Banks)",
+        "track_id": "USUM72112389",
+        "duration_ms": 228251,
+        "explicit": true,
+        "spotify_track_uri": "24YG5Z8Of1VHovrfXsbvCZ",
+        "track_number": 8,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "7s3eCGNZMrwUQraXlocCBv"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Bizzy Banks"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27379476cf856443329e6c52c04",
+        "album_id": 6900000000000000129,
+        "album_name": "Faith",
+        "album_total_tracks": 20,
+        "release_date": "2021-07-16"
+    },
+    {
+        "track_name": "Kujo Freestyle",
+        "track_id": "QZFZ32000549",
+        "duration_ms": 115099,
+        "explicit": true,
+        "spotify_track_uri": "1VvwxqIfKRazmvE7zdDFRg",
+        "track_number": 1,
+        "artists": [
+            "0ndm6JWcrLhnmrbVzSGi0b"
+        ],
+        "artists_names": [
+            "Sinoda"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2736e624895ee3406013a764bab",
+        "album_id": 6900000000000000130,
+        "album_name": "Kujo Freestyle",
+        "album_total_tracks": 1,
+        "release_date": "2019-12-18"
+    },
+    {
+        "track_name": "Fighting Demons",
+        "track_id": "USUG12001902",
+        "duration_ms": 200628,
+        "explicit": true,
+        "spotify_track_uri": "0440JCJyIAmINA8KcYgFb5",
+        "track_number": 14,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2733e0698e4ae5ffb82a005aeeb",
+        "album_id": 6900000000000000131,
+        "album_name": "Legends Never Die",
+        "album_total_tracks": 22,
+        "release_date": "2020-07-10"
+    },
+    {
+        "track_name": "Money Trees",
+        "track_id": "USUM71210785",
+        "duration_ms": 386906,
+        "explicit": true,
+        "spotify_track_uri": "2HbKqm4o0w5wEeEFXm2sD4",
+        "track_number": 5,
+        "artists": [
+            "2YZyLoL8N0Wb9xBt1NhZWg",
+            "28ExwzUQsvgJooOI0X1mr3"
+        ],
+        "artists_names": [
+            "Kendrick Lamar",
+            "Jay Rock"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273d28d2ebdedb220e479743797",
+        "album_id": 6900000000000000132,
+        "album_name": "good kid, m.A.A.d city",
+        "album_total_tracks": 13,
+        "release_date": "2012"
+    },
+    {
+        "track_name": "E-ER (feat. Lil Yachty)",
+        "track_id": "USUYG1342164",
+        "duration_ms": 163384,
+        "explicit": true,
+        "spotify_track_uri": "4N7i6RfJXMWfkx9Zr6pzkJ",
+        "track_number": 4,
+        "artists": [
+            "1m7LSAMIB1BErIHYSOn32W",
+            "2rhFzFmezpnW82MNqEKVry",
+            "4e5oZygHeeRoTXc00gYWiu",
+            "6icQOAFXDZKsumw3YXyusw"
+        ],
+        "artists_names": [
+            "DJ Scheme",
+            "Ski Mask The Slump God",
+            "Danny Towers",
+            "Lil Yachty"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27362700bbd5fe234b42d40b63c",
+        "album_id": 6900000000000000133,
+        "album_name": "FAMILY",
+        "album_total_tracks": 17,
+        "release_date": "2020-12-04"
+    },
+    {
+        "track_name": "6 Kiss",
+        "track_id": "QZJ841900147",
+        "duration_ms": 199436,
+        "explicit": true,
+        "spotify_track_uri": "7tgjDlQsMR8RvkdlNCJA58",
+        "track_number": 7,
+        "artists": [
+            "6Xgp2XMz1fhVYe7i6yNAax",
+            "4MCBfE4596Uoi2O4DtmEMz",
+            "1cNDP5yjU5vjeR8qMf4grg"
+        ],
+        "artists_names": [
+            "Trippie Redd",
+            "Juice WRLD",
+            "YNW Melly"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273cd81b9f0393348b6537c9d92",
+        "album_id": 6900000000000000134,
+        "album_name": "A Love Letter To You 4",
+        "album_total_tracks": 21,
+        "release_date": "2019-11-22"
+    },
+    {
+        "track_name": "EVERY CHANCE I GET (feat. Lil Baby & Lil Durk)",
+        "track_id": "USSM12102263",
+        "duration_ms": 236524,
+        "explicit": true,
+        "spotify_track_uri": "1EJIcDYXwSqipW5dFe4uJz",
+        "track_number": 2,
+        "artists": [
+            "0QHgL1lAIqAw0HtD7YldmP",
+            "5f7VJjfbwm532GiveGC0ZK",
+            "3hcs9uc56yIGFCSy9leWe7"
+        ],
+        "artists_names": [
+            "DJ Khaled",
+            "Lil Baby",
+            "Lil Durk"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273dcd4d70294f17175991ba1bb",
+        "album_id": 6900000000000000135,
+        "album_name": "KHALED KHALED",
+        "album_total_tracks": 14,
+        "release_date": "2021-04-30"
+    },
+    {
+        "track_name": "Shenanigans (feat. Yung Bans)",
+        "track_id": "USAT21904069",
+        "duration_ms": 138243,
+        "explicit": true,
+        "spotify_track_uri": "6Js9pKLTyVw7xZQ1MIjkVo",
+        "track_number": 3,
+        "artists": [
+            "7502fDxg339jvGV08Jd4R0",
+            "6WkUZyqghQei2G809wMKuZ"
+        ],
+        "artists_names": [
+            "Jasiah",
+            "Yung Bans"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735e8cc10ff27240cc3139b090",
+        "album_id": 6900000000000000136,
+        "album_name": "Jasiah I Am",
+        "album_total_tracks": 11,
+        "release_date": "2019-07-19"
+    },
+    {
+        "track_name": "No Fucks (feat. Sueco The Child and AzChike)",
+        "track_id": "US39N1900210",
+        "duration_ms": 136800,
+        "explicit": true,
+        "spotify_track_uri": "1xEcsGNqeAeeB5Yx2gmFRJ",
+        "track_number": 1,
+        "artists": [
+            "6vCAhgYcKSL1curqoT6eNu",
+            "4iDroUFo89Y7YBsdDTBmTD",
+            "6fqjJNsLs7g6F3PXy01Xnw"
+        ],
+        "artists_names": [
+            "1takejay",
+            "Sueco",
+            "AzChike"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27336954dbc186a931f650d3cd0",
+        "album_id": 6900000000000000137,
+        "album_name": "No Fucks (feat. Sueco The Child and AzChike)",
+        "album_total_tracks": 1,
+        "release_date": "2019-11-15"
+    },
+    {
+        "track_name": "Fuck It Up (feat. YG)",
+        "track_id": "TCACN1619441",
+        "duration_ms": 141844,
+        "explicit": true,
+        "spotify_track_uri": "0nXgBBZFVdumUIaxszDm1p",
+        "track_number": 5,
+        "artists": [
+            "3XVpDdKav6C6zwlDXPhMEO",
+            "0A0FS04o6zMoto8OKPsDwY"
+        ],
+        "artists_names": [
+            "Kamaiyah",
+            "YG"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2731774ffb4a502234482038396",
+        "album_id": 6900000000000000138,
+        "album_name": "A Good Night in the Ghetto",
+        "album_total_tracks": 16,
+        "release_date": "2016-03-23"
+    },
+    {
+        "track_name": "SUVs (Black on Black)",
+        "track_id": "USAT22102616",
+        "duration_ms": 157675,
+        "explicit": true,
+        "spotify_track_uri": "1MIGkQxcdAt2lDx6ySpsc5",
+        "track_number": 1,
+        "artists": [
+            "2LIk90788K0zvyj2JJVwkJ",
+            "5F1aAS1duwlzExnPs3l2Xe"
+        ],
+        "artists_names": [
+            "Jack Harlow",
+            "Pooh Shiesty"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2734d00928934df027c7c51365e",
+        "album_id": 6900000000000000139,
+        "album_name": "SUVs (Black on Black)",
+        "album_total_tracks": 1,
+        "release_date": "2021-08-03"
+    },
+    {
+        "track_name": "Mind of Melvin (feat. Lil Uzi Vert)",
+        "track_id": "QMCE32100443",
+        "duration_ms": 230880,
+        "explicit": true,
+        "spotify_track_uri": "5xyLeb2q1lxDf7hXKYlC1H",
+        "track_number": 1,
+        "artists": [
+            "1cNDP5yjU5vjeR8qMf4grg",
+            "4O15NlyKLIASxsJ0PrXPfz"
+        ],
+        "artists_names": [
+            "YNW Melly",
+            "Lil Uzi Vert"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27346a15349dc3eb33627800bc7",
+        "album_id": 6900000000000000140,
+        "album_name": "Just A Matter of Slime",
+        "album_total_tracks": 12,
+        "release_date": "2021-08-13"
+    },
+    {
+        "track_name": "Bout A Million (feat. 42 Dugg & 21 Savage)",
+        "track_id": "USUM72112386",
+        "duration_ms": 203586,
+        "explicit": true,
+        "spotify_track_uri": "4LaGu95Ui2s4vprSQYWUAZ",
+        "track_number": 5,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "1URnnhqYAYcrqrcwql10ft",
+            "45gHcnDnMC15sgx3VL7ROG"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "21 Savage",
+            "42 Dugg"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27379476cf856443329e6c52c04",
+        "album_id": 6900000000000000141,
+        "album_name": "Faith",
+        "album_total_tracks": 20,
+        "release_date": "2021-07-16"
+    },
+    {
+        "track_name": "Woodlawn",
+        "track_id": "USUM72013373",
+        "duration_ms": 143152,
+        "explicit": true,
+        "spotify_track_uri": "4FFC7McrnnwAWKbAqbckTP",
+        "track_number": 2,
+        "artists": [
+            "3Gm5F95VdRxW3mqCn8RPBJ"
+        ],
+        "artists_names": [
+            "Amin\u00e9"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273ea9bbdf9f1433e68c7dffbad",
+        "album_id": 6900000000000000142,
+        "album_name": "Limbo",
+        "album_total_tracks": 14,
+        "release_date": "2020-08-07"
+    },
+    {
+        "track_name": "Tell The Vision (feat. Kanye West & Pusha T)",
+        "track_id": "USUM72112384",
+        "duration_ms": 215000,
+        "explicit": true,
+        "spotify_track_uri": "3ohd1ahp3G0OVBH27BwIpt",
+        "track_number": 3,
+        "artists": [
+            "0eDvMgVFoNV3TpwtrVCoTj",
+            "5K4W6rqBFWDnAN6FQUkS6x",
+            "0ONHkAv9pCAFxb0zJwDNTy"
+        ],
+        "artists_names": [
+            "Pop Smoke",
+            "Kanye West",
+            "Pusha T"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738350e0c4238db3dde31b69c0",
+        "album_id": 6900000000000000143,
+        "album_name": "Faith (Deluxe)",
+        "album_total_tracks": 24,
+        "release_date": "2021-07-21"
+    },
+    {
+        "track_name": "NOT SOBER (feat. Polo G & Stunna Gambino)",
+        "track_id": "USSM12104952",
+        "duration_ms": 216000,
+        "explicit": true,
+        "spotify_track_uri": "1JXBNvlDEl2epKSJ9EOgKX",
+        "track_number": 2,
+        "artists": [
+            "2tIP7SsRs7vjIcLrU85W8J",
+            "6AgTAQt8XS6jRWi4sX7w49",
+            "15ZjD8Gus20Miqw3fdOaXX"
+        ],
+        "artists_names": [
+            "The Kid LAROI",
+            "Polo G",
+            "Stunna Gambino"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738e6551a2944764bc8e33a960",
+        "album_id": 6900000000000000144,
+        "album_name": "F*CK LOVE 3: OVER YOU",
+        "album_total_tracks": 29,
+        "release_date": "2021-07-23"
+    },
+    {
+        "track_name": "2055",
+        "track_id": "USRC12100442",
+        "duration_ms": 123986,
+        "explicit": true,
+        "spotify_track_uri": "4XvcHTUfIlWfyJTRG0aqlo",
+        "track_number": 4,
+        "artists": [
+            "6EPlBSH2RSiettczlz7ihV"
+        ],
+        "artists_names": [
+            "Sleepy Hallow"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27378376f650afd63698b82e4b1",
+        "album_id": 6900000000000000145,
+        "album_name": "Still Sleep?",
+        "album_total_tracks": 14,
+        "release_date": "2021-06-02"
+    },
+    {
+        "track_name": "Mmm Hmm",
+        "track_id": "USWB12102564",
+        "duration_ms": 184152,
+        "explicit": true,
+        "spotify_track_uri": "4IOc5GvIjzdnHgEpjAHtla",
+        "track_number": 1,
+        "artists": [
+            "0ErzCpIMyLcjPiwT4elrtZ"
+        ],
+        "artists_names": [
+            "NLE Choppa"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273244c0804c14bbe88e6ebbce9",
+        "album_id": 6900000000000000146,
+        "album_name": "Mmm Hmm",
+        "album_total_tracks": 1,
+        "release_date": "2021-08-13"
+    },
+    {
+        "track_name": "ROLLIN N CONTROLLIN, Pt.2 (PICTURE ME)",
+        "track_id": "USUYG1370139",
+        "duration_ms": 121836,
+        "explicit": true,
+        "spotify_track_uri": "3vqELgIl8luh8eRzQ2ZfvT",
+        "track_number": 12,
+        "artists": [
+            "22hWz22JAmIhIEp0u1X01L"
+        ],
+        "artists_names": [
+            "DUSTY LOCANE"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273357a034fa438bcceb3e55521",
+        "album_id": 6900000000000000147,
+        "album_name": "UNTAMED",
+        "album_total_tracks": 20,
+        "release_date": "2021-12-03"
+    },
+    {
+        "track_name": "Ni**as In Paris",
+        "track_id": "USUM71111621",
+        "duration_ms": 219333,
+        "explicit": true,
+        "spotify_track_uri": "4Li2WHPkuyCdtmokzW2007",
+        "track_number": 3,
+        "artists": [
+            "3nFkdlSjzX9mRTtwJOzDYB",
+            "5K4W6rqBFWDnAN6FQUkS6x"
+        ],
+        "artists_names": [
+            "JAY-Z",
+            "Kanye West"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735c837cc621c1ec82bf3c81ac",
+        "album_id": 6900000000000000148,
+        "album_name": "Watch The Throne (Deluxe)",
+        "album_total_tracks": 16,
+        "release_date": "2011-08-08"
+    },
+    {
+        "track_name": "Tetris (feat. Russ) - Remix",
+        "track_id": "USUYG1256161",
+        "duration_ms": 232803,
+        "explicit": true,
+        "spotify_track_uri": "2ukzJBTilioEVW34gL6b77",
+        "track_number": 1,
+        "artists": [
+            "0hF1ENHHpEGZxdRdqwMr6E",
+            "1z7b1Pr1rSlvWRzsW3HOrS"
+        ],
+        "artists_names": [
+            "Derek King",
+            "Russ"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738ff1b7a3db588506ee7f0274",
+        "album_id": 6900000000000000149,
+        "album_name": "Tetris (Remix) [feat. Russ]",
+        "album_total_tracks": 1,
+        "release_date": "2019-07-12"
+    },
+    {
+        "track_name": "Weekend (feat. Miguel)",
+        "track_id": "USWB11508643",
+        "duration_ms": 208080,
+        "explicit": true,
+        "spotify_track_uri": "6GnhWMhgJb7uyiiPEiEkDA",
+        "track_number": 7,
+        "artists": [
+            "4LLpKhyESsyAXpc4laK94U",
+            "360IAlyVv4PCEVjgyMZrxK"
+        ],
+        "artists_names": [
+            "Mac Miller",
+            "Miguel"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273ee0f38410382a255e4fb15f4",
+        "album_id": 6900000000000000150,
+        "album_name": "GO:OD AM",
+        "album_total_tracks": 17,
+        "release_date": "2015-09-18"
+    },
+    {
+        "track_name": "Matt Hardy 999 (feat. Juice WRLD)",
+        "track_id": "QZJ842001147",
+        "duration_ms": 188025,
+        "explicit": true,
+        "spotify_track_uri": "0Ddk8Ha9xW6332fYrMVtTa",
+        "track_number": 1,
+        "artists": [
+            "6Xgp2XMz1fhVYe7i6yNAax",
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Trippie Redd",
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273051b84f5c94b7443edf09c0f",
+        "album_id": 6900000000000000151,
+        "album_name": "Matt Hardy 999 (feat. Juice WRLD)",
+        "album_total_tracks": 1,
+        "release_date": "2021-08-19"
+    },
+    {
+        "track_name": "I'm Still",
+        "track_id": "USUG11800956",
+        "duration_ms": 192859,
+        "explicit": true,
+        "spotify_track_uri": "19m3E0nMZobyA93AxMXC32",
+        "track_number": 13,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273f7db43292a6a99b21b51d5b4",
+        "album_id": 6900000000000000152,
+        "album_name": "Goodbye & Good Riddance",
+        "album_total_tracks": 17,
+        "release_date": "2018-12-10"
+    },
+    {
+        "track_name": "We're All Alone",
+        "track_id": "GBUM72104335",
+        "duration_ms": 280005,
+        "explicit": true,
+        "spotify_track_uri": "22agj1ppHejR41cUyf7k6v",
+        "track_number": 1,
+        "artists": [
+            "6Ip8FS7vWT1uKkJSweANQK"
+        ],
+        "artists_names": [
+            "Dave"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273da5b9c1eb275d48e14d25f3e",
+        "album_id": 6900000000000000153,
+        "album_name": "We're All Alone In This Together",
+        "album_total_tracks": 12,
+        "release_date": "2021-07-22"
+    },
+    {
+        "track_name": "Ring Ring (with Rvssian feat. Clever)",
+        "track_id": "USUG11900391",
+        "duration_ms": 171816,
+        "explicit": true,
+        "spotify_track_uri": "4zxpssj8DyrfZcEUSUiNxG",
+        "track_number": 13,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz",
+            "1fctva4kpRbg2k3v7kwRuS",
+            "5yy76ufVriyvidNSvXlRU1"
+        ],
+        "artists_names": [
+            "Juice WRLD",
+            "Rvssian",
+            "Clever"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273af149eb4002f65f83afc63c4",
+        "album_id": 6900000000000000154,
+        "album_name": "Death Race For Love",
+        "album_total_tracks": 22,
+        "release_date": "2019-03-08"
+    },
+    {
+        "track_name": "STAY (with Justin Bieber)",
+        "track_id": "USSM12103949",
+        "duration_ms": 141805,
+        "explicit": true,
+        "spotify_track_uri": "5HCyWlXZPP0y6Gqq8TgA20",
+        "track_number": 1,
+        "artists": [
+            "2tIP7SsRs7vjIcLrU85W8J",
+            "1uNFoZAHBGtllmzznpCI3s"
+        ],
+        "artists_names": [
+            "The Kid LAROI",
+            "Justin Bieber"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27341e31d6ea1d493dd77933ee5",
+        "album_id": 6900000000000000155,
+        "album_name": "STAY (with Justin Bieber)",
+        "album_total_tracks": 1,
+        "release_date": "2021-07-09"
+    },
+    {
+        "track_name": "Touchable",
+        "track_id": "USWB12101349",
+        "duration_ms": 122647,
+        "explicit": true,
+        "spotify_track_uri": "24iwskv8LDFMYRZ6Sr9iyw",
+        "track_number": 1,
+        "artists": [
+            "65s98MYZ4xFpgKlUYS5XKw"
+        ],
+        "artists_names": [
+            "Remble"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273ed95550ef38182b17bca5785",
+        "album_id": 6900000000000000156,
+        "album_name": "IT\u2019S REMBLE",
+        "album_total_tracks": 13,
+        "release_date": "2021-07-16"
+    },
+    {
+        "track_name": "IMY2 (with Kid Cudi)",
+        "track_id": "USUG12104437",
+        "duration_ms": 252378,
+        "explicit": true,
+        "spotify_track_uri": "7F9cT6hIRhnFCYP6GKS0tf",
+        "track_number": 19,
+        "artists": [
+            "3TVXtAsR1Inumwj472S9r4",
+            "0fA0VVWsXO9YnASrzqfmYu"
+        ],
+        "artists_names": [
+            "Drake",
+            "Kid Cudi"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273cd945b4e3de57edd28481a3f",
+        "album_id": 6900000000000000157,
+        "album_name": "Certified Lover Boy",
+        "album_total_tracks": 21,
+        "release_date": "2021-09-03"
+    },
+    {
+        "track_name": "Boasty (feat. Idris Elba)",
+        "track_id": "GB5KW1900082",
+        "duration_ms": 177185,
+        "explicit": true,
+        "spotify_track_uri": "7cz506PyIgh2bMN90Mc8Tn",
+        "track_number": 1,
+        "artists": [
+            "7k9T7lZlHjRAM1bb0r9Rm3",
+            "2ExGrw6XpbtUAJHTLtUXUD",
+            "3Isy6kedDrgPYoTS1dazA9",
+            "0Dc2rdPzleezxhvQhQbXuS"
+        ],
+        "artists_names": [
+            "Wiley",
+            "Stefflon Don",
+            "Sean Paul",
+            "Idris Elba"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273a51e234cef7a6c520b72a8f8",
+        "album_id": 6900000000000000158,
+        "album_name": "Boasty (feat. Idris Elba)",
+        "album_total_tracks": 1,
+        "release_date": "2019-01-22"
+    },
+    {
+        "track_name": "I Growl",
+        "track_id": "DEZC62157351",
+        "duration_ms": 208166,
+        "explicit": true,
+        "spotify_track_uri": "0WEc6EFo3q7oXbVKSdmt8M",
+        "track_number": 1,
+        "artists": [
+            "74vUXEqrptvRLLZJpzDlRT"
+        ],
+        "artists_names": [
+            "cherry<3"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2734c023a597c6281f42bc72fbc",
+        "album_id": 6900000000000000159,
+        "album_name": "I Growl",
+        "album_total_tracks": 1,
+        "release_date": "2021-06-30"
+    },
+    {
+        "track_name": "Go Krazy, Go Stupid Freestyle",
+        "track_id": "USUG11900744",
+        "duration_ms": 95306,
+        "explicit": true,
+        "spotify_track_uri": "4Z7XtjSL1fyFnd6bTYhEIQ",
+        "track_number": 1,
+        "artists": [
+            "6icQOAFXDZKsumw3YXyusw"
+        ],
+        "artists_names": [
+            "Lil Yachty"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2732c6e61f878951e316d45ca24",
+        "album_id": 6900000000000000160,
+        "album_name": "Go Krazy, Go Stupid Freestyle",
+        "album_total_tracks": 1,
+        "release_date": "2019-06-28"
+    },
+    {
+        "track_name": "RICKY",
+        "track_id": "USC4R1902692",
+        "duration_ms": 147866,
+        "explicit": true,
+        "spotify_track_uri": "2QbGvQssb0VLLS4x5NOmyJ",
+        "track_number": 2,
+        "artists": [
+            "6fxyWrfmjcbj5d12gXeiNV"
+        ],
+        "artists_names": [
+            "Denzel Curry"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735d46e4578c8e1adad9206480",
+        "album_id": 6900000000000000161,
+        "album_name": "ZUU",
+        "album_total_tracks": 12,
+        "release_date": "2019-05-31"
+    },
+    {
+        "track_name": "Conversations",
+        "track_id": "USUG12001896",
+        "duration_ms": 181661,
+        "explicit": true,
+        "spotify_track_uri": "4K06PO78fW4mnBVenxGNob",
+        "track_number": 2,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2733e0698e4ae5ffb82a005aeeb",
+        "album_id": 6900000000000000162,
+        "album_name": "Legends Never Die",
+        "album_total_tracks": 22,
+        "release_date": "2020-07-10"
+    },
+    {
+        "track_name": "TRAGIC (feat. Youngboy Never Broke Again & Internet Money)",
+        "track_id": "USSM12006582",
+        "duration_ms": 153147,
+        "explicit": true,
+        "spotify_track_uri": "13EW51DKru044OJDJ9Bm8o",
+        "track_number": 3,
+        "artists": [
+            "2tIP7SsRs7vjIcLrU85W8J",
+            "7wlFDEWiM5OoIAt8RSli8b",
+            "6MPCFvOQv5cIGfw3jODMF0"
+        ],
+        "artists_names": [
+            "The Kid LAROI",
+            "YoungBoy Never Broke Again",
+            "Internet Money"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273df16d539f508603bfb1efe02",
+        "album_id": 6900000000000000163,
+        "album_name": "F*CK LOVE (SAVAGE)",
+        "album_total_tracks": 22,
+        "release_date": "2020-11-06"
+    },
+    {
+        "track_name": "1400 / 999 Freestyle",
+        "track_id": "QMEU31819746",
+        "duration_ms": 175954,
+        "explicit": true,
+        "spotify_track_uri": "75lcPkAkUsKWHGBlGM476R",
+        "track_number": 13,
+        "artists": [
+            "6Xgp2XMz1fhVYe7i6yNAax",
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Trippie Redd",
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27392bb8047753d97ff274b2f5f",
+        "album_id": 6900000000000000164,
+        "album_name": "A Love Letter To You 3",
+        "album_total_tracks": 16,
+        "release_date": "2018-11-09"
+    },
+    {
+        "track_name": "Miss The Rage (feat. Playboi Carti)",
+        "track_id": "QZJ842000983",
+        "duration_ms": 236883,
+        "explicit": true,
+        "spotify_track_uri": "5gZYpjakt37G3c58FKcQwJ",
+        "track_number": 7,
+        "artists": [
+            "6Xgp2XMz1fhVYe7i6yNAax",
+            "699OTQXzgjhIYAHMy9RyPD"
+        ],
+        "artists_names": [
+            "Trippie Redd",
+            "Playboi Carti"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273d01b8867ca76ba7a4c15a9a4",
+        "album_id": 6900000000000000165,
+        "album_name": "Trip At Knight (Complete Edition)",
+        "album_total_tracks": 18,
+        "release_date": "2021-08-21"
+    },
+    {
+        "track_name": "Me and My Guitar",
+        "track_id": "USAT22000602",
+        "duration_ms": 161764,
+        "explicit": true,
+        "spotify_track_uri": "6cZH4rX1KTt1aJ3Ql6Ynja",
+        "track_number": 3,
+        "artists": [
+            "31W5EY0aAly4Qieq6OFu6I"
+        ],
+        "artists_names": [
+            "A Boogie Wit da Hoodie"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2731072a34d8c8d75e9b2545d8a",
+        "album_id": 6900000000000000166,
+        "album_name": "Artist 2.0",
+        "album_total_tracks": 20,
+        "release_date": "2020-02-14"
+    },
+    {
+        "track_name": "ORANGE SODA",
+        "track_id": "QM6N21900076",
+        "duration_ms": 129882,
+        "explicit": true,
+        "spotify_track_uri": "5FkoSXiJPKTNyYgALRJFhD",
+        "track_number": 12,
+        "artists": [
+            "5SXuuuRpukkTvsLuUknva1"
+        ],
+        "artists_names": [
+            "Baby Keem"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273683757f1fd40a7f7ef64bec1",
+        "album_id": 6900000000000000167,
+        "album_name": "DIE FOR MY BITCH",
+        "album_total_tracks": 14,
+        "release_date": "2019-07-19"
+    },
+    {
+        "track_name": "Hate The Other Side (with Marshmello & The Kid Laroi)",
+        "track_id": "USUG12002092",
+        "duration_ms": 160212,
+        "explicit": true,
+        "spotify_track_uri": "0ada5XsQGLPUVbmTCkAP49",
+        "track_number": 9,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz",
+            "64KEffDW9EtZ1y2vBYgq8T",
+            "2tIP7SsRs7vjIcLrU85W8J",
+            "6AgTAQt8XS6jRWi4sX7w49"
+        ],
+        "artists_names": [
+            "Juice WRLD",
+            "Marshmello",
+            "The Kid LAROI",
+            "Polo G"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2733e0698e4ae5ffb82a005aeeb",
+        "album_id": 6900000000000000168,
+        "album_name": "Legends Never Die",
+        "album_total_tracks": 22,
+        "release_date": "2020-07-10"
+    },
+    {
+        "track_name": "Pardon Me (Lil Yachty feat. Future & Mike WiLL Made-It)",
+        "track_id": "USUG12001625",
+        "duration_ms": 178900,
+        "explicit": true,
+        "spotify_track_uri": "1sxGIhaxY8eF52e1TlShSP",
+        "track_number": 5,
+        "artists": [
+            "6icQOAFXDZKsumw3YXyusw",
+            "1RyvyyTE3xzB2ZywiAwp0i",
+            "0NWbwDZY1VkRqFafuQm6wk"
+        ],
+        "artists_names": [
+            "Lil Yachty",
+            "Future",
+            "Mike WiLL Made-It"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735ee839f6415e0d02fc4f2b49",
+        "album_id": 6900000000000000169,
+        "album_name": "Lil Boat 3",
+        "album_total_tracks": 19,
+        "release_date": "2020-05-29"
+    },
+    {
+        "track_name": "Hot (Remix) [feat. Gunna and Travis Scott]",
+        "track_id": "USAT21906614",
+        "duration_ms": 279906,
+        "explicit": false,
+        "spotify_track_uri": "3JEHTXTL3Ha4kOQB2e7Rq8",
+        "track_number": 1,
+        "artists": [
+            "50co4Is1HCEo8bhOyUWKpn",
+            "0Y5tJX1MQlPlqiwlOH1tJY",
+            "2hlmm7s2ICUX0LVIhVFlZQ"
+        ],
+        "artists_names": [
+            "Young Thug",
+            "Travis Scott",
+            "Gunna"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273a1bebc8d4d48e8d3147ea3cc",
+        "album_id": 6900000000000000170,
+        "album_name": "Hot (Remix) [feat. Gunna and Travis Scott]",
+        "album_total_tracks": 1,
+        "release_date": "2019-10-31"
+    },
+    {
+        "track_name": "Rich MF (feat. Polo G & Lil Durk)",
+        "track_id": "QZJ842001154",
+        "duration_ms": 247714,
+        "explicit": true,
+        "spotify_track_uri": "6cUHiQEECDl5m3WFGQ1GCR",
+        "track_number": 17,
+        "artists": [
+            "6Xgp2XMz1fhVYe7i6yNAax",
+            "6AgTAQt8XS6jRWi4sX7w49",
+            "3hcs9uc56yIGFCSy9leWe7"
+        ],
+        "artists_names": [
+            "Trippie Redd",
+            "Polo G",
+            "Lil Durk"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273d01b8867ca76ba7a4c15a9a4",
+        "album_id": 6900000000000000171,
+        "album_name": "Trip At Knight (Complete Edition)",
+        "album_total_tracks": 18,
+        "release_date": "2021-08-21"
+    },
+    {
+        "track_name": "Eye for an Eye",
+        "track_id": "QZDA51901632",
+        "duration_ms": 161763,
+        "explicit": true,
+        "spotify_track_uri": "51o6ZEmuyDESow4gnsNJ7u",
+        "track_number": 1,
+        "artists": [
+            "7mX72Bq2iXNr8fZdu23fQL"
+        ],
+        "artists_names": [
+            "Boslen"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2736994c53c5ce5bd1517d89513",
+        "album_id": 6900000000000000172,
+        "album_name": "Eye for an Eye",
+        "album_total_tracks": 1,
+        "release_date": "2019-02-07"
+    },
+    {
+        "track_name": "EA (feat. 21 Savage)",
+        "track_id": "QZ5FA1751439",
+        "duration_ms": 227175,
+        "explicit": true,
+        "spotify_track_uri": "68MTDH8Kk4jBEV1ah0n89s",
+        "track_number": 4,
+        "artists": [
+            "5yPzzu25VzEk8qrGTLIrE1",
+            "1URnnhqYAYcrqrcwql10ft"
+        ],
+        "artists_names": [
+            "Young Nudy",
+            "21 Savage"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27356bf918dc517050ebf113d22",
+        "album_id": 6900000000000000173,
+        "album_name": "SlimeBall 2",
+        "album_total_tracks": 13,
+        "release_date": "2017-08-11"
+    },
+    {
+        "track_name": "Quicksand",
+        "track_id": "CA5KR2101974",
+        "duration_ms": 224933,
+        "explicit": true,
+        "spotify_track_uri": "4iCZ6Cr76For1TuHUQ90r8",
+        "track_number": 3,
+        "artists": [
+            "44vREmJC0OlVZjZaGLqVEd"
+        ],
+        "artists_names": [
+            "Morray"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2734e8dfa850411698981fe2c45",
+        "album_id": 6900000000000000174,
+        "album_name": "Street Sermons",
+        "album_total_tracks": 13,
+        "release_date": "2021-04-28"
+    },
+    {
+        "track_name": "Crazy Story",
+        "track_id": "USUYG1232540",
+        "duration_ms": 146751,
+        "explicit": true,
+        "spotify_track_uri": "5i0eJv1DzuyhaYnro4wTKg",
+        "track_number": 7,
+        "artists": [
+            "3IaKn0ExWTMPqa0mscUYw3",
+            "6QtgPSJPSzcnn7dPZ4VINp"
+        ],
+        "artists_names": [
+            "Only The Family",
+            "King Von"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2737130fc3934c842d44afb0ee5",
+        "album_id": 6900000000000000175,
+        "album_name": "Lil Durk Presents: Only the Family Involved, Vol. 2",
+        "album_total_tracks": 12,
+        "release_date": "2018-12-21"
+    },
+    {
+        "track_name": "PTSD",
+        "track_id": "QZ57A2005612",
+        "duration_ms": 232064,
+        "explicit": true,
+        "spotify_track_uri": "1C8ux1YWLMHCenYJFiIV4Z",
+        "track_number": 7,
+        "artists": [
+            "5QdEbQJ3ylBnc3gsIASAT5",
+            "4O15NlyKLIASxsJ0PrXPfz",
+            "4MCBfE4596Uoi2O4DtmEMz",
+            "1anyVhU62p31KFi8MEzkbf"
+        ],
+        "artists_names": [
+            "G Herbo",
+            "Lil Uzi Vert",
+            "Juice WRLD",
+            "Chance the Rapper"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2733fd756c1de4d4e2bb0c2ba7c",
+        "album_id": 6900000000000000176,
+        "album_name": "PTSD",
+        "album_total_tracks": 14,
+        "release_date": "2020-02-28"
+    },
+    {
+        "track_name": "Whipski (feat. Lil Skies & Internet Money)",
+        "track_id": "QMCE32100176",
+        "duration_ms": 183982,
+        "explicit": true,
+        "spotify_track_uri": "0a2Yk4ORO4MsGaJ4DI03qx",
+        "track_number": 1,
+        "artists": [
+            "5IbEL2xjRtKsunfmsahLuO",
+            "7d3WFRME3vBY2cgoP38RDo",
+            "6MPCFvOQv5cIGfw3jODMF0"
+        ],
+        "artists_names": [
+            "$NOT",
+            "Lil Skies",
+            "Internet Money"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27366af01683b00bbe4c7e52ded",
+        "album_id": 6900000000000000177,
+        "album_name": "Whipski (feat. Lil Skies & Internet Money)",
+        "album_total_tracks": 1,
+        "release_date": "2021-04-08"
+    },
+    {
+        "track_name": "No Role Modelz",
+        "track_id": "USQX91402598",
+        "duration_ms": 292986,
+        "explicit": true,
+        "spotify_track_uri": "62vpWI1CHwFy7tMIcSStl8",
+        "track_number": 9,
+        "artists": [
+            "6l3HvQ5sa6mXTsMTB19rO5"
+        ],
+        "artists_names": [
+            "J. Cole"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2736aca031ccc27d2e4dd829d14",
+        "album_id": 6900000000000000178,
+        "album_name": "2014 Forest Hills Drive",
+        "album_total_tracks": 13,
+        "release_date": "2014-12-09"
+    },
+    {
+        "track_name": "Pretend",
+        "track_id": "QZNWT2025324",
+        "duration_ms": 143105,
+        "explicit": true,
+        "spotify_track_uri": "5qlTwtYe8RqXqF7npTawjD",
+        "track_number": 1,
+        "artists": [
+            "3Hxle1ifo8pdsakQ06MMUH"
+        ],
+        "artists_names": [
+            "Kill Jasper"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273d831da6c12e51274cb6b1c9a",
+        "album_id": 6900000000000000179,
+        "album_name": "Pretend",
+        "album_total_tracks": 1,
+        "release_date": "2020-11-30"
+    },
+    {
+        "track_name": "Rich Nigga Shit (feat. Young Thug)",
+        "track_id": "USSM12005348",
+        "duration_ms": 190331,
+        "explicit": true,
+        "spotify_track_uri": "3ruoIF2UnoXdzK8mR61ebq",
+        "track_number": 5,
+        "artists": [
+            "1URnnhqYAYcrqrcwql10ft",
+            "0iEtIxbK0KxaSlF7G42ZOp",
+            "50co4Is1HCEo8bhOyUWKpn"
+        ],
+        "artists_names": [
+            "21 Savage",
+            "Metro Boomin",
+            "Young Thug"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273aa57907bf0cb2ca0c8cc74bc",
+        "album_id": 6900000000000000180,
+        "album_name": "SAVAGE MODE II",
+        "album_total_tracks": 15,
+        "release_date": "2020-10-02"
+    },
+    {
+        "track_name": "Opp Stoppa (feat. 21 Savage)",
+        "track_id": "USAT22100132",
+        "duration_ms": 135430,
+        "explicit": true,
+        "spotify_track_uri": "59fFsGRwFiuhxKDPc1k6xW",
+        "track_number": 1,
+        "artists": [
+            "3gGUMEwIX6XodWsYEvKSal",
+            "1URnnhqYAYcrqrcwql10ft"
+        ],
+        "artists_names": [
+            "YBN Nahmir",
+            "21 Savage"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27339de87657e889736f950804a",
+        "album_id": 6900000000000000181,
+        "album_name": "Opp Stoppa (feat. 21 Savage)",
+        "album_total_tracks": 1,
+        "release_date": "2021-01-22"
+    },
+    {
+        "track_name": "Already Dead",
+        "track_id": "USUG12105423",
+        "duration_ms": 231010,
+        "explicit": true,
+        "spotify_track_uri": "7qM1BWAsZMTYh4BcYLb0uQ",
+        "track_number": 1,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2730cdfd4e1d092e29c6d28e3ba",
+        "album_id": 6900000000000000182,
+        "album_name": "Already Dead",
+        "album_total_tracks": 1,
+        "release_date": "2021-11-12"
+    },
+    {
+        "track_name": "Not Enough",
+        "track_id": "USUG12102474",
+        "duration_ms": 171829,
+        "explicit": true,
+        "spotify_track_uri": "59NTlSZN6G2eCs4jcf46C0",
+        "track_number": 10,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz"
+        ],
+        "artists_names": [
+            "Juice WRLD"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273c820e86be3bcbc65e5b88ef0",
+        "album_id": 6900000000000000183,
+        "album_name": "Fighting Demons",
+        "album_total_tracks": 18,
+        "release_date": "2021-12-10"
+    },
+    {
+        "track_name": "Super Gremlin",
+        "track_id": "USAT22107295",
+        "duration_ms": 200547,
+        "explicit": true,
+        "spotify_track_uri": "4A8cWXxKfIL3lAyUDzXbCF",
+        "track_number": 4,
+        "artists": [
+            "46SHBwWsqBkxI7EeeBEQG7"
+        ],
+        "artists_names": [
+            "Kodak Black"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735340631eca6f127d094545c9",
+        "album_id": 6900000000000000184,
+        "album_name": "Sniper Gang Presents Syko Bob & Snapkatt: Nightmare Babies",
+        "album_total_tracks": 11,
+        "release_date": "2021-10-30"
+    },
+    {
+        "track_name": "2009",
+        "track_id": "USWB11801221",
+        "duration_ms": 347986,
+        "explicit": true,
+        "spotify_track_uri": "6dFn6my1sHK2bcf23GlHwM",
+        "track_number": 12,
+        "artists": [
+            "4LLpKhyESsyAXpc4laK94U"
+        ],
+        "artists_names": [
+            "Mac Miller"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273175c577a61aa13d4fb4b6534",
+        "album_id": 6900000000000000185,
+        "album_name": "Swimming",
+        "album_total_tracks": 13,
+        "release_date": "2018-08-03"
+    },
+    {
+        "track_name": "Roll It Up Again",
+        "track_id": "USSM10402644",
+        "duration_ms": 197360,
+        "explicit": true,
+        "spotify_track_uri": "1hOmlF22XSMO9r90i5ZAn9",
+        "track_number": 3,
+        "artists": [
+            "4P0dddbxPil35MNN9G2MEX"
+        ],
+        "artists_names": [
+            "Cypress Hill"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273bf24257fcc64c44ffb6cd84d",
+        "album_id": 6900000000000000186,
+        "album_name": "What's Your Number?",
+        "album_total_tracks": 3,
+        "release_date": "2004-03-19"
+    },
+    {
+        "track_name": "Serve a Boat",
+        "track_id": "USAT21802107",
+        "duration_ms": 206250,
+        "explicit": true,
+        "spotify_track_uri": "378GxC9FFbFaw02SyyxHfO",
+        "track_number": 2,
+        "artists": [
+            "4tYSBptyGeVyZsk8JC4JHZ"
+        ],
+        "artists_names": [
+            "Shoreline Mafia"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273b31f6adf0da5659911b05c9b",
+        "album_id": 6900000000000000187,
+        "album_name": "ShorelineDoThatShit",
+        "album_total_tracks": 16,
+        "release_date": "2018-05-04"
+    },
+    {
+        "track_name": "Vallie Mode",
+        "track_id": "QZHNB1972783",
+        "duration_ms": 148349,
+        "explicit": true,
+        "spotify_track_uri": "6c9JGhWjQgGydAxlS49f8Y",
+        "track_number": 1,
+        "artists": [
+            "7z29vXpa0PYA6mngEsWNXk"
+        ],
+        "artists_names": [
+            "Dom Vallie"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27355a704a5fd7c743233108a00",
+        "album_id": 6900000000000000188,
+        "album_name": "Vallie Mode",
+        "album_total_tracks": 1,
+        "release_date": "2019-11-29"
+    },
+    {
+        "track_name": "Been Himma",
+        "track_id": "CAAB82100017",
+        "duration_ms": 166829,
+        "explicit": true,
+        "spotify_track_uri": "5G9i6PTCmXdOVmUfDRlc6t",
+        "track_number": 1,
+        "artists": [
+            "7z29vXpa0PYA6mngEsWNXk"
+        ],
+        "artists_names": [
+            "Dom Vallie"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27304c8f36ff7813aaaeba067d3",
+        "album_id": 6900000000000000189,
+        "album_name": "Been Himma",
+        "album_total_tracks": 1,
+        "release_date": "2022-01-07"
+    },
+    {
+        "track_name": "Hoist the Colours",
+        "track_id": "QZK6M2114185",
+        "duration_ms": 122700,
+        "explicit": false,
+        "spotify_track_uri": "2H0RTZvOwdFcpf8GWattYH",
+        "track_number": 1,
+        "artists": [
+            "2hwZ6O8nd7zKSUqRhYPo5U"
+        ],
+        "artists_names": [
+            "Colm R. McGuinness"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2730db8f3403f0d82c2f0224034",
+        "album_id": 6900000000000000190,
+        "album_name": "Hoist the Colours",
+        "album_total_tracks": 1,
+        "release_date": "2021-07-10"
+    },
+    {
+        "track_name": "NO TRENDS",
+        "track_id": "QZNMX2154221",
+        "duration_ms": 151299,
+        "explicit": true,
+        "spotify_track_uri": "7oAN2D1k9Qz8qh2JaNcZrj",
+        "track_number": 1,
+        "artists": [
+            "6rIaHuCIUu32uj2CjlEBN3"
+        ],
+        "artists_names": [
+            "Mike Dimes"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273dce40e711acba2ddb7612856",
+        "album_id": 6900000000000000191,
+        "album_name": "NO TRENDS",
+        "album_total_tracks": 1,
+        "release_date": "2021-08-27"
+    },
+    {
+        "track_name": "Feline (with Polo G & Trippie Redd)",
+        "track_id": "USUG12105422",
+        "duration_ms": 212203,
+        "explicit": true,
+        "spotify_track_uri": "5R4Yrc2j4jw1itr4hKcN26",
+        "track_number": 11,
+        "artists": [
+            "4MCBfE4596Uoi2O4DtmEMz",
+            "6AgTAQt8XS6jRWi4sX7w49",
+            "6Xgp2XMz1fhVYe7i6yNAax"
+        ],
+        "artists_names": [
+            "Juice WRLD",
+            "Polo G",
+            "Trippie Redd"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273c820e86be3bcbc65e5b88ef0",
+        "album_id": 6900000000000000192,
+        "album_name": "Fighting Demons",
+        "album_total_tracks": 18,
+        "release_date": "2021-12-10"
+    },
+    {
+        "track_name": "Ex Calling",
+        "track_id": "USUYG1107545",
+        "duration_ms": 211960,
+        "explicit": true,
+        "spotify_track_uri": "1MQ8ydvrTnn2QJgXFATJvD",
+        "track_number": 10,
+        "artists": [
+            "4IVAbR2w4JJNJDDRFP3E83"
+        ],
+        "artists_names": [
+            "6LACK"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273e4f13cd87b3b1ead6735a520",
+        "album_id": 6900000000000000193,
+        "album_name": "FREE 6LACK",
+        "album_total_tracks": 14,
+        "release_date": "2016-11-18"
+    },
+    {
+        "track_name": "Beat Box 4 (with NLE Choppa)",
+        "track_id": "USUM72105416",
+        "duration_ms": 212026,
+        "explicit": true,
+        "spotify_track_uri": "2LbNkvmYabhVf9jBCVeLm7",
+        "track_number": 1,
+        "artists": [
+            "3Y2MLcrD3ZQXRXmtn4fZQx",
+            "0ErzCpIMyLcjPiwT4elrtZ"
+        ],
+        "artists_names": [
+            "SpotemGottem",
+            "NLE Choppa"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27313121b31cce32ae5e459840f",
+        "album_id": 6900000000000000194,
+        "album_name": "Beat Box 4 (with NLE Choppa)",
+        "album_total_tracks": 1,
+        "release_date": "2021-04-09"
+    },
+    {
+        "track_name": "pushin P (feat. Young Thug)",
+        "track_id": "QMCE32200039",
+        "duration_ms": 136266,
+        "explicit": true,
+        "spotify_track_uri": "3LnpBazWpD31QMTn6LgVGv",
+        "track_number": 2,
+        "artists": [
+            "2hlmm7s2ICUX0LVIhVFlZQ",
+            "1RyvyyTE3xzB2ZywiAwp0i",
+            "50co4Is1HCEo8bhOyUWKpn"
+        ],
+        "artists_names": [
+            "Gunna",
+            "Future",
+            "Young Thug"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273963b0f9c4305995cf3dc991d",
+        "album_id": 6900000000000000195,
+        "album_name": "DS4EVER",
+        "album_total_tracks": 19,
+        "release_date": "2022-01-07"
+    },
+    {
+        "track_name": "Life Letters",
+        "track_id": "RUA1D2003440",
+        "duration_ms": 148040,
+        "explicit": false,
+        "spotify_track_uri": "29VdNzgJIxzlIDkIYjFQqS",
+        "track_number": 1,
+        "artists": [
+            "0j5kVHxvTgUN4nBIPKCLRJ"
+        ],
+        "artists_names": [
+            "Never Get Used To People"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273363c9fa3f1a3e220b2167aa3",
+        "album_id": 6900000000000000196,
+        "album_name": "Life Letters",
+        "album_total_tracks": 1,
+        "release_date": "2018-12-07"
+    },
+    {
+        "track_name": "Surround Sound (feat. 21 Savage & Baby Tate)",
+        "track_id": "USUM72123571",
+        "duration_ms": 229938,
+        "explicit": true,
+        "spotify_track_uri": "0cp97b37sFNsdIbQH6po3T",
+        "track_number": 1,
+        "artists": [
+            "6U3ybJ9UHNKEdsH7ktGBZ7",
+            "1URnnhqYAYcrqrcwql10ft",
+            "3IJ21966TwNZI24MwZHMu4"
+        ],
+        "artists_names": [
+            "JID",
+            "21 Savage",
+            "Baby Tate"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2737cdc9049c803f7a5db9ba399",
+        "album_id": 6900000000000000197,
+        "album_name": "Surround Sound (feat. 21 Savage & Baby Tate)",
+        "album_total_tracks": 1,
+        "release_date": "2022-01-14"
+    },
+    {
+        "track_name": "Banana Goo Pie (Bonus Track)",
+        "track_id": "TCABY1423459",
+        "duration_ms": 214072,
+        "explicit": true,
+        "spotify_track_uri": "5bBsxYuiDd8LUb3kF6RoYL",
+        "track_number": 14,
+        "artists": [
+            "42UrF25gDVhovYn4Dd422d",
+            "3UBxUewPXF2kb68BKd5suU",
+            "3jU8fXs7AxuNnssmHHzS4E",
+            "0a127FzHtfoDjnvjUjJHen"
+        ],
+        "artists_names": [
+            "Sam Lachow",
+            "Sky Blaow",
+            "Ryan Campbell",
+            "Jbyrd"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273290476d5d3e3768e0bc0da9e",
+        "album_id": 6900000000000000198,
+        "album_name": "Huckleberry",
+        "album_total_tracks": 15,
+        "release_date": "2014-08-01"
+    },
+    {
+        "track_name": "Will Darkness",
+        "track_id": "TCACL1651078",
+        "duration_ms": 127490,
+        "explicit": false,
+        "spotify_track_uri": "29qkdwSeYJiPLw1LaZGbDW",
+        "track_number": 12,
+        "artists": [
+            "1vmLIa1VRY38hZoar8AyYS"
+        ],
+        "artists_names": [
+            "Chester Watson"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273e836cb3d8774aa83b0d34e70",
+        "album_id": 6900000000000000199,
+        "album_name": "Past Cloaks",
+        "album_total_tracks": 19,
+        "release_date": "2016-01-21"
+    },
+    {
+        "track_name": "Arctic Tundras",
+        "track_id": "TCAFY2119897",
+        "duration_ms": 161720,
+        "explicit": true,
+        "spotify_track_uri": "6yB5nEEVQAUrt19BB6QO6g",
+        "track_number": 1,
+        "artists": [
+            "4pP35roiiY2ki6Zxjke20H"
+        ],
+        "artists_names": [
+            "xaretti"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27341e3edd7d3c3805b31a1a811",
+        "album_id": 6900000000000000200,
+        "album_name": "Arctic Tundras",
+        "album_total_tracks": 1,
+        "release_date": "2021-12-06"
+    },
+    {
+        "track_name": "On Time",
+        "track_id": "QZK6K2355861",
+        "duration_ms": 195512,
+        "explicit": true,
+        "spotify_track_uri": "2yurkU33Ov6flbuit8Equg",
+        "track_number": 1,
+        "artists": [
+            "2xehZMjvlNsjJMEN9l2muz"
+        ],
+        "artists_names": [
+            "Sougias Mpampas"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2735b1c4f0aed9dad72564265cf",
+        "album_id": 6900000000000000201,
+        "album_name": "On Time",
+        "album_total_tracks": 1,
+        "release_date": "2018-01-08"
+    },
+    {
+        "track_name": "Adore U",
+        "track_id": "QZDA42347149",
+        "duration_ms": 178691,
+        "explicit": true,
+        "spotify_track_uri": "2n5CkEtbZmhurTRZu0jxrj",
+        "track_number": 1,
+        "artists": [
+            "2uAdjqrXUQeK6QomCNY6UV"
+        ],
+        "artists_names": [
+            "EL Sougias"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2736c25467d5992c037dc288cf4",
+        "album_id": 6900000000000000202,
+        "album_name": "Adore U",
+        "album_total_tracks": 1,
+        "release_date": "2022-02-06"
+    },
+    {
+        "track_name": "Always Saucy (with Ski Mask The Slump God & TrippythaKid)",
+        "track_id": "USUM72019047",
+        "duration_ms": 192199,
+        "explicit": true,
+        "spotify_track_uri": "1Q70eaVbwHkiV5a3NIBXW2",
+        "track_number": 1,
+        "artists": [
+            "2YOYua8FpudSEiB9s88IgQ",
+            "2rhFzFmezpnW82MNqEKVry",
+            "4ucIxjoWFS3n9KvguhTWpz"
+        ],
+        "artists_names": [
+            "Yung Gravy",
+            "Ski Mask The Slump God",
+            "TrippyThaKid"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273c5e844c860c9717785b7aaa2",
+        "album_id": 6900000000000000203,
+        "album_name": "Gasanova",
+        "album_total_tracks": 14,
+        "release_date": "2020-10-02"
+    },
+    {
+        "track_name": "The London (feat. J. Cole & Travis Scott)",
+        "track_id": "USAT21903320",
+        "duration_ms": 200186,
+        "explicit": true,
+        "spotify_track_uri": "3s4mrPrEFFPF0LmAfutW0n",
+        "track_number": 19,
+        "artists": [
+            "50co4Is1HCEo8bhOyUWKpn",
+            "6l3HvQ5sa6mXTsMTB19rO5",
+            "0Y5tJX1MQlPlqiwlOH1tJY"
+        ],
+        "artists_names": [
+            "Young Thug",
+            "J. Cole",
+            "Travis Scott"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2736fcd1b6e205d0d19d9efa0cc",
+        "album_id": 6900000000000000204,
+        "album_name": "So Much Fun",
+        "album_total_tracks": 19,
+        "release_date": "2019-08-16"
+    },
+    {
+        "track_name": "a m a r i",
+        "track_id": "QMJMT2103632",
+        "duration_ms": 148421,
+        "explicit": true,
+        "spotify_track_uri": "2cnKST6T9qUo2i907lm8zX",
+        "track_number": 2,
+        "artists": [
+            "6l3HvQ5sa6mXTsMTB19rO5"
+        ],
+        "artists_names": [
+            "J. Cole"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27310e6745bb2f179dd3616b85f",
+        "album_id": 6900000000000000205,
+        "album_name": "The Off-Season",
+        "album_total_tracks": 12,
+        "release_date": "2021-05-14"
+    },
+    {
+        "track_name": "Calling For You (feat. 21 Savage)",
+        "track_id": "USUG12306068",
+        "duration_ms": 285630,
+        "explicit": true,
+        "spotify_track_uri": "2nibvvDdAQkVraYP00z2RS",
+        "track_number": 3,
+        "artists": [
+            "3TVXtAsR1Inumwj472S9r4",
+            "1URnnhqYAYcrqrcwql10ft"
+        ],
+        "artists_names": [
+            "Drake",
+            "21 Savage"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2737d384516b23347e92a587ed1",
+        "album_id": 6900000000000000206,
+        "album_name": "For All The Dogs",
+        "album_total_tracks": 23,
+        "release_date": "2023-10-06"
+    },
+    {
+        "track_name": "First Person Shooter (feat. J. Cole)",
+        "track_id": "USUG12306071",
+        "duration_ms": 247444,
+        "explicit": true,
+        "spotify_track_uri": "7aqfrAY2p9BUSiupwk3svU",
+        "track_number": 6,
+        "artists": [
+            "3TVXtAsR1Inumwj472S9r4",
+            "6l3HvQ5sa6mXTsMTB19rO5"
+        ],
+        "artists_names": [
+            "Drake",
+            "J. Cole"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2737d384516b23347e92a587ed1",
+        "album_id": 6900000000000000207,
+        "album_name": "For All The Dogs",
+        "album_total_tracks": 23,
+        "release_date": "2023-10-06"
+    },
+    {
+        "track_name": "What Would Pluto Do",
+        "track_id": "USUG12306080",
+        "duration_ms": 182998,
+        "explicit": true,
+        "spotify_track_uri": "1DAibqbopEYULPEtE8WHTE",
+        "track_number": 15,
+        "artists": [
+            "3TVXtAsR1Inumwj472S9r4"
+        ],
+        "artists_names": [
+            "Drake"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2737d384516b23347e92a587ed1",
+        "album_id": 6900000000000000208,
+        "album_name": "For All The Dogs",
+        "album_total_tracks": 23,
+        "release_date": "2023-10-06"
+    },
+    {
+        "track_name": "Weight On Me",
+        "track_id": "USUYG1310202",
+        "duration_ms": 157619,
+        "explicit": true,
+        "spotify_track_uri": "6A4hgJdwriera4WSUl4moW",
+        "track_number": 11,
+        "artists": [
+            "1tG7s7S4sq2eFFW0QZyLbm",
+            "6EPlBSH2RSiettczlz7ihV"
+        ],
+        "artists_names": [
+            "Sheff G",
+            "Sleepy Hallow"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b273ad8cc1fba73c2360ba0ff182",
+        "album_id": 6900000000000000209,
+        "album_name": "One and Only",
+        "album_total_tracks": 12,
+        "release_date": "2020-05-15"
+    },
+    {
+        "track_name": "Big Tipper (feat. Melii, Lil Wayne)",
+        "track_id": "CA5KR2121373",
+        "duration_ms": 201900,
+        "explicit": true,
+        "spotify_track_uri": "0a8r445oJPuj8IGl8Unrvw",
+        "track_number": 5,
+        "artists": [
+            "2jku7tDXc6XoB6MO2hFuqg",
+            "4udfTw7V8jI4AHi7PEfJfj",
+            "55Aa2cqylxrFIXC767Z865"
+        ],
+        "artists_names": [
+            "Tory Lanez",
+            "Melii",
+            "Lil Wayne"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27321b8b12f9b735eb5e9c2b0d4",
+        "album_id": 6900000000000000210,
+        "album_name": "Loner",
+        "album_total_tracks": 10,
+        "release_date": "2020-12-22"
+    },
+    {
+        "track_name": "Boink Boink (feat. Rich The Kid, VV$ Ken)",
+        "track_id": "CA5KR2121374",
+        "duration_ms": 234546,
+        "explicit": true,
+        "spotify_track_uri": "6gyZlDzJx2Q3rEdEqZ4woi",
+        "track_number": 6,
+        "artists": [
+            "2jku7tDXc6XoB6MO2hFuqg",
+            "1pPmIToKXyGdsCF6LmqLmI",
+            "2FelUywHDci70FpLOHGghU"
+        ],
+        "artists_names": [
+            "Tory Lanez",
+            "Rich The Kid",
+            "VV$ KEN"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b27321b8b12f9b735eb5e9c2b0d4",
+        "album_id": 6900000000000000211,
+        "album_name": "Loner",
+        "album_total_tracks": 10,
+        "release_date": "2020-12-22"
+    },
+    {
+        "track_name": "Black Skinhead",
+        "track_id": "USUM71307719",
+        "duration_ms": 188013,
+        "explicit": true,
+        "spotify_track_uri": "722tgOgdIbNe3BEyLnejw4",
+        "track_number": 2,
+        "artists": [
+            "5K4W6rqBFWDnAN6FQUkS6x"
+        ],
+        "artists_names": [
+            "Kanye West"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2731dacfbc31cc873d132958af9",
+        "album_id": 6900000000000000212,
+        "album_name": "Yeezus",
+        "album_total_tracks": 10,
+        "release_date": "2013-06-18"
+    },
+    {
+        "track_name": "Brand New",
+        "track_id": "USUYG1507439",
+        "duration_ms": 182532,
+        "explicit": true,
+        "spotify_track_uri": "3MbOT5mzE94Ne0Hv51akoS",
+        "track_number": 1,
+        "artists": [
+            "5LHRHt1k9lMyONurDHEdrp",
+            "0A0FS04o6zMoto8OKPsDwY",
+            "55Aa2cqylxrFIXC767Z865"
+        ],
+        "artists_names": [
+            "Tyga",
+            "YG",
+            "Lil Wayne"
+        ],
+        "album_art": "https://i.scdn.co/image/ab67616d0000b2738011b08c771d5a4b30da211e",
+        "album_id": 6900000000000000213,
+        "album_name": "Brand New",
+        "album_total_tracks": 1,
+        "release_date": "2023-09-27"
+    }
+]
