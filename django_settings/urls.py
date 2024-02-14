@@ -1,5 +1,5 @@
 """
-URL configuration for soundcentral project.
+URL configuration for django_settings project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -20,7 +20,7 @@ from playlists.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='home'),
+    path('', home.as_view(), name='home'),
     path('playlists/', include('playlists.urls')),
     path('profile/', include('userprofile.urls'))
 ]

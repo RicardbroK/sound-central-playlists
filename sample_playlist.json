@@ -1,0 +1,1887 @@
+[
+    {
+        "track_name": "This Could Be Us",
+        "duration_ms": 206306,
+        "explicit": true,
+        "track_number": 5,
+        "album": {
+            "album_name": "SremmLife",
+            "release_date": "2015-01-06",
+            "total_tracks": 11
+        },
+        "artists": [
+            {
+                "artist_name": "Rae Sremmurd"
+            }
+        ]
+    },
+    {
+        "track_name": "Peaches (feat. Daniel Caesar & Giveon)",
+        "duration_ms": 198081,
+        "explicit": true,
+        "track_number": 12,
+        "album": {
+            "album_name": "Justice",
+            "release_date": "2021-03-19",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Justin Bieber"
+            },
+            {
+                "artist_name": "Daniel Caesar"
+            },
+            {
+                "artist_name": "Giveon"
+            }
+        ]
+    },
+    {
+        "track_name": "What You Know Bout Love",
+        "duration_ms": 160000,
+        "explicit": true,
+        "track_number": 15,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Lemonade (feat. Gunna, Don Toliver & NAV)",
+        "duration_ms": 195428,
+        "explicit": true,
+        "track_number": 17,
+        "album": {
+            "album_name": "B4 The Storm",
+            "release_date": "2020-08-28",
+            "total_tracks": 17
+        },
+        "artists": [
+            {
+                "artist_name": "Internet Money"
+            },
+            {
+                "artist_name": "Gunna"
+            },
+            {
+                "artist_name": "Don Toliver"
+            },
+            {
+                "artist_name": "NAV"
+            }
+        ]
+    },
+    {
+        "track_name": "Martin & Gina",
+        "duration_ms": 132832,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "THE GOAT",
+            "release_date": "2020-05-15",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            }
+        ]
+    },
+    {
+        "track_name": "i n t e r l u d e",
+        "duration_ms": 133021,
+        "explicit": true,
+        "track_number": 9,
+        "album": {
+            "album_name": "The Off-Season",
+            "release_date": "2021-05-14",
+            "total_tracks": 12
+        },
+        "artists": [
+            {
+                "artist_name": "J. Cole"
+            }
+        ]
+    },
+    {
+        "track_name": "Already Best Friends (feat. Chris Brown)",
+        "duration_ms": 197031,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "Thats What They All Say",
+            "release_date": "2020-12-11",
+            "total_tracks": 15
+        },
+        "artists": [
+            {
+                "artist_name": "Jack Harlow"
+            },
+            {
+                "artist_name": "Chris Brown"
+            }
+        ]
+    },
+    {
+        "track_name": "RAPSTAR",
+        "duration_ms": 165925,
+        "explicit": true,
+        "track_number": 2,
+        "album": {
+            "album_name": "Hall of Fame",
+            "release_date": "2021-06-11",
+            "total_tracks": 20
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            }
+        ]
+    },
+    {
+        "track_name": "Levitating (feat. DaBaby)",
+        "duration_ms": 203064,
+        "explicit": false,
+        "track_number": 12,
+        "album": {
+            "album_name": "Future Nostalgia",
+            "release_date": "2020-03-27",
+            "total_tracks": 13
+        },
+        "artists": [
+            {
+                "artist_name": "Dua Lipa"
+            },
+            {
+                "artist_name": "DaBaby"
+            }
+        ]
+    },
+    {
+        "track_name": "For The Night (feat. Lil Baby & DaBaby)",
+        "duration_ms": 190476,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Lil Baby"
+            },
+            {
+                "artist_name": "DaBaby"
+            }
+        ]
+    },
+    {
+        "track_name": "Big Gangsta",
+        "duration_ms": 243462,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Big Gangsta",
+            "release_date": "2021-03-26",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Kevin Gates"
+            }
+        ]
+    },
+    {
+        "track_name": "Wants and Needs (feat. Lil Baby)",
+        "duration_ms": 192956,
+        "explicit": true,
+        "track_number": 2,
+        "album": {
+            "album_name": "Scary Hours 2",
+            "release_date": "2021-03-05",
+            "total_tracks": 3
+        },
+        "artists": [
+            {
+                "artist_name": "Drake"
+            },
+            {
+                "artist_name": "Lil Baby"
+            }
+        ]
+    },
+    {
+        "track_name": "Whoopty",
+        "duration_ms": 123262,
+        "explicit": true,
+        "track_number": 4,
+        "album": {
+            "album_name": "Loyalty Over Royalty",
+            "release_date": "2021-02-19",
+            "total_tracks": 8
+        },
+        "artists": [
+            {
+                "artist_name": "CJ"
+            }
+        ]
+    },
+    {
+        "track_name": "Hello (feat. A Boogie Wit da Hoodie)",
+        "duration_ms": 190534,
+        "explicit": true,
+        "track_number": 30,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon (Deluxe)",
+            "release_date": "2020-07-20",
+            "total_tracks": 34
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "A Boogie Wit da Hoodie"
+            }
+        ]
+    },
+    {
+        "track_name": "Goosebumps - Remix",
+        "duration_ms": 162802,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Goosebumps (Remix)",
+            "release_date": "2021-01-15",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Travis Scott"
+            },
+            {
+                "artist_name": "HVME"
+            }
+        ]
+    },
+    {
+        "track_name": "After Party",
+        "duration_ms": 167915,
+        "explicit": true,
+        "track_number": 4,
+        "album": {
+            "album_name": "Heaven Or Hell",
+            "release_date": "2020-03-13",
+            "total_tracks": 12
+        },
+        "artists": [
+            {
+                "artist_name": "Don Toliver"
+            }
+        ]
+    },
+    {
+        "track_name": "Element",
+        "duration_ms": 135746,
+        "explicit": true,
+        "track_number": 7,
+        "album": {
+            "album_name": "Meet The Woo 2",
+            "release_date": "2020-02-07",
+            "total_tracks": 13
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Body (Remix) [feat. ArrDee, E1 (3x3), ZT (3x3), Bugzy Malone, Buni, Fivio Foreign & Darkoo]",
+        "duration_ms": 278085,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Body (Remix) [feat. ArrDee, E1 (3x3), ZT (3x3), Bugzy Malone, Buni, Fivio Foreign & Darkoo]",
+            "release_date": "2021-04-22",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Tion Wayne"
+            },
+            {
+                "artist_name": "Russ Millions"
+            },
+            {
+                "artist_name": "ArrDee"
+            },
+            {
+                "artist_name": "E1 (3x3)"
+            },
+            {
+                "artist_name": "ZT (3x3)"
+            },
+            {
+                "artist_name": "Bugzy Malone"
+            },
+            {
+                "artist_name": "Buni"
+            },
+            {
+                "artist_name": "Fivio Foreign"
+            },
+            {
+                "artist_name": "Darkoo"
+            }
+        ]
+    },
+    {
+        "track_name": "Fair Trade (with Travis Scott)",
+        "duration_ms": 291175,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "Certified Lover Boy",
+            "release_date": "2021-09-03",
+            "total_tracks": 21
+        },
+        "artists": [
+            {
+                "artist_name": "Drake"
+            },
+            {
+                "artist_name": "Travis Scott"
+            }
+        ]
+    },
+    {
+        "track_name": "She Make It Clap",
+        "duration_ms": 111549,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "She Make It Clap",
+            "release_date": "2021-04-15",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Soulja Boy"
+            }
+        ]
+    },
+    {
+        "track_name": "Mood Swings (feat. Lil Tjay)",
+        "duration_ms": 213333,
+        "explicit": true,
+        "track_number": 13,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Lil Tjay"
+            }
+        ]
+    },
+    {
+        "track_name": "PRACTICE",
+        "duration_ms": 122586,
+        "explicit": true,
+        "track_number": 2,
+        "album": {
+            "album_name": "BLAME IT ON BABY (DELUXE)",
+            "release_date": "2020-08-04",
+            "total_tracks": 24
+        },
+        "artists": [
+            {
+                "artist_name": "DaBaby"
+            }
+        ]
+    },
+    {
+        "track_name": "Dior",
+        "duration_ms": 216386,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "Meet The Woo",
+            "release_date": "2019-07-26",
+            "total_tracks": 9
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Real Shit (with benny blanco)",
+        "duration_ms": 183782,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Real Shit (with benny blanco)",
+            "release_date": "2020-12-02",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Juice WRLD"
+            },
+            {
+                "artist_name": "benny blanco"
+            }
+        ]
+    },
+    {
+        "track_name": "Got It On Me",
+        "duration_ms": 164579,
+        "explicit": true,
+        "track_number": 17,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Burn The Hoods",
+        "duration_ms": 102960,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Burn The Hoods",
+            "release_date": "2020-07-24",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Ski Mask The Slump God"
+            }
+        ]
+    },
+    {
+        "track_name": "24 (feat. Lil Baby)",
+        "duration_ms": 182857,
+        "explicit": true,
+        "track_number": 13,
+        "album": {
+            "album_name": "Epidemic (Deluxe)",
+            "release_date": "2020-08-21",
+            "total_tracks": 20
+        },
+        "artists": [
+            {
+                "artist_name": "Money Man"
+            },
+            {
+                "artist_name": "Lil Baby"
+            }
+        ]
+    },
+    {
+        "track_name": "Get Back",
+        "duration_ms": 108160,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "Meet The Woo 2",
+            "release_date": "2020-02-07",
+            "total_tracks": 13
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "OUT WEST (feat. Young Thug)",
+        "duration_ms": 157712,
+        "explicit": true,
+        "track_number": 5,
+        "album": {
+            "album_name": "JACKBOYS",
+            "release_date": "2019-12-27",
+            "total_tracks": 7
+        },
+        "artists": [
+            {
+                "artist_name": "JACKBOYS"
+            },
+            {
+                "artist_name": "Travis Scott"
+            },
+            {
+                "artist_name": "Young Thug"
+            }
+        ]
+    },
+    {
+        "track_name": "Moonwalking in Calabasas (feat. Blueface) - Remix",
+        "duration_ms": 170232,
+        "explicit": true,
+        "track_number": 11,
+        "album": {
+            "album_name": "Die 4 Respect",
+            "release_date": "2021-06-15",
+            "total_tracks": 11
+        },
+        "artists": [
+            {
+                "artist_name": "DDG"
+            },
+            {
+                "artist_name": "Blueface"
+            }
+        ]
+    },
+    {
+        "track_name": "Whats Poppin (feat. DaBaby, Tory Lanez & Lil Wayne) [Remix] - Bonus Track",
+        "duration_ms": 227478,
+        "explicit": true,
+        "track_number": 15,
+        "album": {
+            "album_name": "Thats What They All Say",
+            "release_date": "2020-12-11",
+            "total_tracks": 15
+        },
+        "artists": [
+            {
+                "artist_name": "Jack Harlow"
+            },
+            {
+                "artist_name": "Tory Lanez"
+            },
+            {
+                "artist_name": "DaBaby"
+            },
+            {
+                "artist_name": "Lil Wayne"
+            }
+        ]
+    },
+    {
+        "track_name": "NO BYSTANDERS",
+        "duration_ms": 218283,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "ASTROWORLD",
+            "release_date": "2018-08-03",
+            "total_tracks": 17
+        },
+        "artists": [
+            {
+                "artist_name": "Travis Scott"
+            }
+        ]
+    },
+    {
+        "track_name": "Enjoy Yourself (feat. Karol G)",
+        "duration_ms": 197938,
+        "explicit": true,
+        "track_number": 12,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "KAROL G"
+            }
+        ]
+    },
+    {
+        "track_name": "F.N",
+        "duration_ms": 224000,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "True 2 Myself",
+            "release_date": "2019-10-11",
+            "total_tracks": 17
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Tjay"
+            }
+        ]
+    },
+    {
+        "track_name": "AP - Music from the film Boogie",
+        "duration_ms": 171891,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "AP (Music from the film Boogie)",
+            "release_date": "2021-02-26",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Unbothered",
+        "duration_ms": 138426,
+        "explicit": true,
+        "track_number": 5,
+        "album": {
+            "album_name": "STOKELEY",
+            "release_date": "2018-11-30",
+            "total_tracks": 13
+        },
+        "artists": [
+            {
+                "artist_name": "Ski Mask The Slump God"
+            }
+        ]
+    },
+    {
+        "track_name": "SOLVED THE PROBLEM",
+        "duration_ms": 117073,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "BAWSKEE 3.5",
+            "release_date": "2019-07-26",
+            "total_tracks": 12
+        },
+        "artists": [
+            {
+                "artist_name": "Comethazine"
+            }
+        ]
+    },
+    {
+        "track_name": "A92 x Fumez The Engineer - Plugged In Freestyle",
+        "duration_ms": 240000,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "A92 x Fumez The Engineer - Plugged In Freestyle",
+            "release_date": "2020-10-08",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Fumez The Engineer"
+            },
+            {
+                "artist_name": "A92"
+            },
+            {
+                "artist_name": "Offica"
+            }
+        ]
+    },
+    {
+        "track_name": "Walk Em Down (feat. Roddy Ricch)",
+        "duration_ms": 173288,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "Top Shotta",
+            "release_date": "2020-08-10",
+            "total_tracks": 20
+        },
+        "artists": [
+            {
+                "artist_name": "NLE Choppa"
+            },
+            {
+                "artist_name": "Roddy Ricch"
+            }
+        ]
+    },
+    {
+        "track_name": "Ric Flair Drip (with Metro Boomin)",
+        "duration_ms": 172800,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "Without Warning",
+            "release_date": "2017-10-30",
+            "total_tracks": 10
+        },
+        "artists": [
+            {
+                "artist_name": "Offset"
+            },
+            {
+                "artist_name": "Metro Boomin"
+            }
+        ]
+    },
+    {
+        "track_name": "21",
+        "duration_ms": 163797,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "THE GOAT",
+            "release_date": "2020-05-15",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            }
+        ]
+    },
+    {
+        "track_name": "Sum More",
+        "duration_ms": 191160,
+        "explicit": true,
+        "track_number": 8,
+        "album": {
+            "album_name": "Too Hard",
+            "release_date": "2017-12-01",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Baby"
+            },
+            {
+                "artist_name": "Lil Yachty"
+            }
+        ]
+    },
+    {
+        "track_name": "family ties (with Kendrick Lamar)",
+        "duration_ms": 252262,
+        "explicit": true,
+        "track_number": 10,
+        "album": {
+            "album_name": "The Melodic Blue",
+            "release_date": "2021-09-10",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Baby Keem"
+            },
+            {
+                "artist_name": "Kendrick Lamar"
+            }
+        ]
+    },
+    {
+        "track_name": "Gangstas",
+        "duration_ms": 160000,
+        "explicit": true,
+        "track_number": 5,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Show Out (with Skepta & Pop Smoke)",
+        "duration_ms": 174960,
+        "explicit": true,
+        "track_number": 8,
+        "album": {
+            "album_name": "Man On The Moon III: The Chosen",
+            "release_date": "2020-12-11",
+            "total_tracks": 18
+        },
+        "artists": [
+            {
+                "artist_name": "Kid Cudi"
+            },
+            {
+                "artist_name": "Skepta"
+            },
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "NEVER LEFT",
+        "duration_ms": 168727,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "We Love You Tecca 2",
+            "release_date": "2021-08-27",
+            "total_tracks": 20
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Tecca"
+            }
+        ]
+    },
+    {
+        "track_name": "Headshot (feat. Polo G & Fivio Foreign)",
+        "duration_ms": 144349,
+        "explicit": true,
+        "track_number": 7,
+        "album": {
+            "album_name": "Destined 2 Win",
+            "release_date": "2021-04-02",
+            "total_tracks": 21
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Tjay"
+            },
+            {
+                "artist_name": "Polo G"
+            },
+            {
+                "artist_name": "Fivio Foreign"
+            }
+        ]
+    },
+    {
+        "track_name": "Back in Blood (feat. Lil Durk)",
+        "duration_ms": 184489,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Back In Blood (feat. Lil Durk)",
+            "release_date": "2020-11-06",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Pooh Shiesty"
+            },
+            {
+                "artist_name": "Lil Durk"
+            }
+        ]
+    },
+    {
+        "track_name": "Shoota (feat. Lil Uzi Vert)",
+        "duration_ms": 153800,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "Die Lit",
+            "release_date": "2018-05-11",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Playboi Carti"
+            },
+            {
+                "artist_name": "Lil Uzi Vert"
+            }
+        ]
+    },
+    {
+        "track_name": "Beat Box 2 (feat. Pooh Shiesty)",
+        "duration_ms": 181087,
+        "explicit": true,
+        "track_number": 2,
+        "album": {
+            "album_name": "Final Destination",
+            "release_date": "2020-12-18",
+            "total_tracks": 13
+        },
+        "artists": [
+            {
+                "artist_name": "SpotemGottem"
+            },
+            {
+                "artist_name": "Pooh Shiesty"
+            }
+        ]
+    },
+    {
+        "track_name": "GATTI",
+        "duration_ms": 181144,
+        "explicit": true,
+        "track_number": 7,
+        "album": {
+            "album_name": "JACKBOYS",
+            "release_date": "2019-12-27",
+            "total_tracks": 7
+        },
+        "artists": [
+            {
+                "artist_name": "JACKBOYS"
+            },
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Travis Scott"
+            }
+        ]
+    },
+    {
+        "track_name": "Need It (feat. YoungBoy Never Broke Again)",
+        "duration_ms": 195680,
+        "explicit": true,
+        "track_number": 19,
+        "album": {
+            "album_name": "Culture III",
+            "release_date": "2021-06-11",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Migos"
+            },
+            {
+                "artist_name": "YoungBoy Never Broke Again"
+            }
+        ]
+    },
+    {
+        "track_name": "Blastoff (feat. Juice Wrld & Trippie Redd)",
+        "duration_ms": 174729,
+        "explicit": true,
+        "track_number": 9,
+        "album": {
+            "album_name": "B4 The Storm",
+            "release_date": "2020-08-28",
+            "total_tracks": 17
+        },
+        "artists": [
+            {
+                "artist_name": "Internet Money"
+            },
+            {
+                "artist_name": "Trippie Redd"
+            },
+            {
+                "artist_name": "Diplo"
+            },
+            {
+                "artist_name": "Juice WRLD"
+            }
+        ]
+    },
+    {
+        "track_name": "Bad Boy (with Young Thug)",
+        "duration_ms": 157355,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Bad Boy (with Young Thug)",
+            "release_date": "2021-01-15",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Juice WRLD"
+            },
+            {
+                "artist_name": "Young Thug"
+            }
+        ]
+    },
+    {
+        "track_name": "Solid (feat. Drake)",
+        "duration_ms": 215693,
+        "explicit": true,
+        "track_number": 4,
+        "album": {
+            "album_name": "Slime Language 2",
+            "release_date": "2021-04-16",
+            "total_tracks": 23
+        },
+        "artists": [
+            {
+                "artist_name": "Young Stoner Life"
+            },
+            {
+                "artist_name": "Young Thug"
+            },
+            {
+                "artist_name": "Gunna"
+            },
+            {
+                "artist_name": "Drake"
+            }
+        ]
+    },
+    {
+        "track_name": "Hotel Lobby",
+        "duration_ms": 151011,
+        "explicit": true,
+        "track_number": 20,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon (Deluxe)",
+            "release_date": "2020-07-20",
+            "total_tracks": 34
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Lonely (with Lil Wayne)",
+        "duration_ms": 154432,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Lonely (with Lil Wayne)",
+            "release_date": "2021-09-09",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "DaBaby"
+            },
+            {
+                "artist_name": "Lil Wayne"
+            }
+        ]
+    },
+    {
+        "track_name": "Flex (feat. Juice WRLD)",
+        "duration_ms": 163902,
+        "explicit": true,
+        "track_number": 4,
+        "album": {
+            "album_name": "THE GOAT",
+            "release_date": "2020-05-15",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            },
+            {
+                "artist_name": "Juice WRLD"
+            }
+        ]
+    },
+    {
+        "track_name": "Through Da Storm",
+        "duration_ms": 195586,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "Die A Legend",
+            "release_date": "2019-06-07",
+            "total_tracks": 14
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            }
+        ]
+    },
+    {
+        "track_name": "All the Smoke (feat. Gunna & Wiz Khalifa)",
+        "duration_ms": 211237,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "All the Smoke (feat. Gunna & Wiz Khalifa)",
+            "release_date": "2020-12-18",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Tyla Yaweh"
+            },
+            {
+                "artist_name": "Gunna"
+            },
+            {
+                "artist_name": "Wiz Khalifa"
+            }
+        ]
+    },
+    {
+        "track_name": "Epidemic",
+        "duration_ms": 177272,
+        "explicit": true,
+        "track_number": 5,
+        "album": {
+            "album_name": "Hall of Fame",
+            "release_date": "2021-06-11",
+            "total_tracks": 20
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            }
+        ]
+    },
+    {
+        "track_name": "Ballin' (with Roddy Ricch)",
+        "duration_ms": 180434,
+        "explicit": true,
+        "track_number": 9,
+        "album": {
+            "album_name": "Perfect Ten",
+            "release_date": "2019-06-28",
+            "total_tracks": 10
+        },
+        "artists": [
+            {
+                "artist_name": "Mustard"
+            },
+            {
+                "artist_name": "Roddy Ricch"
+            }
+        ]
+    },
+    {
+        "track_name": "WHAT'S GOOD (feat. Delawou)",
+        "duration_ms": 229999,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "WHAT'S GOOD (feat. Delawou)",
+            "release_date": "2020-02-11",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Jaecy"
+            },
+            {
+                "artist_name": "Delawou"
+            }
+        ]
+    },
+    {
+        "track_name": "p r i d e . i s . t h e . d e v i l (with Lil Baby)",
+        "duration_ms": 218210,
+        "explicit": true,
+        "track_number": 7,
+        "album": {
+            "album_name": "The Off-Season",
+            "release_date": "2021-05-14",
+            "total_tracks": 12
+        },
+        "artists": [
+            {
+                "artist_name": "J. Cole"
+            },
+            {
+                "artist_name": "Lil Baby"
+            }
+        ]
+    },
+    {
+        "track_name": "Welcome To The Party",
+        "duration_ms": 214960,
+        "explicit": true,
+        "track_number": 2,
+        "album": {
+            "album_name": "Meet The Woo",
+            "release_date": "2019-07-26",
+            "total_tracks": 9
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Go Stupid",
+        "duration_ms": 165726,
+        "explicit": true,
+        "track_number": 5,
+        "album": {
+            "album_name": "THE GOAT",
+            "release_date": "2020-05-15",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            },
+            {
+                "artist_name": "Stunna 4 Vegas"
+            },
+            {
+                "artist_name": "NLE Choppa"
+            },
+            {
+                "artist_name": "Mike WiLL Made-It"
+            }
+        ]
+    },
+    {
+        "track_name": "Turks (with Gunna & ft. Travis Scott)",
+        "duration_ms": 161319,
+        "explicit": true,
+        "track_number": 4,
+        "album": {
+            "album_name": "Good Intentions",
+            "release_date": "2020-05-08",
+            "total_tracks": 18
+        },
+        "artists": [
+            {
+                "artist_name": "NAV"
+            },
+            {
+                "artist_name": "Gunna"
+            },
+            {
+                "artist_name": "Travis Scott"
+            }
+        ]
+    },
+    {
+        "track_name": "Still Trappin' (with King Von)",
+        "duration_ms": 172185,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "The Voice",
+            "release_date": "2020-12-24",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Durk"
+            },
+            {
+                "artist_name": "King Von"
+            }
+        ]
+    },
+    {
+        "track_name": "Paranoia (feat. Gunna & Young Thug)",
+        "duration_ms": 212658,
+        "explicit": true,
+        "track_number": 29,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon (Deluxe)",
+            "release_date": "2020-07-20",
+            "total_tracks": 34
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Gunna"
+            },
+            {
+                "artist_name": "Young Thug"
+            }
+        ]
+    },
+    {
+        "track_name": "Dark Knight Dummo",
+        "duration_ms": 256161,
+        "explicit": true,
+        "track_number": 9,
+        "album": {
+            "album_name": "LIFE'S A TRIP",
+            "release_date": "2018-08-10",
+            "total_tracks": 14
+        },
+        "artists": [
+            {
+                "artist_name": "Trippie Redd"
+            },
+            {
+                "artist_name": "Travis Scott"
+            }
+        ]
+    },
+    {
+        "track_name": "War (feat. Lil Tjay) - Bonus",
+        "duration_ms": 221826,
+        "explicit": true,
+        "track_number": 13,
+        "album": {
+            "album_name": "Meet The Woo 2",
+            "release_date": "2020-02-07",
+            "total_tracks": 13
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Lil Tjay"
+            }
+        ]
+    },
+    {
+        "track_name": "Iced Out Audemars (feat. Lil Wayne) - Remix",
+        "duration_ms": 196056,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Iced Out Audemars (Remix)",
+            "release_date": "2020-10-15",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Lil Wayne"
+            }
+        ]
+    },
+    {
+        "track_name": "Coffin",
+        "duration_ms": 89535,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "Lil Boat 3.5",
+            "release_date": "2020-11-27",
+            "total_tracks": 27
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Yachty"
+            }
+        ]
+    },
+    {
+        "track_name": "Splash (feat. Moneybagg Yo)",
+        "duration_ms": 173161,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Splash (feat. Moneybagg Yo)",
+            "release_date": "2021-06-11",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Tyga"
+            },
+            {
+                "artist_name": "Moneybagg Yo"
+            }
+        ]
+    },
+    {
+        "track_name": "Many Men (Wish Death)",
+        "duration_ms": 256226,
+        "explicit": true,
+        "track_number": 4,
+        "album": {
+            "album_name": "Get Rich Or Die Tryin'",
+            "release_date": "2003-02-06",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "50 Cent"
+            }
+        ]
+    },
+    {
+        "track_name": "What You Know Bout Love",
+        "duration_ms": 160000,
+        "explicit": true,
+        "track_number": 15,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            }
+        ]
+    },
+    {
+        "track_name": "Martin & Gina",
+        "duration_ms": 132832,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "THE GOAT",
+            "release_date": "2020-05-15",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            }
+        ]
+    },
+    {
+        "track_name": "Zim Zimma",
+        "duration_ms": 239702,
+        "explicit": true,
+        "track_number": 4,
+        "album": {
+            "album_name": "Evolution",
+            "release_date": "2020-10-23",
+            "total_tracks": 12
+        },
+        "artists": [
+            {
+                "artist_name": "Joyner Lucas"
+            }
+        ]
+    },
+    {
+        "track_name": "RAPSTAR",
+        "duration_ms": 165925,
+        "explicit": true,
+        "track_number": 2,
+        "album": {
+            "album_name": "Hall of Fame",
+            "release_date": "2021-06-11",
+            "total_tracks": 20
+        },
+        "artists": [
+            {
+                "artist_name": "Polo G"
+            }
+        ]
+    },
+    {
+        "track_name": "How You Feel? (Freestyle) (feat. Lil Yachty & Ski Mask The Slump God)",
+        "duration_ms": 135022,
+        "explicit": true,
+        "track_number": 2,
+        "album": {
+            "album_name": "Preseason EP",
+            "release_date": "2019-07-30",
+            "total_tracks": 3
+        },
+        "artists": [
+            {
+                "artist_name": "DJ Scheme"
+            },
+            {
+                "artist_name": "Danny Towers"
+            },
+            {
+                "artist_name": "Lil Yachty"
+            },
+            {
+                "artist_name": "Ski Mask The Slump God"
+            }
+        ]
+    },
+    {
+        "track_name": "Nobody Special (with Future)",
+        "duration_ms": 169500,
+        "explicit": true,
+        "track_number": 17,
+        "album": {
+            "album_name": "Life Of A Hotboii",
+            "release_date": "2021-12-10",
+            "total_tracks": 17
+        },
+        "artists": [
+            {
+                "artist_name": "Hotboii"
+            },
+            {
+                "artist_name": "Future"
+            }
+        ]
+    },
+    {
+        "track_name": "10 Freaky Girls (with 21 Savage)",
+        "duration_ms": 208293,
+        "explicit": true,
+        "track_number": 6,
+        "album": {
+            "album_name": "NOT ALL HEROES WEAR CAPES (Deluxe)",
+            "release_date": "2018-11-06",
+            "total_tracks": 26
+        },
+        "artists": [
+            {
+                "artist_name": "Metro Boomin"
+            },
+            {
+                "artist_name": "21 Savage"
+            }
+        ]
+    },
+    {
+        "track_name": "Who Want Smoke?? (feat. G Herbo, Lil Durk & 21 Savage)",
+        "duration_ms": 279573,
+        "explicit": true,
+        "track_number": 9,
+        "album": {
+            "album_name": "Who is Nardo Wick?",
+            "release_date": "2021-12-03",
+            "total_tracks": 18
+        },
+        "artists": [
+            {
+                "artist_name": "Nardo Wick"
+            },
+            {
+                "artist_name": "G Herbo"
+            },
+            {
+                "artist_name": "Lil Durk"
+            },
+            {
+                "artist_name": "21 Savage"
+            }
+        ]
+    },
+    {
+        "track_name": "We Paid (feat. 42 Dugg)",
+        "duration_ms": 181929,
+        "explicit": true,
+        "track_number": 26,
+        "album": {
+            "album_name": "My Turn (Deluxe)",
+            "release_date": "2020-05-01",
+            "total_tracks": 26
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Baby"
+            },
+            {
+                "artist_name": "42 Dugg"
+            }
+        ]
+    },
+    {
+        "track_name": "Way Out (feat. Big Sean)",
+        "duration_ms": 168906,
+        "explicit": true,
+        "track_number": 5,
+        "album": {
+            "album_name": "Thats What They All Say",
+            "release_date": "2020-12-11",
+            "total_tracks": 15
+        },
+        "artists": [
+            {
+                "artist_name": "Jack Harlow"
+            },
+            {
+                "artist_name": "Big Sean"
+            }
+        ]
+    },
+    {
+        "track_name": "Out Of Love (feat. Internet Money)",
+        "duration_ms": 153626,
+        "explicit": true,
+        "track_number": 19,
+        "album": {
+            "album_name": "Virgo World",
+            "release_date": "2020-09-18",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Tecca"
+            },
+            {
+                "artist_name": "Internet Money"
+            }
+        ]
+    },
+    {
+        "track_name": "ROLLIN N CONTROLLIN FREESTYLE",
+        "duration_ms": 191208,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "ROLLIN N CONTROLLIN FREESTYLE",
+            "release_date": "2020-08-07",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "DUSTY LOCANE"
+            }
+        ]
+    },
+    {
+        "track_name": "Sum 2 Prove",
+        "duration_ms": 205760,
+        "explicit": true,
+        "track_number": 13,
+        "album": {
+            "album_name": "My Turn",
+            "release_date": "2020-02-28",
+            "total_tracks": 20
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Baby"
+            }
+        ]
+    },
+    {
+        "track_name": "Glock In My Lap",
+        "duration_ms": 193591,
+        "explicit": true,
+        "track_number": 3,
+        "album": {
+            "album_name": "SAVAGE MODE II",
+            "release_date": "2020-10-02",
+            "total_tracks": 15
+        },
+        "artists": [
+            {
+                "artist_name": "21 Savage"
+            },
+            {
+                "artist_name": "Metro Boomin"
+            }
+        ]
+    },
+    {
+        "track_name": "Leaked",
+        "duration_ms": 220240,
+        "explicit": true,
+        "track_number": 10,
+        "album": {
+            "album_name": "True 2 Myself",
+            "release_date": "2019-10-11",
+            "total_tracks": 17
+        },
+        "artists": [
+            {
+                "artist_name": "Lil Tjay"
+            }
+        ]
+    },
+    {
+        "track_name": "Mannequin (feat. Lil Tjay)",
+        "duration_ms": 160560,
+        "explicit": true,
+        "track_number": 9,
+        "album": {
+            "album_name": "Meet The Woo 2 (Deluxe)",
+            "release_date": "2020-02-12",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Lil Tjay"
+            }
+        ]
+    },
+    {
+        "track_name": "War (feat. Lil Tjay) - Bonus",
+        "duration_ms": 221813,
+        "explicit": true,
+        "track_number": 13,
+        "album": {
+            "album_name": "Meet The Woo 2 (Deluxe)",
+            "release_date": "2020-02-12",
+            "total_tracks": 16
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "Lil Tjay"
+            }
+        ]
+    },
+    {
+        "track_name": "The Woo (feat. 50 Cent & Roddy Ricch)",
+        "duration_ms": 201600,
+        "explicit": true,
+        "track_number": 10,
+        "album": {
+            "album_name": "Shoot For The Stars Aim For The Moon",
+            "release_date": "2020-07-03",
+            "total_tracks": 19
+        },
+        "artists": [
+            {
+                "artist_name": "Pop Smoke"
+            },
+            {
+                "artist_name": "50 Cent"
+            },
+            {
+                "artist_name": "Roddy Ricch"
+            }
+        ]
+    },
+    {
+        "track_name": "GO (feat. Juice WRLD)",
+        "duration_ms": 181688,
+        "explicit": true,
+        "track_number": 7,
+        "album": {
+            "album_name": "F*CK LOVE",
+            "release_date": "2020-07-24",
+            "total_tracks": 15
+        },
+        "artists": [
+            {
+                "artist_name": "The Kid LAROI"
+            },
+            {
+                "artist_name": "Juice WRLD"
+            }
+        ]
+    },
+    {
+        "track_name": "APOLOGIZE",
+        "duration_ms": 213473,
+        "explicit": true,
+        "track_number": 14,
+        "album": {
+            "album_name": "DIE FOR MY BITCH",
+            "release_date": "2019-07-19",
+            "total_tracks": 14
+        },
+        "artists": [
+            {
+                "artist_name": "Baby Keem"
+            }
+        ]
+    },
+    {
+        "track_name": "PLASTIC",
+        "duration_ms": 181015,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "PLASTIC",
+            "release_date": "2020-05-29",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Unghetto"
+            }
+        ]
+    },
+    {
+        "track_name": "UGLY (feat. Lil Baby)",
+        "duration_ms": 194285,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "UGLY (feat. Lil Baby)",
+            "release_date": "2021-01-08",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Russ"
+            },
+            {
+                "artist_name": "Lil Baby"
+            }
+        ]
+    },
+    {
+        "track_name": "Papi Chulo",
+        "duration_ms": 161667,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Papi Chulo",
+            "release_date": "2020-03-13",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "Octavian"
+            },
+            {
+                "artist_name": "Skepta"
+            }
+        ]
+    },
+    {
+        "track_name": "The Race - Remix",
+        "duration_ms": 211875,
+        "explicit": true,
+        "track_number": 9,
+        "album": {
+            "album_name": "#SantanaWorld (+)",
+            "release_date": "2017-12-14",
+            "total_tracks": 10
+        },
+        "artists": [
+            {
+                "artist_name": "Tay-K"
+            },
+            {
+                "artist_name": "21 Savage"
+            },
+            {
+                "artist_name": "Young Nudy"
+            }
+        ]
+    },
+    {
+        "track_name": "Swervin (feat. Veysel)",
+        "duration_ms": 186382,
+        "explicit": true,
+        "track_number": 1,
+        "album": {
+            "album_name": "Swervin (feat. Veysel)",
+            "release_date": "2019-06-14",
+            "total_tracks": 1
+        },
+        "artists": [
+            {
+                "artist_name": "A Boogie Wit da Hoodie"
+            },
+            {
+                "artist_name": "Veysel"
+            }
+        ]
+    }
+]
