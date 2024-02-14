@@ -52,12 +52,20 @@ def fetch_playlist_data(playlist_id):
 
 
 # Replace 'playlist_id' with the actual Spotify playlist ID
-playlist_id = '7oCnZ5kZMdUa0hh0vjwIVt'
+playlist_id = '7oCnZ5kZMdUa0hh0vjwIVt' # extract this from the playlists homepage user input
 playlist_data = fetch_playlist_data(playlist_id)
-playlist_data_str = json.dumps(playlist_data, indent=4)
-# Sample portion of the provided JSON string for demonstration
 
-# Replacing single quotes with double quotes and correcting boolean values
-# Displaying the corrected JSON string
+# Display the first 10 entries of the playlist data
+first_10_entries = playlist_data[:10]
+first_10_entries_str = json.dumps(first_10_entries, indent=4)
+print(first_10_entries_str)
 
-pprint.pprint(fetch_playlist_data(playlist_id))
+# Define the target directory two levels up from the current script location
+target_dir = os.path.join(os.path.dirname(__file__), '..', '..')
+
+# Ensure the target directory exists
+os.makedirs(target_dir, exist_ok=True)
+
+# Save the playlist data to 'sample_playlist.json' in the target directory
+with open(os.path.join(target_dir, 'sample_playlist.json'), 'w') as f:
+    json.dump(playlist_data, f, indent=4)
