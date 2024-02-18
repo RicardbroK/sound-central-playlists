@@ -26,7 +26,7 @@ except:
 
 def fetch_playlist_data(playlist_id):
     formatted_data = []  # List to hold processed tracks data
-    auto_incrementing_album_id = 6900000000000000000  # Starting point for custom album ID
+    auto_incrementing_album_id = 690000000  # Starting point for custom album ID
     offset = 0  # Offset for pagination
 
     # Loop to handle pagination and fetch all tracks
@@ -42,23 +42,42 @@ def fetch_playlist_data(playlist_id):
             track = item['track']
             if track:  # Ensure track data is not None
                 # Compile relevant track information into a dictionary
-                track_data = {
-                    'track_name': track['name'],
-                    'track_id': track['external_ids'].get('isrc', ''),  # Use ISRC as a universal track ID, default to empty string if not found
-                    'duration_ms': track['duration_ms'],
-                    'explicit': track['explicit'],
-                    'spotify_track_uri': track['id'],
-                    'track_number': track['track_number'],
-                    'artists': [artist['id'] for artist in track['artists']],
-                    'artists_names': [artist['name'] for artist in track['artists']],
-                    'album_art': track['album']['images'][0]['url'] if track['album']['images'] else None,  # Album cover art URL, None if not available
-                    'album_id': auto_incrementing_album_id,
-                    'album_name': track['album']['name'],
-                    'album_total_tracks': track['album']['total_tracks'],
-                    'release_date': track['album']['release_date']
-                }
-                auto_incrementing_album_id += 1  # Increment custom album ID for next track
-                formatted_data.append(track_data)  # Add processed track data to list
+                # Process each track in the current batch
+                for item in playlist_tracks:
+                    track = item['track']
+                    if track:  # Ensure track data is not None
+                        # Initialize an empty dictionary for artists
+                        artists_dict = {}
+                        # Loop through each artist in the track's artists list
+                        for i, artist in enumerate(track['artists']):
+                            # Create a new key for each artist in the format "artist1", "artist2", etc.
+                            artist_key = f"artist{i + 1}"
+                            # Assign a dictionary with artist name and Spotify URI to the new key
+                            artists_dict[artist_key] = {
+                                "artist_name": artist['name'],
+                                "artist_spotify_uri": artist['id']
+                            }
+
+                        # Compile relevant track information into a dictionarygit
+                        track_data = {
+                            'track_name': track['name'],
+                            'track_id': track['external_ids'].get('isrc', ''),
+                            # Use ISRC as a universal track ID, default to empty string if not found
+                            'duration_ms': track['duration_ms'],
+                            'explicit': track['explicit'],
+                            'spotify_track_uri': track['id'],
+                            'spotify_album_uri': track['album']['id'],
+                            'track_number': track['track_number'],
+                            'artists': artists_dict,  # Use the newly created artists_dict
+                            'album_art': track['album']['images'][0]['url'] if track['album']['images'] else None,
+                            # Album cover art URL, None if not available
+                            'album_id': auto_incrementing_album_id,
+                            'album_name': track['album']['name'],
+                            'album_total_tracks': track['album']['total_tracks'],
+                            'release_date': track['album']['release_date']
+                        }
+                        auto_incrementing_album_id += 1  # Increment custom album ID for next track
+                        formatted_data.append(track_data)  # Add processed track data to list
 
         offset += len(playlist_tracks)  # Increase offset for next batch of tracks
 

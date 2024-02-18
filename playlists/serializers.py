@@ -1,17 +1,11 @@
 from rest_framework import serializers
-from .models import Artist, Album, Track, Playlist, Genre
-from rest_framework.authtoken.admin import User
+from .models import Artist, Album, Track, Genre
 
-
-# class UserSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = User
-#         fields = ['user_id', 'username', 'email', 'password']
 
 class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
-        fields = ['genre_id', 'name']
+        fields = ['genre_id', 'genre_name']
 
 
 class ArtistSerializer(serializers.ModelSerializer):
@@ -29,6 +23,12 @@ class AlbumSerializer(serializers.ModelSerializer):
         fields = ['album_id', 'artists', 'album_name', 'album_art', 'release_date', 'total_tracks', 'spotify_album_uri',
                   'apple_music_album_uri', 'youtube_music_album_uri']
 
+    # Custom method to handle the release_date serialization
+    def to_representation(self, instance):
+        representation = super(AlbumSerializer, self).to_representation(instance)
+        representation['release_date'] = instance.release_date.strftime('%Y-%m-%d') if instance.release_date else None
+        return representation
+
 
 class TrackSerializer(serializers.ModelSerializer):
     artists = ArtistSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Artist
@@ -39,10 +39,10 @@ class TrackSerializer(serializers.ModelSerializer):
                   'apple_music_track_uri', 'youtube_music_track_uri', 'track_number']
 
 
-class PlaylistSerializer(serializers.ModelSerializer):
-    tracks = TrackSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Track
-
-    class Meta:
-        model = Playlist
-        fields = ['playlist_id', 'tracks', 'playlist_name', 'playlist_description',
-                  'playlist_track_length', 'created_at', 'updated_at']
+# class PlaylistSerializer(serializers.ModelSerializer):
+#     tracks = TrackSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Track
+#
+#     class Meta:
+#         model = Playlist
+#         fields = ['playlist_id', 'tracks', 'playlist_name', 'playlist_description', 'playlist_track_length',
+#                   'created_at', 'updated_at']
