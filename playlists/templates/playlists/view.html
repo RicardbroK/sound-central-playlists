@@ -1,0 +1,23 @@
+{% extends "playlists/base.html" %}
+
+{% block title %}SoundCentral Home{% endblock %}
+
+{% block content %}
+ <!-- Create a div with class "container" to wrap the heading -->
+<div class="container position-absolute top-50 start-50 translate-middle">
+    <!-- Create a div with class "row" to create a grid row -->
+    <div class="row">
+        <!-- Create a div with class "col" to create a grid column -->
+        <div class="col">
+            <!-- Create a heading element with class "text-center" to center the text horizontally -->
+            {% if not valid_url%}
+            <h1 class="text-center">URL is invalid, try again.</h1>
+            {% else %}
+            <h1 class="text-center">Wow, you made it!</h1>
+            <h1>Platform URL is {{platform}}, and the playlist id is {{playlist_id}}</h1>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{#<h1>Submitted url is {{ request.GET.playlisturl }}</h1>#}
+{% endblock %}
