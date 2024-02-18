@@ -18,7 +18,7 @@ class Artist(models.Model):
     artist_name = models.CharField(max_length=255)
     spotify_artist_uri = models.URLField(blank=True, default='')  # Store Spotify URI for direct linking
     apple_music_artist_uri = models.URLField(blank=True, default='')  # Store Apple Music URI for direct linking
-    youtube_music_channel_uri = models.URLField(blank=True, default='')  # Store Youtube Music URI for direct linking
+    youtube_music_channel_uri = models.URLField(blank=True, default='')  # Store YouTube Music URI for direct linking
 
     def __str__(self):
         return f"{self.artist_name}  (ID: {self.artist_id})"
