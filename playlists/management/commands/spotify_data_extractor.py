@@ -55,10 +55,12 @@ def fetch_playlist_data(playlist_id):
                             # Assign a dictionary with artist name and Spotify URI to the new key
                             artists_dict[artist_key] = {
                                 "artist_name": artist['name'],
-                                "artist_spotify_uri": artist['id']
+                                "artist_spotify_uri": artist['id'],
+                                "artist_apple_uri": "",
+                                "artist_youtube_uri": ""
                             }
 
-                        # Compile relevant track information into a dictionarygit
+                        # Compile relevant track information into a dictionary
                         track_data = {
                             'track_name': track['name'],
                             'track_id': track['external_ids'].get('isrc', ''),
@@ -67,6 +69,9 @@ def fetch_playlist_data(playlist_id):
                             'explicit': track['explicit'],
                             'spotify_track_uri': track['id'],
                             'spotify_album_uri': track['album']['id'],
+                            'apple_album_uri': "",
+                            'youtube_album_uri': "",
+                            'youtube_track_uri': "",
                             'track_number': track['track_number'],
                             'artists': artists_dict,  # Use the newly created artists_dict
                             'album_art': track['album']['images'][0]['url'] if track['album']['images'] else None,
@@ -84,7 +89,7 @@ def fetch_playlist_data(playlist_id):
     return formatted_data  # Return all processed tracks data
 
 # Replace placeholder with actual Spotify playlist ID
-playlist_id = '7oCnZ5kZMdUa0hh0vjwIVt' #eventually we will grab the information from the playlist home page
+playlist_id = '77hk687w9J5zwU9fJgsnyW' #eventually we will grab the information from the playlist home page
 playlist_data = fetch_playlist_data(playlist_id)  # Fetch all data for specified playlist
 
 # Display the first 10 entries of the playlist data for quick inspection

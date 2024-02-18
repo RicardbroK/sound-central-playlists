@@ -14,8 +14,10 @@ class Command(BaseCommand):
             try:
                 release_date = datetime.strptime(item['release_date'], "%Y-%m-%d")
             except ValueError:
-                print(f"Invalid date format for album {item['album_id']}: {item['release_date']}")
-                continue
+                # Extract year from the provided date string
+                year = item['release_date'].split("-")[0]
+                # Set release date to January 1st of the extracted year
+                release_date = datetime.strptime(f"{year}-01-01", "%Y-%m-%d")
 
             album, _ = Album.objects.get_or_create(
                 spotify_album_uri=item['spotify_album_uri'],
