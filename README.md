@@ -5,12 +5,17 @@ to start, clone the repo using visual studio code.
 once project is open in vs code,
 run a terminal and cd to main directory
 
-Activate the virtual enviornment is this command.
+##### While in the django_react_roomscheduler folder run:
 
-`.venv\Scripts\activate`
+```cmd
 
-Now that you are in your virtual enviornment
-start the server by running
+docker build -t soundcentral -f dockerfile.yaml . 
+````
+
+Then to start the database run:
+```cmd
+    docker run --name SoundCentral -p 5432:5432 -d soundcentral
+```
 
 `python manage.py runserver `
 # Working on new feature?
