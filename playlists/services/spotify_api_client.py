@@ -52,7 +52,6 @@ def fetch_playlist_data(playlist_id):
                     'artists': [artist['id'] for artist in track['artists']],
                     'artists_names': [artist['name'] for artist in track['artists']],
                     'album_art': track['album']['images'][0]['url'] if track['album']['images'] else None,  # Album cover art URL, None if not available
-                    'album_id': auto_incrementing_album_id,
                     'album_name': track['album']['name'],
                     'album_total_tracks': track['album']['total_tracks'],
                     'release_date': track['album']['release_date']
@@ -67,17 +66,3 @@ def fetch_playlist_data(playlist_id):
 # Replace placeholder with actual Spotify playlist ID
 playlist_id = '7oCnZ5kZMdUa0hh0vjwIVt' #eventually we will grab the information from the playlist home page
 playlist_data = fetch_playlist_data(playlist_id)  # Fetch all data for specified playlist
-
-# Display the first 10 entries of the playlist data for quick inspection
-first_10_entries = playlist_data[:10]
-first_10_entries_str = json.dumps(first_10_entries, indent=4)
-print(first_10_entries_str)
-
-# Determine the directory two levels up from the script's location
-target_dir = os.path.join(os.path.dirname(__file__), '..', '..')
-
-os.makedirs(target_dir, exist_ok=True)  # Create target directory if it doesn't exist
-
-# Save the fetched playlist data to a JSON file in the target directory
-with open(os.path.join(target_dir, 'sample_playlist.json'), 'w') as f:
-    json.dump(playlist_data, f, indent=4)  # Write data with pretty-print formatting

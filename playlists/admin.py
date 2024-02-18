@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from .models import Artist, Album, Track, Playlist
+from .models import Artist, Album, Track
 
 
 @admin.register(Artist)
@@ -29,9 +29,9 @@ class TrackAdmin(admin.ModelAdmin):
     search_fields = ['artists', 'track_name']
 
 
-@admin.register(Playlist)
-class PlaylistAdmin(admin.ModelAdmin):
-    list_display = ['playlist_id', 'playlist_name', 'playlist_description',
-                    'playlist_track_length', 'created_at', 'updated_at']
-    ordering = ['playlist_id', 'playlist_name']
-    search_fields = ['playlist_name', 'tracks']
+# @admin.register(Playlist)
+# class PlaylistAdmin(admin.ModelAdmin):
+#     list_display = ['playlist_id', 'playlist_name', 'playlist_description',
+#                     'playlist_track_length', 'created_at', 'updated_at']
+#     ordering = ['playlist_id', 'playlist_name']
+#     search_fields = ['playlist_name', 'tracks']
