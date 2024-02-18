@@ -1,107 +1,76 @@
+from django.core.management.base import BaseCommand
 import os
 import spotipy
 import json
-import spotipy.util as util
-from spotipy.oauth2 import SpotifyClientCredentials, SpotifyOAuth
-from dotenv import load_dotenv
+from spotipy.oauth2 import SpotifyOAuth
 
-# Load environment variables from a .env file
-load_dotenv()
 
-# Retrieve Spotify API credentials from environment variables
-SPOTIPY_CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
-SPOTIPY_CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
-SPOTIPY_REDIRECT_URI = os.getenv("SPOTIPY_REDIRECT_URI")
+class Command(BaseCommand):
+    help = 'Fetches data from a Spotify playlist and saves it to a JSON file'
 
-# Initialize Spotify client with OAuth for user authorization
-spotify = spotipy.Spotify(auth_manager=SpotifyOAuth(scope="playlist-modify-private playlist-read-private"))
-username = 12139200429  # Placeholder for user ID, consider replacing with dynamic user input
+    def handle(self, *args, **options):
+        spotify = spotipy.Spotify(auth_manager=SpotifyOAuth(scope="playlist-modify-private playlist-read-private"))
+        username = '12139200429'  # Update this with the actual user ID or retrieve dynamically
 
-# Attempt to get user token, remove cache and retry if failed
-try:
-    token = util.prompt_for_user_token(username)
-except:
-    os.remove(f".cache-{username}")  # Remove cached token file
-    token = util.prompt_for_user_token(username)  # Retry token generation
+        # Function to extract playlist ID from a Spotify playlist link
+        def extract_playlist_id(playlist_link):
+            return playlist_link.split("playlist/")[1].split("?si=")[0]
 
-def fetch_playlist_data(playlist_id):
-    formatted_data = []  # List to hold processed tracks data
-    auto_incrementing_album_id = 690000000  # Starting point for custom album ID
-    offset = 0  # Offset for pagination
+        # Function to fetch playlist data
+        def fetch_playlist_data(playlist_id):
+            formatted_data = []  # List to hold processed tracks data
+            auto_incrementing_album_id = 690000000  # Starting point for custom album ID
+            offset = 0  # Offset for pagination
 
-    # Loop to handle pagination and fetch all tracks
-    while True:
-        results = spotify.playlist_tracks(playlist_id, offset=offset)  # Fetch tracks with current offset
-        playlist_tracks = results['items']  # Extract tracks from results
+            # Loop to handle pagination and fetch all tracks
+            while True:
+                results = spotify.playlist_tracks(playlist_id, offset=offset)  # Fetch tracks with current offset
+                playlist_tracks = results['items']  # Extract tracks from results
 
-        if not playlist_tracks:  # Exit loop if no more tracks are returned
-            break
+                if not playlist_tracks:  # Exit loop if no more tracks are returned
+                    break
 
-        # Process each track in the current batch
-        for item in playlist_tracks:
-            track = item['track']
-            if track:  # Ensure track data is not None
-                # Compile relevant track information into a dictionary
                 # Process each track in the current batch
                 for item in playlist_tracks:
                     track = item['track']
                     if track:  # Ensure track data is not None
-                        # Initialize an empty dictionary for artists
                         artists_dict = {}
-                        # Loop through each artist in the track's artists list
                         for i, artist in enumerate(track['artists']):
-                            # Create a new key for each artist in the format "artist1", "artist2", etc.
                             artist_key = f"artist{i + 1}"
-                            # Assign a dictionary with artist name and Spotify URI to the new key
                             artists_dict[artist_key] = {
                                 "artist_name": artist['name'],
-                                "artist_spotify_uri": artist['id'],
-                                "artist_apple_uri": "",
-                                "artist_youtube_uri": ""
+                                "artist_spotify_uri": artist['id']
                             }
 
-                        # Compile relevant track information into a dictionary
                         track_data = {
                             'track_name': track['name'],
                             'track_id': track['external_ids'].get('isrc', ''),
-                            # Use ISRC as a universal track ID, default to empty string if not found
                             'duration_ms': track['duration_ms'],
                             'explicit': track['explicit'],
                             'spotify_track_uri': track['id'],
                             'spotify_album_uri': track['album']['id'],
-                            'apple_album_uri': "",
-                            'youtube_album_uri': "",
-                            'youtube_track_uri': "",
                             'track_number': track['track_number'],
-                            'artists': artists_dict,  # Use the newly created artists_dict
+                            'artists': artists_dict,
                             'album_art': track['album']['images'][0]['url'] if track['album']['images'] else None,
-                            # Album cover art URL, None if not available
                             'album_id': auto_incrementing_album_id,
                             'album_name': track['album']['name'],
                             'album_total_tracks': track['album']['total_tracks'],
                             'release_date': track['album']['release_date']
                         }
-                        auto_incrementing_album_id += 1  # Increment custom album ID for next track
-                        formatted_data.append(track_data)  # Add processed track data to list
+                        auto_incrementing_album_id += 1
+                        formatted_data.append(track_data)
 
-        offset += len(playlist_tracks)  # Increase offset for next batch of tracks
+                offset += len(playlist_tracks)
 
-    return formatted_data  # Return all processed tracks data
+            return formatted_data
 
-# Replace placeholder with actual Spotify playlist ID
-playlist_id = '77hk687w9J5zwU9fJgsnyW' #eventually we will grab the information from the playlist home page
-playlist_data = fetch_playlist_data(playlist_id)  # Fetch all data for specified playlist
+        # Prompt for playlist link and fetch data
+        playlist_link = input('Paste in your playlist link: ')
+        playlist_id = extract_playlist_id(playlist_link)
+        playlist_data = fetch_playlist_data(playlist_id)
 
-# Display the first 10 entries of the playlist data for quick inspection
-first_10_entries = playlist_data[:10]
-first_10_entries_str = json.dumps(first_10_entries, indent=4)
-print(first_10_entries_str)
+        # Save fetched data to a JSON file
+        with open('sample_playlist.json', 'w') as f:
+            json.dump(playlist_data, f, indent=4)
 
-# Determine the directory two levels up from the script's location
-target_dir = os.path.join(os.path.dirname(__file__), '../..', '..')
-
-os.makedirs(target_dir, exist_ok=True)  # Create target directory if it doesn't exist
-
-# Save the fetched playlist data to a JSON file in the target directory
-with open(os.path.join(target_dir, 'sample_playlist.json'), 'w') as f:
-    json.dump(playlist_data, f, indent=4)  # Write data with pretty-print formatting
+        self.stdout.write(self.style.SUCCESS('Successfully fetched playlist data'))
