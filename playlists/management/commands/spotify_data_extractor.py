@@ -5,6 +5,7 @@ import json
 from spotipy.oauth2 import SpotifyOAuth
 
 
+
 class Command(BaseCommand):
     help = 'Fetches data from a Spotify playlist and saves it to a JSON file'
 
@@ -43,6 +44,7 @@ class Command(BaseCommand):
                             }
 
                         track_data = {
+                            'spotify_playlist_id': playlist_id,
                             'track_name': track['name'],
                             'track_id': track['external_ids'].get('isrc', ''),
                             'duration_ms': track['duration_ms'],

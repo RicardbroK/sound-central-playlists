@@ -5,7 +5,7 @@ to start, clone the repo using visual studio code.
 once project is open in vs code,
 run a terminal and cd to main directory
 
-##### While in the django_react_roomscheduler folder run:
+##### While in the sound_central_playlists folder run:
 
 ```cmd
 
@@ -14,7 +14,7 @@ docker build -t soundcentral -f dockerfile.yaml .
 
 Then to start the database run:
 ```cmd
-    docker run --name SoundCentral -p 5432:5432 -d soundcentral
+docker run --name SoundCentral -p 5432:5432 -d soundcentral
 ```
 
 `python manage.py runserver `
@@ -34,11 +34,11 @@ git checkout -b featurename
 ```cmd
 Python manage.py migrate
 ```
-### Were file changes just made?
+### Did you make file changes just made? Check to see that they were added to the git
 ```cmd
 Git status
 ```
-### clean out any unneeded files (pycache, .env, etc)
+### clean out any unneeded files (pycache, .env, etc.)
 ```cmd
 Git rm -f <path to file>
 ```

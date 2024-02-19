@@ -3,6 +3,7 @@ from datetime import datetime
 from django.core.management.base import BaseCommand
 from playlists.models import Artist, Album, Track
 
+
 class Command(BaseCommand):
     help = 'Seeds the database with data from a JSON file'
 

@@ -68,15 +68,18 @@ class Track(models.Model):
         return f"{self.track_name} - {artist_names} (ID: {self.track_id})"
 
 
-# class Playlist(models.Model):
-#     playlist_id = models.AutoField(primary_key=True)
-#     user_id = models.CharField(max_length=255, blank=True, default='', null=True)
-#     tracks = models.ManyToManyField(Track)
-#     playlist_name = models.CharField(max_length=255)
-#     playlist_description = models.TextField(blank=True, default='')
-#     playlist_track_length = models.IntegerField(blank=True, default=0)
-#     created_at = models.DateTimeField(auto_now_add=True)
-#     updated_at = models.DateTimeField(auto_now=True)
-#
-#     def __str__(self):
-#         return f"{self.playlist_name} - (ID: {self.playlist_id})"
+class Playlist(models.Model):
+    playlist_id = models.AutoField(primary_key=True)
+    user_id = models.CharField(max_length=255, blank=True, default='', null=True)
+    tracks = models.ManyToManyField(Track)
+    playlist_name = models.CharField(max_length=255)
+    playlist_description = models.TextField(blank=True, default='')
+    playlist_track_length = models.IntegerField(blank=True, default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    spotify_playlist_uri = models.URLField(blank=True, default='')
+    apple_playlist_uri = models.URLField(blank=True, default='')
+    youtube_playlist_uri = models.URLField(blank=True, default='')
+
+    def __str__(self):
+        return f"{self.playlist_name} - (ID: {self.playlist_id})"

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Artist, Album, Track, Genre
+from .models import Artist, Album, Track, Genre, Playlist
 
 
 class GenreSerializer(serializers.ModelSerializer):
@@ -39,10 +39,10 @@ class TrackSerializer(serializers.ModelSerializer):
                   'apple_music_track_uri', 'youtube_music_track_uri', 'track_number']
 
 
-# class PlaylistSerializer(serializers.ModelSerializer):
-#     tracks = TrackSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Track
-#
-#     class Meta:
-#         model = Playlist
-#         fields = ['playlist_id', 'tracks', 'playlist_name', 'playlist_description', 'playlist_track_length',
-#                   'created_at', 'updated_at']
+class PlaylistSerializer(serializers.ModelSerializer):
+    tracks = TrackSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Track
+
+    class Meta:
+        model = Playlist
+        fields = ['playlist_id', 'tracks', 'playlist_name', 'playlist_description', 'playlist_track_length',
+                  'created_at', 'updated_at', 'youtube_playlist_uri', 'apple_playlist_uri', 'spotify_playlist_uri']
