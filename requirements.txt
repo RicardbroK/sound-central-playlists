@@ -5,3 +5,4 @@ requests ~= 2.31.0
 djangorestframework~=3.14.0
 psycopg[binary]
 spotipy
+requests==2.31.0

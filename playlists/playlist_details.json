@@ -1,0 +1,1225 @@
+[
+    {
+        "spotify_playlist_id": "7qrp2GyeQzzW8ApY10J3lG",
+        "creator_name": "Harry McLane",
+        "playlist_name": "Final Stretch",
+        "playlist_description": "Bumping into the my senior year with the fucking bangers \ud83e\udd74\ud83e\udd74\ud83d\ude2b\ud83e\uddfd\ud83d\udc85\ud83e\udee1\ud83d\udcaa\ud83c\udffc\ud83d\ude08\ud83d\udcaf\u2705\ud83d\udc79\ud83e\uddb9\u200d\u2642\ufe0f\ud83e\udec3\ud83c\udffc\ud83e\udec3\ud83c\udffd\ud83e\udec3\ud83c\udffe\ud83e\udec3\ud83c\udfff\ud83e\udec3\ud83c\udffbwait why the fuck are there two different white pregnant men? That shits wild\u2026. Anyways good fucking luck my boy, the goal is all A\u2019s baby, bring that gpa up \ud83d\udcc8\ud83d\udcc8\ud83d\udcc8 don\u2019t fuck around you gotta kill it, but you will I have faith",
+        "playlist_image": "https://mosaic.scdn.co/640/ab67616d0000b2734f0fd9dad63977146e685700ab67616d0000b2736ed9aef791159496b286179fab67616d0000b273881d8d8378cd01099babcd44ab67616d0000b273e94c665ca4668b3aac7c72d6",
+        "total_tracks": 55,
+        "playlist_tracks": [
+            {
+                "track_name": "Get It Together",
+                "track_id": "USCM51700045",
+                "duration_ms": 250337,
+                "explicit": true,
+                "spotify_track_uri": "7y6c07pgjZvtHI9kuMVqk1",
+                "spotify_album_uri": "1lXY618HWkwYKJWBRYR4MK",
+                "track_number": 5,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "artist2": {
+                        "artist_name": "Black Coffee",
+                        "artist_spotify_uri": "6wMr4zKPrrR0UVz08WtUWc"
+                    },
+                    "artist3": {
+                        "artist_name": "Jorja Smith",
+                        "artist_spotify_uri": "1CoZyIx7UvdxT5c8UkMzHd"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2734f0fd9dad63977146e685700",
+                "album_name": "More Life",
+                "album_total_tracks": 22,
+                "release_date": "2017-03-18"
+            },
+            {
+                "track_name": "Passionfruit",
+                "track_id": "USCM51700072",
+                "duration_ms": 298940,
+                "explicit": true,
+                "spotify_track_uri": "5mCPDVBb16L4XQwDdbRUpz",
+                "spotify_album_uri": "1lXY618HWkwYKJWBRYR4MK",
+                "track_number": 3,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2734f0fd9dad63977146e685700",
+                "album_name": "More Life",
+                "album_total_tracks": 22,
+                "release_date": "2017-03-18"
+            },
+            {
+                "track_name": "Outer Space",
+                "track_id": "AEA2L2292692",
+                "duration_ms": 233894,
+                "explicit": false,
+                "spotify_track_uri": "0Z8Kl4rlFUUksNxLATsmxx",
+                "spotify_album_uri": "3wedIXfe0Y9KAxAPWPBhWh",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Nazda",
+                        "artist_spotify_uri": "1L8lUy3lsKiJ7Ogomq3o44"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273e9018262a618d0d59f4e2a7a",
+                "album_name": "Outer Space",
+                "album_total_tracks": 1,
+                "release_date": "2022-08-02"
+            },
+            {
+                "track_name": "TELEKINESIS (feat. SZA & Future)",
+                "track_id": "USSM12305019",
+                "duration_ms": 353754,
+                "explicit": true,
+                "spotify_track_uri": "1i9lZvlaDdWDPyXEE95aiq",
+                "spotify_album_uri": "18NOKLkZETa4sWwLMIm0UZ",
+                "track_number": 18,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    },
+                    "artist2": {
+                        "artist_name": "SZA",
+                        "artist_spotify_uri": "7tYKF4w9nC0nq9CsPZTHyP"
+                    },
+                    "artist3": {
+                        "artist_name": "Future",
+                        "artist_spotify_uri": "1RyvyyTE3xzB2ZywiAwp0i"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
+                "album_name": "UTOPIA",
+                "album_total_tracks": 19,
+                "release_date": "2023-07-28"
+            },
+            {
+                "track_name": "MELTDOWN (feat. Drake)",
+                "track_id": "USSM12305021",
+                "duration_ms": 246133,
+                "explicit": true,
+                "spotify_track_uri": "67nepsnrcZkowTxMWigSbb",
+                "spotify_album_uri": "18NOKLkZETa4sWwLMIm0UZ",
+                "track_number": 7,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    },
+                    "artist2": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
+                "album_name": "UTOPIA",
+                "album_total_tracks": 19,
+                "release_date": "2023-07-28"
+            },
+            {
+                "track_name": "Nonviolent Communication (Metro Boomin & James Blake, A$AP Rocky, 21 Savage)",
+                "track_id": "USUM72308569",
+                "duration_ms": 209533,
+                "explicit": false,
+                "spotify_track_uri": "3xMnPIvsaWwzHzqqzaihEX",
+                "spotify_album_uri": "1bwbZJ6khPJyVpOaqgKsoZ",
+                "track_number": 11,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Metro Boomin",
+                        "artist_spotify_uri": "0iEtIxbK0KxaSlF7G42ZOp"
+                    },
+                    "artist2": {
+                        "artist_name": "James Blake",
+                        "artist_spotify_uri": "53KwLdlmrlCelAZMaLVZqU"
+                    },
+                    "artist3": {
+                        "artist_name": "A$AP Rocky",
+                        "artist_spotify_uri": "13ubrt8QOOCPljQ2FL1Kca"
+                    },
+                    "artist4": {
+                        "artist_name": "21 Savage",
+                        "artist_spotify_uri": "1URnnhqYAYcrqrcwql10ft"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2736ed9aef791159496b286179f",
+                "album_name": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE)",
+                "album_total_tracks": 13,
+                "release_date": "2023-06-02"
+            },
+            {
+                "track_name": "Get Busy",
+                "track_id": "USAT20202575",
+                "duration_ms": 211666,
+                "explicit": false,
+                "spotify_track_uri": "6bK9BH9Ts8Gj5JFvnQkzak",
+                "spotify_album_uri": "1aYcfMrpGIuPNZhDWMJcnV",
+                "track_number": 5,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Sean Paul",
+                        "artist_spotify_uri": "3Isy6kedDrgPYoTS1dazA9"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b27370a92ddbe10010f1c2f95da1",
+                "album_name": "Dutty Rock (20th Anniversary)",
+                "album_total_tracks": 21,
+                "release_date": "2022-11-11"
+            },
+            {
+                "track_name": "GOD'S COUNTRY",
+                "track_id": "USSM12305008",
+                "duration_ms": 127991,
+                "explicit": true,
+                "spotify_track_uri": "04WxWo7XeVyx22xEsrWRUb",
+                "spotify_album_uri": "18NOKLkZETa4sWwLMIm0UZ",
+                "track_number": 5,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
+                "album_name": "UTOPIA",
+                "album_total_tracks": 19,
+                "release_date": "2023-07-28"
+            },
+            {
+                "track_name": "Flooded The Face",
+                "track_id": "USAT22306846",
+                "duration_ms": 192727,
+                "explicit": true,
+                "spotify_track_uri": "4daEMLSZCgZ2Mt7gNm2SRa",
+                "spotify_album_uri": "2ua5bFkZLZl1lIgKWtYZIz",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Lil Uzi Vert",
+                        "artist_spotify_uri": "4O15NlyKLIASxsJ0PrXPfz"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273a0e7694a73abed7372474d69",
+                "album_name": "Pink Tape",
+                "album_total_tracks": 26,
+                "release_date": "2023-06-30"
+            },
+            {
+                "track_name": "Ms. Poli Sci",
+                "track_id": "QM24S2205625",
+                "duration_ms": 128703,
+                "explicit": true,
+                "spotify_track_uri": "3imYkN34og7muZbkSZWLUW",
+                "spotify_album_uri": "7qypqH6zU0ZowehywC9395",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Paul Russell",
+                        "artist_spotify_uri": "4zoRNhOhsGX3w8yBAnFSQ8"
+                    },
+                    "artist2": {
+                        "artist_name": "Khary",
+                        "artist_spotify_uri": "4489Zgs4RNq2ZtSh3UnOxZ"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273b8c7ca1a63bfcd0a74539cef",
+                "album_name": "Ms. Poli Sci",
+                "album_total_tracks": 1,
+                "release_date": "2022-11-11"
+            },
+            {
+                "track_name": "10 Freaky Girls (with 21 Savage)",
+                "track_id": "USUG11802481",
+                "duration_ms": 208293,
+                "explicit": true,
+                "spotify_track_uri": "0AluA5RNsa4Cx6XRhf2hWZ",
+                "spotify_album_uri": "3IO8IPjwXuzPJnoaqkwYrj",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Metro Boomin",
+                        "artist_spotify_uri": "0iEtIxbK0KxaSlF7G42ZOp"
+                    },
+                    "artist2": {
+                        "artist_name": "21 Savage",
+                        "artist_spotify_uri": "1URnnhqYAYcrqrcwql10ft"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2732887f8c05b5a9f1cb105be29",
+                "album_name": "NOT ALL HEROES WEAR CAPES (Deluxe)",
+                "album_total_tracks": 26,
+                "release_date": "2018-11-06"
+            },
+            {
+                "track_name": "Jail pt 2",
+                "track_id": "USUM72116309",
+                "duration_ms": 297000,
+                "explicit": false,
+                "spotify_track_uri": "2H8jWuNmluerTEsuh8Gu6y",
+                "spotify_album_uri": "5CnpZV3q5BcESefcB3WJmz",
+                "track_number": 24,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273cad190f1a73c024e5a40dddd",
+                "album_name": "Donda",
+                "album_total_tracks": 27,
+                "release_date": "2021-08-29"
+            },
+            {
+                "track_name": "Doomsday (with Juice WRLD & Cordae)",
+                "track_id": "USUG12303674",
+                "duration_ms": 150967,
+                "explicit": true,
+                "spotify_track_uri": "3bkpVSoNvBkvt9LJMFT5at",
+                "spotify_album_uri": "0uGrHjpQjFttH2ztKbouyb",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Lyrical Lemonade",
+                        "artist_spotify_uri": "3VrGfWE8YdYMK4ySpnE0ly"
+                    },
+                    "artist2": {
+                        "artist_name": "Juice WRLD",
+                        "artist_spotify_uri": "4MCBfE4596Uoi2O4DtmEMz"
+                    },
+                    "artist3": {
+                        "artist_name": "Cordae",
+                        "artist_spotify_uri": "0huGjMyP507tBCARyzSkrv"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2737a5767f9da2c8a4265f035d4",
+                "album_name": "Doomsday",
+                "album_total_tracks": 1,
+                "release_date": "2023-06-23"
+            },
+            {
+                "track_name": "i",
+                "track_id": "USUM71414120",
+                "duration_ms": 231933,
+                "explicit": true,
+                "spotify_track_uri": "7wdzLe2Gsx1RGqbvYZHASz",
+                "spotify_album_uri": "51C65YqHrDODM1hD5FEL5x",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kendrick Lamar",
+                        "artist_spotify_uri": "2YZyLoL8N0Wb9xBt1NhZWg"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2736d89f336fbfbdf2089701da0",
+                "album_name": "i",
+                "album_total_tracks": 1,
+                "release_date": "2014-09-23"
+            },
+            {
+                "track_name": "MY EYES",
+                "track_id": "USSM12305007",
+                "duration_ms": 251249,
+                "explicit": true,
+                "spotify_track_uri": "4kjI1gwQZRKNDkw1nI475M",
+                "spotify_album_uri": "18NOKLkZETa4sWwLMIm0UZ",
+                "track_number": 4,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
+                "album_name": "UTOPIA",
+                "album_total_tracks": 19,
+                "release_date": "2023-07-28"
+            },
+            {
+                "track_name": "Search & Rescue",
+                "track_id": "USUG12301601",
+                "duration_ms": 272112,
+                "explicit": true,
+                "spotify_track_uri": "7aRCf5cLOFN1U7kvtChY1G",
+                "spotify_album_uri": "67WUCOjyl44d8fAFzHONjW",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273cace8a4b2ff924c9e12e3a96",
+                "album_name": "Search & Rescue",
+                "album_total_tracks": 1,
+                "release_date": "2023-04-07"
+            },
+            {
+                "track_name": "90210 (feat. Kacy Hill)",
+                "track_id": "USSM11506731",
+                "duration_ms": 339066,
+                "explicit": true,
+                "spotify_track_uri": "51EC3I1nQXpec4gDk0mQyP",
+                "spotify_album_uri": "4PWBTB6NYSKQwfo79I3prg",
+                "track_number": 5,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    },
+                    "artist2": {
+                        "artist_name": "Kacy Hill",
+                        "artist_spotify_uri": "4dYQmk5ma04mZ1KJ9KkAQK"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273715973050587fe3c93033aad",
+                "album_name": "Rodeo",
+                "album_total_tracks": 16,
+                "release_date": "2015-09-04"
+            },
+            {
+                "track_name": "Father Stretch My Hands Pt. 1",
+                "track_id": "USUM71603067",
+                "duration_ms": 135920,
+                "explicit": true,
+                "spotify_track_uri": "4KW1lqgSr8TKrvBII0Brf8",
+                "spotify_album_uri": "7gsWAHLeT0w7es6FofOXk1",
+                "track_number": 2,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2732a7db835b912dc5014bd37f4",
+                "album_name": "The Life Of Pablo",
+                "album_total_tracks": 20,
+                "release_date": "2016-06-10"
+            },
+            {
+                "track_name": "FE!N (feat. Playboi Carti)",
+                "track_id": "USSM12305010",
+                "duration_ms": 191700,
+                "explicit": true,
+                "spotify_track_uri": "42VsgItocQwOQC3XWZ8JNA",
+                "spotify_album_uri": "18NOKLkZETa4sWwLMIm0UZ",
+                "track_number": 8,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    },
+                    "artist2": {
+                        "artist_name": "Playboi Carti",
+                        "artist_spotify_uri": "699OTQXzgjhIYAHMy9RyPD"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
+                "album_name": "UTOPIA",
+                "album_total_tracks": 19,
+                "release_date": "2023-07-28"
+            },
+            {
+                "track_name": "Surround Sound (feat. 21 Savage & Baby Tate)",
+                "track_id": "USUM72123571",
+                "duration_ms": 229938,
+                "explicit": true,
+                "spotify_track_uri": "1udwFobQ1JoOdWPQrp2b6u",
+                "spotify_album_uri": "4rJDCELWL0fjdmN9Gn4f4g",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "JID",
+                        "artist_spotify_uri": "6U3ybJ9UHNKEdsH7ktGBZ7"
+                    },
+                    "artist2": {
+                        "artist_name": "21 Savage",
+                        "artist_spotify_uri": "1URnnhqYAYcrqrcwql10ft"
+                    },
+                    "artist3": {
+                        "artist_name": "Baby Tate",
+                        "artist_spotify_uri": "3IJ21966TwNZI24MwZHMu4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273cae6e44dcc84e2035c3ad092",
+                "album_name": "The Forever Story (Extended Version)",
+                "album_total_tracks": 16,
+                "release_date": "2022-10-31"
+            },
+            {
+                "track_name": "I Wonder",
+                "track_id": "USUM70749085",
+                "duration_ms": 243440,
+                "explicit": true,
+                "spotify_track_uri": "7rbECVPkY5UODxoOUVKZnA",
+                "spotify_album_uri": "4SZko61aMnmgvNhfhgTuD3",
+                "track_number": 4,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a",
+                "album_name": "Graduation",
+                "album_total_tracks": 14,
+                "release_date": "2007-09-11"
+            },
+            {
+                "track_name": "Flashing Lights",
+                "track_id": "USUM70749095",
+                "duration_ms": 237506,
+                "explicit": true,
+                "spotify_track_uri": "5TRPicyLGbAF2LGBFbHGvO",
+                "spotify_album_uri": "4SZko61aMnmgvNhfhgTuD3",
+                "track_number": 9,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    },
+                    "artist2": {
+                        "artist_name": "Dwele",
+                        "artist_spotify_uri": "7u6LfVyYpEzMpHLL7jTyvU"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a",
+                "album_name": "Graduation",
+                "album_total_tracks": 14,
+                "release_date": "2007-09-11"
+            },
+            {
+                "track_name": "Wicked",
+                "track_id": "QZDA72263658",
+                "duration_ms": 123789,
+                "explicit": true,
+                "spotify_track_uri": "79nJFSXOGCb5tAM6pzhSCi",
+                "spotify_album_uri": "3s8eNk47rNa9CXdK2exLUo",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Say True God?",
+                        "artist_spotify_uri": "47gUwvUoNtEAUhUyGMBSjr"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b27357fab530252acdcc516d6804",
+                "album_name": "Wicked",
+                "album_total_tracks": 1,
+                "release_date": "2022-03-24"
+            },
+            {
+                "track_name": "We Set The Trends (feat. Migos & \u200eJuelz Santana) - Remix",
+                "track_id": "USUYG1421941",
+                "duration_ms": 217815,
+                "explicit": true,
+                "spotify_track_uri": "3KNxJvz0dM6aPb6bVJdyKi",
+                "spotify_album_uri": "7JZ79IAZ6xFXBqbzsb06YE",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Jim Jones",
+                        "artist_spotify_uri": "6AMa1VFQ7qCi61tCRtVWXe"
+                    },
+                    "artist2": {
+                        "artist_name": "Lil Wayne",
+                        "artist_spotify_uri": "55Aa2cqylxrFIXC767Z865"
+                    },
+                    "artist3": {
+                        "artist_name": "DJ Khaled",
+                        "artist_spotify_uri": "0QHgL1lAIqAw0HtD7YldmP"
+                    },
+                    "artist4": {
+                        "artist_name": "Migos",
+                        "artist_spotify_uri": "6oMuImdp5ZcFhWP0ESe6mG"
+                    },
+                    "artist5": {
+                        "artist_name": "Juelz Santana",
+                        "artist_spotify_uri": "6Uh8uJyN9g7oFjDK16nJgb"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273189ed48c026a2224da9deb21",
+                "album_name": "We Set The Trends (Remix) [feat. \u200eMigos & Juelz Santana]",
+                "album_total_tracks": 1,
+                "release_date": "2022-04-08"
+            },
+            {
+                "track_name": "Paradise",
+                "track_id": "USAT21504173",
+                "duration_ms": 172703,
+                "explicit": true,
+                "spotify_track_uri": "7pudclCl5P99Me3P5F9hPC",
+                "spotify_album_uri": "5WrbKW1nRN4vSsu70uizxX",
+                "track_number": 12,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Lil Uzi Vert",
+                        "artist_spotify_uri": "4O15NlyKLIASxsJ0PrXPfz"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273dc7fa10440eb5ddd8d90a8aa",
+                "album_name": "Luv Is Rage",
+                "album_total_tracks": 12,
+                "release_date": "2015-12-18"
+            },
+            {
+                "track_name": "Only",
+                "track_id": "USCM51400340",
+                "duration_ms": 312026,
+                "explicit": true,
+                "spotify_track_uri": "4MRT0dDbhqFKl67WzhUbSw",
+                "spotify_album_uri": "5ooCuPIk58IwSo6DRr1JCu",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Nicki Minaj",
+                        "artist_spotify_uri": "0hCNtLu0JehylgoiP8L4Gh"
+                    },
+                    "artist2": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "artist3": {
+                        "artist_name": "Lil Wayne",
+                        "artist_spotify_uri": "55Aa2cqylxrFIXC767Z865"
+                    },
+                    "artist4": {
+                        "artist_name": "Chris Brown",
+                        "artist_spotify_uri": "7bXgB6jMjp9ATFy66eO08Z"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2730f79d1616e3b02368d41f458",
+                "album_name": "The Pinkprint (Deluxe)",
+                "album_total_tracks": 19,
+                "release_date": "2014-12-15"
+            },
+            {
+                "track_name": "I'm Geekin (feat. NLE Choppa & BIA) - Remix",
+                "track_id": "USSM12303952",
+                "duration_ms": 189026,
+                "explicit": true,
+                "spotify_track_uri": "5TGkqW4UfYV1jQVLrhz4Yc",
+                "spotify_album_uri": "00Lj9HDscsRLpbBG3stE2g",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "DDG",
+                        "artist_spotify_uri": "0WK3H9OErSn5zKOkOV5egm"
+                    },
+                    "artist2": {
+                        "artist_name": "NLE Choppa",
+                        "artist_spotify_uri": "0ErzCpIMyLcjPiwT4elrtZ"
+                    },
+                    "artist3": {
+                        "artist_name": "BIA",
+                        "artist_spotify_uri": "6veh5zbFpm31XsPdjBgPER"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2735d45527dc4baddcd6c630d9a",
+                "album_name": "I'm Geekin (feat. NLE Choppa & BIA) [Remix]",
+                "album_total_tracks": 1,
+                "release_date": "2023-06-16"
+            },
+            {
+                "track_name": "fukumean",
+                "track_id": "USAT22306575",
+                "duration_ms": 125040,
+                "explicit": true,
+                "spotify_track_uri": "4rXLjWdF2ZZpXCVTfWcshS",
+                "spotify_album_uri": "5qmZefgh78fN3jsyPPlvuw",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Gunna",
+                        "artist_spotify_uri": "2hlmm7s2ICUX0LVIhVFlZQ"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273017d5e26552345c4b1575b6c",
+                "album_name": "a Gift & a Curse",
+                "album_total_tracks": 15,
+                "release_date": "2023-06-16"
+            },
+            {
+                "track_name": "Marvins Room",
+                "track_id": "USCM51100267",
+                "duration_ms": 347226,
+                "explicit": true,
+                "spotify_track_uri": "047fCsbO4NdmwCBn8pcUXl",
+                "spotify_album_uri": "6X1x82kppWZmDzlXXK3y3q",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273c7ea04a9b455e3f68ef82550",
+                "album_name": "Take Care (Deluxe)",
+                "album_total_tracks": 19,
+                "release_date": "2011-11-15"
+            },
+            {
+                "track_name": "Solo",
+                "track_id": "USSM11701733",
+                "duration_ms": 265996,
+                "explicit": true,
+                "spotify_track_uri": "4lH6nENd1y81jp7Yt9lTBX",
+                "spotify_album_uri": "7K6OykPbezfgKgBufihn6X",
+                "track_number": 16,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Future",
+                        "artist_spotify_uri": "1RyvyyTE3xzB2ZywiAwp0i"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2737567ec7d3c07783e4f2111e0",
+                "album_name": "HNDRXX",
+                "album_total_tracks": 19,
+                "release_date": "2017-07-27"
+            },
+            {
+                "track_name": "P power (feat. Drake)",
+                "track_id": "QMCE32200042",
+                "duration_ms": 193346,
+                "explicit": true,
+                "spotify_track_uri": "0lEjxUUlKqjqXrVlIHFduD",
+                "spotify_album_uri": "02uWB8Kekadkl3yGBoOOcx",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Gunna",
+                        "artist_spotify_uri": "2hlmm7s2ICUX0LVIhVFlZQ"
+                    },
+                    "artist2": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b27314d91ebdd6d7e2931322cc1a",
+                "album_name": "DS4EVER",
+                "album_total_tracks": 20,
+                "release_date": "2022-01-13"
+            },
+            {
+                "track_name": "Feel No Ways",
+                "track_id": "USCM51600067",
+                "duration_ms": 240653,
+                "explicit": true,
+                "spotify_track_uri": "3cjF2OFRmip8spwZYQRKxP",
+                "spotify_album_uri": "40GMAhriYJRO1rsY4YdrZb",
+                "track_number": 4,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2739416ed64daf84936d89e671c",
+                "album_name": "Views",
+                "album_total_tracks": 20,
+                "release_date": "2016-05-06"
+            },
+            {
+                "track_name": "Peaches & Eggplants (feat. 21 Savage)",
+                "track_id": "USRC12300570",
+                "duration_ms": 203813,
+                "explicit": true,
+                "spotify_track_uri": "2KcQ0PbPj0O3P48B9YX7iN",
+                "spotify_album_uri": "1UbeEAPS49eulB659XSU9g",
+                "track_number": 8,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Young Nudy",
+                        "artist_spotify_uri": "5yPzzu25VzEk8qrGTLIrE1"
+                    },
+                    "artist2": {
+                        "artist_name": "21 Savage",
+                        "artist_spotify_uri": "1URnnhqYAYcrqrcwql10ft"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273209981a18ed76b7c72e673ea",
+                "album_name": "Gumbo",
+                "album_total_tracks": 13,
+                "release_date": "2023-02-28"
+            },
+            {
+                "track_name": "Hurts Me",
+                "track_id": "QZJ842003380",
+                "duration_ms": 140800,
+                "explicit": false,
+                "spotify_track_uri": "0RBw4ODUQPO4cuAOZtBGga",
+                "spotify_album_uri": "5fMG2nwVGN3fBofLm9CB0x",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Tory Lanez",
+                        "artist_spotify_uri": "2jku7tDXc6XoB6MO2hFuqg"
+                    },
+                    "artist2": {
+                        "artist_name": "Trippie Redd",
+                        "artist_spotify_uri": "6Xgp2XMz1fhVYe7i6yNAax"
+                    },
+                    "artist3": {
+                        "artist_name": "Yoko Gold",
+                        "artist_spotify_uri": "24WdRSLiIlFrqK2FqxGLVm"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2731dba361996f5b70c1df2b4ee",
+                "album_name": "Hurts Me",
+                "album_total_tracks": 1,
+                "release_date": "2023-06-27"
+            },
+            {
+                "track_name": "family ties (with Kendrick Lamar)",
+                "track_id": "USSM12105949",
+                "duration_ms": 252262,
+                "explicit": true,
+                "spotify_track_uri": "3QFInJAm9eyaho5vBzxInN",
+                "spotify_album_uri": "3r46DPIQeBQbjvjjV5mXGg",
+                "track_number": 10,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Baby Keem",
+                        "artist_spotify_uri": "5SXuuuRpukkTvsLuUknva1"
+                    },
+                    "artist2": {
+                        "artist_name": "Kendrick Lamar",
+                        "artist_spotify_uri": "2YZyLoL8N0Wb9xBt1NhZWg"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2731bfa23b13d0504fb90c37b39",
+                "album_name": "The Melodic Blue",
+                "album_total_tracks": 16,
+                "release_date": "2021-09-10"
+            },
+            {
+                "track_name": "Fair Trade (with Travis Scott)",
+                "track_id": "USUG12104402",
+                "duration_ms": 291175,
+                "explicit": true,
+                "spotify_track_uri": "40iJIUlhi6renaREYGeIDS",
+                "spotify_album_uri": "3SpBlxme9WbeQdI9kx7KAV",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "artist2": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273cd945b4e3de57edd28481a3f",
+                "album_name": "Certified Lover Boy",
+                "album_total_tracks": 21,
+                "release_date": "2021-09-03"
+            },
+            {
+                "track_name": "Life Is Good (feat. Drake)",
+                "track_id": "USSM11914962",
+                "duration_ms": 237735,
+                "explicit": true,
+                "spotify_track_uri": "5yY9lUy8nbvjM1Uyo1Uqoc",
+                "spotify_album_uri": "5uCEoLCj3ZZZ1EtzQdQWVl",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Future",
+                        "artist_spotify_uri": "1RyvyyTE3xzB2ZywiAwp0i"
+                    },
+                    "artist2": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2738a01c7b77a34378a62f46402",
+                "album_name": "Life Is Good (feat. Drake)",
+                "album_total_tracks": 1,
+                "release_date": "2020-01-10"
+            },
+            {
+                "track_name": "TIL FURTHER NOTICE (feat. James Blake & 21 Savage)",
+                "track_id": "USSM12305020",
+                "duration_ms": 314836,
+                "explicit": true,
+                "spotify_track_uri": "76gcXhY3Zv6wW0BTe9nHJo",
+                "spotify_album_uri": "18NOKLkZETa4sWwLMIm0UZ",
+                "track_number": 19,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    },
+                    "artist2": {
+                        "artist_name": "James Blake",
+                        "artist_spotify_uri": "53KwLdlmrlCelAZMaLVZqU"
+                    },
+                    "artist3": {
+                        "artist_name": "21 Savage",
+                        "artist_spotify_uri": "1URnnhqYAYcrqrcwql10ft"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273881d8d8378cd01099babcd44",
+                "album_name": "UTOPIA",
+                "album_total_tracks": 19,
+                "release_date": "2023-07-28"
+            },
+            {
+                "track_name": "Devil In A New Dress",
+                "track_id": "USUM71027277",
+                "duration_ms": 351946,
+                "explicit": true,
+                "spotify_track_uri": "1UGD3lW3tDmgZfAVDh6w7r",
+                "spotify_album_uri": "20r762YmB5HeofjMCiPMLv",
+                "track_number": 8,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    },
+                    "artist2": {
+                        "artist_name": "Rick Ross",
+                        "artist_spotify_uri": "1sBkRIssrMs1AbVkOJbc7a"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f",
+                "album_name": "My Beautiful Dark Twisted Fantasy",
+                "album_total_tracks": 13,
+                "release_date": "2010-11-22"
+            },
+            {
+                "track_name": "Runnin",
+                "track_id": "USSM12005346",
+                "duration_ms": 195906,
+                "explicit": true,
+                "spotify_track_uri": "5SWnsxjhdcEDc7LJjq9UHk",
+                "spotify_album_uri": "6wTyGUWGCilBFZ837k5aRi",
+                "track_number": 2,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "21 Savage",
+                        "artist_spotify_uri": "1URnnhqYAYcrqrcwql10ft"
+                    },
+                    "artist2": {
+                        "artist_name": "Metro Boomin",
+                        "artist_spotify_uri": "0iEtIxbK0KxaSlF7G42ZOp"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273aa57907bf0cb2ca0c8cc74bc",
+                "album_name": "SAVAGE MODE II",
+                "album_total_tracks": 15,
+                "release_date": "2020-10-02"
+            },
+            {
+                "track_name": "Champagne Poetry",
+                "track_id": "USUG12104397",
+                "duration_ms": 336511,
+                "explicit": true,
+                "spotify_track_uri": "2HSmyk2qMN8WQjuGhaQgCk",
+                "spotify_album_uri": "3SpBlxme9WbeQdI9kx7KAV",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273cd945b4e3de57edd28481a3f",
+                "album_name": "Certified Lover Boy",
+                "album_total_tracks": 21,
+                "release_date": "2021-09-03"
+            },
+            {
+                "track_name": "Wet Dreamz",
+                "track_id": "USQX91402592",
+                "duration_ms": 239266,
+                "explicit": true,
+                "spotify_track_uri": "4tqcoej1zPvwePZCzuAjJd",
+                "spotify_album_uri": "0UMMIkurRUmkruZ3KGBLtG",
+                "track_number": 3,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "J. Cole",
+                        "artist_spotify_uri": "6l3HvQ5sa6mXTsMTB19rO5"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273c6e0948bbb0681ff29cdbae8",
+                "album_name": "2014 Forest Hills Drive",
+                "album_total_tracks": 13,
+                "release_date": "2014-12-09"
+            },
+            {
+                "track_name": "Bound 2",
+                "track_id": "USUM71307523",
+                "duration_ms": 229146,
+                "explicit": true,
+                "spotify_track_uri": "3sNVsP50132BTNlImLx70i",
+                "spotify_album_uri": "7D2NdGvBHIavgLhmcwhluK",
+                "track_number": 10,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2731dacfbc31cc873d132958af9",
+                "album_name": "Yeezus",
+                "album_total_tracks": 10,
+                "release_date": "2013-06-18"
+            },
+            {
+                "track_name": "Violent Crimes",
+                "track_id": "USUM71807795",
+                "duration_ms": 215320,
+                "explicit": true,
+                "spotify_track_uri": "3s7MCdXyWmwjdcWh7GWXas",
+                "spotify_album_uri": "2Ek1q2haOnxVqhvVKqMvJe",
+                "track_number": 7,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2730cd942c1a864afa4e92d04f2",
+                "album_name": "ye",
+                "album_total_tracks": 7,
+                "release_date": "2018-06-01"
+            },
+            {
+                "track_name": "Love Is Only a Feeling",
+                "track_id": "QMKSC1700112",
+                "duration_ms": 152041,
+                "explicit": true,
+                "spotify_track_uri": "7umZiitjVsEjMQ6HNddpUI",
+                "spotify_album_uri": "5e82uQW57EpmAOCJvLKMpr",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Joey Bada$$",
+                        "artist_spotify_uri": "2P5sC9cVZDToPxyomzF1UH"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273b142bbe4a766121f8d6fad41",
+                "album_name": "Love Is Only a Feeling",
+                "album_total_tracks": 1,
+                "release_date": "2017-07-06"
+            },
+            {
+                "track_name": "All Falls Down",
+                "track_id": "USDJ20301703",
+                "duration_ms": 223506,
+                "explicit": true,
+                "spotify_track_uri": "5SkRLpaGtvYPhw02vZhQQ9",
+                "spotify_album_uri": "4Uv86qWpGTxf7fU7lG5X6F",
+                "track_number": 4,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Kanye West",
+                        "artist_spotify_uri": "5K4W6rqBFWDnAN6FQUkS6x"
+                    },
+                    "artist2": {
+                        "artist_name": "Syleena Johnson",
+                        "artist_spotify_uri": "1lE6SEy8f84Zhjvp7r8yTD"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b27325b055377757b3cdd6f26b78",
+                "album_name": "The College Dropout",
+                "album_total_tracks": 21,
+                "release_date": "2004-02-10"
+            },
+            {
+                "track_name": "Temperature",
+                "track_id": "USAT20505520",
+                "duration_ms": 218573,
+                "explicit": false,
+                "spotify_track_uri": "0k2GOhqsrxDTAbFFSdNJjT",
+                "spotify_album_uri": "32Bu3ETQhR1PFCj3ndDlYf",
+                "track_number": 11,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Sean Paul",
+                        "artist_spotify_uri": "3Isy6kedDrgPYoTS1dazA9"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b27369ba684e533706bafe248ef3",
+                "album_name": "The Trinity",
+                "album_total_tracks": 18,
+                "release_date": "2005-09-26"
+            },
+            {
+                "track_name": "What's the Use?",
+                "track_id": "USWB11801213",
+                "duration_ms": 288640,
+                "explicit": true,
+                "spotify_track_uri": "2dgrYdgguVZKeCsrVb9XEs",
+                "spotify_album_uri": "5wtE5aLX5r7jOosmPhJhhk",
+                "track_number": 3,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Mac Miller",
+                        "artist_spotify_uri": "4LLpKhyESsyAXpc4laK94U"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273175c577a61aa13d4fb4b6534",
+                "album_name": "Swimming",
+                "album_total_tracks": 13,
+                "release_date": "2018-08-03"
+            },
+            {
+                "track_name": "20 Min",
+                "track_id": "USAT21704166",
+                "duration_ms": 220586,
+                "explicit": true,
+                "spotify_track_uri": "0uxSUdBrJy9Un0EYoBowng",
+                "spotify_album_uri": "0zicd2mBV8HTzSubByj4vP",
+                "track_number": 20,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Lil Uzi Vert",
+                        "artist_spotify_uri": "4O15NlyKLIASxsJ0PrXPfz"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2730d5a84e4e47399d2726c330c",
+                "album_name": "Luv Is Rage 2 (Deluxe)",
+                "album_total_tracks": 20,
+                "release_date": "2017-11-17"
+            },
+            {
+                "track_name": "On Time",
+                "track_id": "QZK6K2355861",
+                "duration_ms": 195512,
+                "explicit": true,
+                "spotify_track_uri": "2yurkU33Ov6flbuit8Equg",
+                "spotify_album_uri": "4vesnD2PjyQ72AWAOpc8JT",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Sougias Mpampas",
+                        "artist_spotify_uri": "2xehZMjvlNsjJMEN9l2muz"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2735b1c4f0aed9dad72564265cf",
+                "album_name": "On Time",
+                "album_total_tracks": 1,
+                "release_date": "2018-01-08"
+            },
+            {
+                "track_name": "Adonis Interlude (The Montage) (with J. Cole)",
+                "track_id": "USUM72302960",
+                "duration_ms": 95902,
+                "explicit": true,
+                "spotify_track_uri": "5Mkbqot9JUaN5XhRgqITME",
+                "spotify_album_uri": "4V6qjHa2otWYkYHB6bdO1S",
+                "track_number": 4,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Dreamville",
+                        "artist_spotify_uri": "1iNqsUDUraNWrj00bqssQG"
+                    },
+                    "artist2": {
+                        "artist_name": "J. Cole",
+                        "artist_spotify_uri": "6l3HvQ5sa6mXTsMTB19rO5"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2737e4d9f2b77109ba3380662ba",
+                "album_name": "Creed III: The Soundtrack",
+                "album_total_tracks": 18,
+                "release_date": "2023-03-03"
+            },
+            {
+                "track_name": "Brand New",
+                "track_id": "USUYG1507439",
+                "duration_ms": 182532,
+                "explicit": true,
+                "spotify_track_uri": "3MbOT5mzE94Ne0Hv51akoS",
+                "spotify_album_uri": "0p82QxkLngaHhRkbET3IZ0",
+                "track_number": 1,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Tyga",
+                        "artist_spotify_uri": "5LHRHt1k9lMyONurDHEdrp"
+                    },
+                    "artist2": {
+                        "artist_name": "YG",
+                        "artist_spotify_uri": "0A0FS04o6zMoto8OKPsDwY"
+                    },
+                    "artist3": {
+                        "artist_name": "Lil Wayne",
+                        "artist_spotify_uri": "55Aa2cqylxrFIXC767Z865"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2738011b08c771d5a4b30da211e",
+                "album_name": "Brand New",
+                "album_total_tracks": 1,
+                "release_date": "2023-09-27"
+            },
+            {
+                "track_name": "Good Girls Ain't No Fun",
+                "track_id": "USRC12301692",
+                "duration_ms": 142911,
+                "explicit": true,
+                "spotify_track_uri": "0zopUZ43mcvEFV7Y2zD5ZZ",
+                "spotify_album_uri": "2Qq4N5lYtsZspF2QFLKcbY",
+                "track_number": 2,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Sleepy Hallow",
+                        "artist_spotify_uri": "6EPlBSH2RSiettczlz7ihV"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273b61bab0113fd666ceab61615",
+                "album_name": "Boy Meets World",
+                "album_total_tracks": 18,
+                "release_date": "2023-09-15"
+            },
+            {
+                "track_name": "5% TINT",
+                "track_id": "USSM11806666",
+                "duration_ms": 196138,
+                "explicit": true,
+                "spotify_track_uri": "11kDth1aKUEUMq9r1pqyds",
+                "spotify_album_uri": "41GuZcammIkupMPKH2OJ6I",
+                "track_number": 9,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Travis Scott",
+                        "artist_spotify_uri": "0Y5tJX1MQlPlqiwlOH1tJY"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b273072e9faef2ef7b6db63834a3",
+                "album_name": "ASTROWORLD",
+                "album_total_tracks": 17,
+                "release_date": "2018-08-03"
+            },
+            {
+                "track_name": "First Person Shooter (feat. J. Cole)",
+                "track_id": "USUG12306071",
+                "duration_ms": 247444,
+                "explicit": true,
+                "spotify_track_uri": "7aqfrAY2p9BUSiupwk3svU",
+                "spotify_album_uri": "4czdORdCWP9umpbhFXK2fW",
+                "track_number": 6,
+                "artists": {
+                    "artist1": {
+                        "artist_name": "Drake",
+                        "artist_spotify_uri": "3TVXtAsR1Inumwj472S9r4"
+                    },
+                    "artist2": {
+                        "artist_name": "J. Cole",
+                        "artist_spotify_uri": "6l3HvQ5sa6mXTsMTB19rO5"
+                    }
+                },
+                "album_art": "https://i.scdn.co/image/ab67616d0000b2737d384516b23347e92a587ed1",
+                "album_name": "For All The Dogs",
+                "album_total_tracks": 23,
+                "release_date": "2023-10-06"
+            }
+        ]
+    }
+]
