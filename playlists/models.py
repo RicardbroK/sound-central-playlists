@@ -16,9 +16,9 @@ class Genre(models.Model):
 class Artist(models.Model):
     artist_id = models.AutoField(primary_key=True)
     artist_name = models.CharField(max_length=255)
-    spotify_artist_uri = models.URLField(blank=True, default='')  # Store Spotify URI for direct linking
-    apple_music_artist_uri = models.URLField(blank=True, default='')  # Store Apple Music URI for direct linking
-    youtube_music_channel_uri = models.URLField(blank=True, default='')  # Store YouTube Music URI for direct linking
+    spotify_artist_uri = models.CharField(max_length=22,blank=True, default='', null=True)  # Store Spotify URI for direct linking
+    apple_music_artist_uri = models.CharField(max_length=22,blank=True, default='', null=True)# Store Apple Music URI for direct linking
+    youtube_music_channel_uri = models.CharField(max_length=22,blank=True, default='', null=True) # Store YouTube Music URI for direct linking
 
     def __str__(self):
         return f"{self.artist_name}  (ID: {self.artist_id})"
@@ -31,9 +31,9 @@ class Album(models.Model):
     album_art = models.URLField(blank=True, default='')  # Stores the album art from Spotify ATM
     release_date = models.DateField()
     total_tracks = models.IntegerField(blank=True, default=0)
-    spotify_album_uri = models.URLField(blank=True, default='')  # Store Spotify URI for direct linking
-    apple_music_album_uri = models.URLField(blank=True, default='')  # Store Apple Music URI for direct linking
-    youtube_music_album_uri = models.URLField(blank=True, default='')  # Store YouTube Music URI for direct linking
+    spotify_album_uri = models.CharField(max_length=22,blank=True, default='', null=True)  # Store Spotify URI for direct linking
+    apple_music_album_uri = models.CharField(max_length=22,blank=True, default='', null=True) # Store Apple Music URI for direct linking
+    youtube_music_album_uri = models.CharField(max_length=22,blank=True, default='', null=True) # Store YouTube Music URI for direct linking
 
     def __str__(self):
         return f"{self.album_name}"
@@ -58,9 +58,9 @@ class Track(models.Model):
     track_name = models.CharField(max_length=255)
     duration_ms = models.BigIntegerField(blank=True, default=0)
     explicit = models.BooleanField()
-    spotify_track_uri = models.URLField(blank=True, default='')  # Store Spotify URI for direct linking
-    apple_music_track_uri = models.URLField(blank=True, default='')  # Store Apple Music URI for direct linking
-    youtube_music_track_uri = models.URLField(blank=True, default='')  # Store YouTube Music URI for direct linking
+    spotify_track_uri = models.CharField(max_length=22,blank=True, default='', null=True) # Store Spotify URI for direct linking
+    apple_music_track_uri = models.CharField(max_length=22,blank=True, default='', null=True)  # Store Apple Music URI for direct linking
+    youtube_music_track_uri = models.CharField(max_length=22,blank=True, default='', null=True)  # Store YouTube Music URI for direct linking
     track_number = models.IntegerField(blank=True, default=1)
 
     def __str__(self):
@@ -77,9 +77,9 @@ class Playlist(models.Model):
     playlist_track_length = models.IntegerField(blank=True, default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    spotify_playlist_uri = models.URLField(blank=True, default='')
-    apple_playlist_uri = models.URLField(blank=True, default='')
-    youtube_playlist_uri = models.URLField(blank=True, default='')
+    spotify_playlist_uri = models.CharField(max_length=22,blank=True, default='', null=True)
+    apple_playlist_uri = models.CharField(max_length=22,blank=True, default='', null=True)
+    youtube_playlist_uri = models.CharField(max_length=22,blank=True, default='', null=True)
 
-    def __str__(self):
-        return f"{self.playlist_name} - (ID: {self.playlist_id})"
+    # def __str__(self):
+    #     return f"{self.playlist_name} - (ID: {self.playlist_id})"
