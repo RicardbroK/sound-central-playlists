@@ -1,0 +1,108 @@
+{% extends "playlists/base.html" %}
+{% load static %}
+{% block title %}Top playlists{% endblock %}
+
+{% block content %}
+
+<body>
+    <h1>Top Playlists</h1>
+    <hr>
+    <br><br>
+    <h2>Featured</h2>
+
+    <div class="py-4 text-center">
+        <div class="container">
+        <div class="row">
+        <!--Start playlist content-->    
+
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
+                    <img
+                    src="{% static 'playlists/images/playlistimage.PNG' %}"
+                    class="card-img-top rounded"
+                    alt="Waterfall"
+                    width="360"
+                    height="260"/>
+                    <div class="card-body white-text">
+                        <h5 class="card-title"style="color: white">Glimpse of Us</h5>
+                        <p class="card-text" style="color: white">
+                            Export to:
+                        </p>
+                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
+                    <img
+                    src="{% static 'playlists/images/playlistimg2.PNG' %}"
+                    class="card-img-top rounded"
+                    alt="Sunset Over the Sea"
+                    width="360"
+                    height="260"
+                    />
+                    <div class="card-body white-text">
+                        <h5 class="card-title" style="color: white">WHEN WE ALL ...</h5>
+                        <p class="card-text" style="color: white">
+                            Export to:
+                        </p>
+                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
+                    <img
+                    src="{% static 'playlists/images/playlistimg3.PNG' %}"
+                    class="card-img-top rounded"
+                    alt="Sunset over the Sea"
+                    width="360"
+                    height="260"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white">Confessions</h5>
+                        <p class="card-text" style="color: white">
+                            Export to:
+                        </p>
+                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
+                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
+                    <img
+                    src="{% static 'playlists/images/playlistimg4.PNG' %}"
+                    class="card-img-top rounded"
+                    alt="Sunset over the Sea"
+                    width="360"
+                    height="260"
+                    />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: white">Cannibal</h5>
+                        <p class="card-text" style="color: white">
+                            Export to:
+                        </p>
+                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
+                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
+                    </div>
+                </div>
+            </div>
+
+        <!--Main divs-->
+        </div>    
+        </div>    
+    </div>
+
+</body>
+
+{% endblock %}
