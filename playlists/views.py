@@ -73,3 +73,13 @@ def user_playlists(request):
 
 def saved_playlists(request):
     return HttpResponse('Viewing saved playlist here')
+
+#HTML page views 
+def topPlaylists(request):
+    return render(request, "playlists/topPlaylists.html")
+def homepage(request):
+    return render(request, "playlists/home.html")
+def myPlaylists(request):
+    return render(request, "playlists/myPlaylists.html")
+def importPage(request):
+    return render(request, "playlists/import.html")
