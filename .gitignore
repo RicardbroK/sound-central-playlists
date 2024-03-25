@@ -4,4 +4,5 @@ dockerfile.yaml
 __pycache__/
 .cache*
 playlists/migrations/
+userprofile/migrations/
 *.pyc

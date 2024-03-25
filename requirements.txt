@@ -6,3 +6,6 @@ djangorestframework~=3.14.0
 psycopg[binary]
 spotipy
 requests==2.31.0
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
