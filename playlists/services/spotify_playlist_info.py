@@ -13,9 +13,11 @@ from playlists.models import Artist, Album, Track, Playlist
 load_dotenv()
 SPOTIPY_CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
 SPOTIPY_CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
+
 class spotify_playlist_info(object):
     def __init__(self, url):
         self.url = url
+
     def get_token(self):
         """Fetches an OAuth token from Spotify."""
         endpoint = 'https://accounts.spotify.com/api/token'
@@ -31,7 +33,25 @@ class spotify_playlist_info(object):
 
         # Function to extract track data
         def extract_track_data(track):
-            track_data = {'track_name': track['name'], 'track_id': track['external_ids'].get('isrc', ''), 'duration_ms': track['duration_ms'], 'explicit': track['explicit'], 'spotify_track_uri': track['id'], 'spotify_album_uri': track['album']['id'], 'track_number': track['track_number'], 'artists': {f"artist{i + 1}": {"artist_name": artist['name'], "artist_spotify_uri": artist['id']} for i, artist in enumerate(track['artists'])}, 'album_art': track['album']['images'][0]['url'] if track['album']['images'] else None, 'album_name': track['album']['name'], 'album_total_tracks': track['album']['total_tracks'], 'release_date': track['album']['release_date']}
+            track_data = {
+                'track_name': track['name'],
+                'track_id': track['external_ids'].get('isrc', ''),
+                'duration_ms': track['duration_ms'],
+                'explicit': track['explicit'],
+                'spotify_track_uri': track['id'],
+                'spotify_album_uri': track['album']['id'],
+                'track_number': track['track_number'],
+                'artists': {
+                    f"artist{i + 1}": {
+                        "artist_name": artist['name'],
+                        "artist_spotify_uri": artist['id']
+                    } for i, artist in enumerate(track['artists'])
+                },
+                'album_art': track['album']['images'][0]['url'] if track['album']['images'] else None,
+                'album_name': track['album']['name'],
+                'album_total_tracks': track['album']['total_tracks'],
+                'release_date': track['album']['release_date']
+            }
             return track_data
 
         # Extract track data for each track in the playlist
@@ -57,63 +77,82 @@ class spotify_playlist_info(object):
         response = requests.get(endpoint, headers={"Authorization": f'Bearer {token}'})
         playlist_details = response.json()
 
-        playlist_data = {'spotify_playlist_id': playlist_details['id'],
-                         'creator_name': playlist_details['owner']['display_name'],
-                         'playlist_name': playlist_details['name'],
-                         'playlist_description': playlist_details['description'],
-                         'playlist_image': playlist_details['images'][0]['url'] if playlist_details['images'] else None,
-                         'total_tracks': playlist_details['tracks']['total'],
-                         'playlist_tracks': self.get_paging(endpoint, token)}
-        #add data to the DB
+        playlist_data = {
+            'spotify_playlist_id': playlist_details['id'],
+            'creator_name': playlist_details['owner']['display_name'],
+            'playlist_name': playlist_details['name'],
+            'playlist_description': playlist_details['description'],
+            'playlist_image': playlist_details['images'][0]['url'] if playlist_details['images'] else None,
+            'total_tracks': playlist_details['tracks']['total'],
+            'playlist_tracks': self.get_paging(endpoint, token)
+        }
+
+        # Check for existing playlist
+        existing_playlist = Playlist.objects.filter(spotify_playlist_uri=playlist_data['spotify_playlist_id']).first()
+        if existing_playlist:
+            print(f"Playlist with Spotify ID {playlist_data['spotify_playlist_id']} already exists.")
+            # Optionally update existing_playlist here
+            return existing_playlist.playlist_id
+
+        # Continue with adding new playlist, tracks, and albums
         playlist_tracks = []
-        data = [playlist_data]
-        pprint.pprint(data)
-        for item in data[0]['playlist_tracks']:
+        for item in playlist_data['playlist_tracks']:
             try:
                 release_date = datetime.strptime(item['release_date'], "%Y-%m-%d")
             except ValueError:
-                # Extract year from the provided date string
                 year = item['release_date'].split("-")[0]
-                # Set release date to January 1st of the extracted year
                 release_date = datetime.strptime(f"{year}-01-01", "%Y-%m-%d")
+
             artists = []
             for artist_key, artist_value in item['artists'].items():
                 artist, _ = Artist.objects.get_or_create(
                     artist_name=artist_value['artist_name'],
-                    spotify_artist_uri=artist_value['artist_spotify_uri']
+                    defaults={'spotify_artist_uri': artist_value['artist_spotify_uri']}
                 )
-                artists.append(artist.artist_id)
+                artists.append(artist)
 
             album, _ = Album.objects.get_or_create(
                 spotify_album_uri=item['spotify_album_uri'],
-                album_name=item['album_name'],
-                release_date=release_date,
-                total_tracks=int(item['album_total_tracks']),
-                album_art=item['album_art'],
+                defaults={
+                    'album_name': item['album_name'],
+                    'release_date': release_date,
+                    'total_tracks': item['album_total_tracks'],
+                    'album_art': item['album_art']
+                }
             )
-            for artist_id in artists:
-                album.artists.add(artist_id)
+
+            for artist in artists:
+                album.artists.add(artist)
 
             track, _ = Track.objects.get_or_create(
                 track_id=item['track_id'],
-                track_name=item['track_name'],
-                duration_ms=int(item['duration_ms']),
-                explicit=item['explicit'],
-                track_number=int(item['track_number']),
-                album_id=album,
-                spotify_track_uri=item['spotify_track_uri'],
+                defaults={
+                    'track_name': item['track_name'],
+                    'duration_ms': item['duration_ms'],
+                    'explicit': item['explicit'],
+                    'track_number': item['track_number'],
+                    'spotify_track_uri': item['spotify_track_uri'],
+                    'album_id': album
+                }
             )
-            for artist_id in artists:
-                track.artists.add(artist_id)
-            playlist_tracks.append(track.track_id)
+
+            for artist in artists:
+                track.artists.add(artist)
+
+            playlist_tracks.append(track)
 
         playlist, _ = Playlist.objects.get_or_create(
-            spotify_playlist_uri=data[0]['spotify_playlist_id'],
-            playlist_name=data[0]['playlist_name'],
-            playlist_description=data[0]['playlist_description'],
-            # total_tracks=int(data[0]['total_tracks']),
-            # playlist_image=data[0]['playlist_image'],
+            spotify_playlist_uri=playlist_data['spotify_playlist_id'],
+            defaults={
+                'playlist_name': playlist_data['playlist_name'],
+                'playlist_description': playlist_data['playlist_description'],
+                'playlist_track_length': len(playlist_tracks)  # Updated from 'total_tracks'
+            }
         )
+
         for track in playlist_tracks:
             playlist.tracks.add(track)
+
+        print(f"Successfully added/updated playlist: {playlist.playlist_name}")
         return playlist.playlist_id
+

@@ -9,6 +9,7 @@ from playlists.models import Playlist
 from .serializers import PlaylistSerializer
 from .services.spotify_playlist_info import spotify_playlist_info
 from .services.yt_music_playlist_info import youtube_playlist_info
+from django.conf import settings
 
 
 # Create your views here.
@@ -18,8 +19,9 @@ class home(APIView):
 
     def post(self, request):
         playlist_url = request.POST.get('playlisturl')
-        context = {}
+        context = {'developer_token': ''}
         playlist_id = 0
+
         def get_platform_name(url) -> str:
             parsed_url = urlparse(url)
             # check hostname to see if it is a supported platform
@@ -70,24 +72,29 @@ class home(APIView):
         context['platform'] = url_platform = get_platform_name(playlist_url)
         if url_is_valid and url_platform != 'unsupported':
             context['playlist_id'] = playlist_id = get_playlist_id(playlist_url)
-            #make sure that url is fully working
+            # make sure that url is fully working
             try:
                 match url_platform:
                     case 'spotify':
                         sur = spotify_playlist_info(playlist_url)
                         playlist_id = sur.fetch_playlist_info()
-                        playlist_details = Playlist.objects.get(playlist_id=playlist_id)
-                        serializer = PlaylistSerializer(playlist_details, many=False)
+                        playlist_data = Playlist.objects.get(playlist_id=playlist_id)
+                        serializer = PlaylistSerializer(playlist_data, many=False)
                         context['playlist_details'] = serializer.data
+
                     case 'yt_music':
                         yur = youtube_playlist_info(playlist_id)
                         playlist_data = yur.get_playlist_info()
                     case _:
-                        breakpoint
+                        print("Unsupported platform or an error occurred in matching the platform.")
+            except Exception as e:
+                print(f"An error occurred: {e}")
+                context['valid_url'] = False
+                return render(request, 'playlists/home.html', context)
             except:
-                    context['valid_url'] = False
-                    return render(request, 'playlists/home.html', context)
-            context['playlist_data' ] = playlist_data
+                context['valid_url'] = False
+                return render(request, 'playlists/home.html', context)
+            context['playlist_data'] = playlist_data
             return render(request, 'playlists/view.html', context=context)
         else:
             return render(request, 'playlists/home.html', context=context)
