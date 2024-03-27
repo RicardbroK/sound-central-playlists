@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Artist, Album, Track, Genre, Playlist
+from .models import Artist, Track, Genre, Playlist
 
 
 class GenreSerializer(serializers.ModelSerializer):
@@ -14,30 +14,13 @@ class ArtistSerializer(serializers.ModelSerializer):
         fields = ['artist_id', 'artist_name', 'spotify_artist_uri', 'apple_music_artist_uri',
                   'youtube_music_channel_uri']
 
-
-class AlbumSerializer(serializers.ModelSerializer):
-    artist_id = ArtistSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Artist
-
-    class Meta:
-        model = Album
-        fields = ['album_id', 'artists', 'album_name', 'album_art', 'release_date', 'total_tracks', 'spotify_album_uri',
-                  'apple_music_album_uri', 'youtube_music_album_uri']
-
-    # Custom method to handle the release_date serialization
-    def to_representation(self, instance):
-        representation = super(AlbumSerializer, self).to_representation(instance)
-        representation['release_date'] = instance.release_date.strftime('%Y-%m-%d') if instance.release_date else None
-        return representation
-
-
 class TrackSerializer(serializers.ModelSerializer):
     artists = ArtistSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Artist
 
     class Meta:
         model = Track
-        fields = ['track_id', 'album_id', 'artists', 'track_name', 'duration_ms', 'explicit', 'spotify_track_uri',
-                  'apple_music_track_uri', 'youtube_music_track_uri', 'track_number']
-
+        fields = ['track_id', 'album_title', 'album_art_url', 'artists', 'track_name', 'duration_ms', 'explicit', 'release_date','spotify_track_uri',
+                  'apple_music_track_uri', 'youtube_music_track_uri', 'track_number','original_platform']
 
 class PlaylistSerializer(serializers.ModelSerializer):
     tracks = TrackSerializer(many=True, read_only=True)  # Assuming a many-to-many relationship with Track

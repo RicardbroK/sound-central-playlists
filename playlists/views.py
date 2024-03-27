@@ -33,7 +33,7 @@ class home(APIView):
                             return 'spotify'
                         case _:
                             return 'unsupported'
-                case 'youtube.com' | 'www.youtube.com' | 'music.youtube.com':
+                case 'music.youtube.com':
                     # make sure it is a playlist path
                     match parsed_url.path.split('/')[1:]:
                         case ['playlist', *_]:
@@ -78,27 +78,22 @@ class home(APIView):
                     case 'spotify':
                         sur = spotify_playlist_info(playlist_url)
                         playlist_id = sur.fetch_playlist_info()
-                        playlist_data = Playlist.objects.get(playlist_id=playlist_id)
-                        serializer = PlaylistSerializer(playlist_data, many=False)
-                        context['playlist_details'] = serializer.data
-
                     case 'yt_music':
                         yur = youtube_playlist_info(playlist_id)
-                        playlist_data = yur.get_playlist_info()
+                        playlist_id = yur.insert_playlist_db()
                     case _:
-                        print("Unsupported platform or an error occurred in matching the platform.")
+                        raise ValueError("Unsupported platform or an error occurred in matching the platform.")
+                playlist_details = Playlist.objects.get(playlist_id=playlist_id)
+                serializer = PlaylistSerializer(playlist_details, many=False)
+                playlist_data = serializer.data
             except Exception as e:
                 print(f"An error occurred: {e}")
                 context['valid_url'] = False
-                return render(request, 'playlists/home.html', context)
-            except:
-                context['valid_url'] = False
-                return render(request, 'playlists/home.html', context)
-            context['playlist_data'] = playlist_data
+                return render(request, 'playlists/home.html', context=context)
+            context['playlist_data' ] = playlist_data
             return render(request, 'playlists/view.html', context=context)
         else:
             return render(request, 'playlists/home.html', context=context)
-
 
 def view_playlist(request):
     return HttpResponse('Viewing playlist here')

@@ -6,7 +6,7 @@ import pprint
 import requests
 from dotenv import load_dotenv
 from datetime import datetime
-from playlists.models import Artist, Album, Track, Playlist
+from playlists.models import Artist, Track, Playlist
 
 
 # Load environment variables containing Spotify API credentials
@@ -104,26 +104,17 @@ class spotify_playlist_info(object):
                 release_date = datetime.strptime(f"{year}-01-01", "%Y-%m-%d")
 
             artists = []
-            for artist_key, artist_value in item['artists'].items():
+            for artist_key,artist_value  in item['artists'].items():
                 artist, _ = Artist.objects.get_or_create(
                     artist_name=artist_value['artist_name'],
                     defaults={'spotify_artist_uri': artist_value['artist_spotify_uri']}
                 )
+                if artist.spotify_artist_uri is None or artist.spotify_artist_uri is '':
+                    print(artist)
+                    artist.spotify_artist_uri = artist_value['artist_spotify_uri']
+                    artist.save()
                 artists.append(artist)
-
-            album, _ = Album.objects.get_or_create(
-                spotify_album_uri=item['spotify_album_uri'],
-                defaults={
-                    'album_name': item['album_name'],
-                    'release_date': release_date,
-                    'total_tracks': item['album_total_tracks'],
-                    'album_art': item['album_art']
-                }
-            )
-
-            for artist in artists:
-                album.artists.add(artist)
-
+            
             track, _ = Track.objects.get_or_create(
                 track_id=item['track_id'],
                 defaults={
@@ -132,7 +123,10 @@ class spotify_playlist_info(object):
                     'explicit': item['explicit'],
                     'track_number': item['track_number'],
                     'spotify_track_uri': item['spotify_track_uri'],
-                    'album_id': album
+                    'album_art_url': item['album_art'],
+                    'album_title': item['album_name'],
+                    'release_date': release_date,
+                    'original_platform': 'spotify'
                 }
             )
 
@@ -146,7 +140,8 @@ class spotify_playlist_info(object):
             defaults={
                 'playlist_name': playlist_data['playlist_name'],
                 'playlist_description': playlist_data['playlist_description'],
-                'playlist_track_length': len(playlist_tracks)  # Updated from 'total_tracks'
+                'playlist_track_length': len(playlist_tracks),  # Updated from 'total_tracks'
+                'playlist_image': playlist_data['playlist_image']
             }
         )
 
