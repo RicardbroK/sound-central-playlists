@@ -10,7 +10,9 @@ from .serializers import PlaylistSerializer
 from .services.spotify_playlist_info import spotify_playlist_info
 from .services.yt_music_playlist_info import youtube_playlist_info
 from django.conf import settings
-
+import json
+from django.shortcuts import redirect
+import requests
 
 # Create your views here.
 class home(APIView):
@@ -83,25 +85,29 @@ class home(APIView):
                         playlist_id = yur.insert_playlist_db()
                     case _:
                         raise ValueError("Unsupported platform or an error occurred in matching the platform.")
-                playlist_details = Playlist.objects.get(playlist_id=playlist_id)
-                serializer = PlaylistSerializer(playlist_details, many=False)
-                playlist_data = serializer.data
             except Exception as e:
                 print(f"An error occurred: {e}")
                 context['valid_url'] = False
                 return render(request, 'playlists/home.html', context=context)
-            context['playlist_data' ] = playlist_data
-            return render(request, 'playlists/view.html', context=context)
+            return redirect(f'/playlists/view?playlist_id={playlist_id}')
         else:
             return render(request, 'playlists/home.html', context=context)
 
 def view_playlist(request):
-    return HttpResponse('Viewing playlist here')
-
+    playlist_id = request.GET.get('playlist_id')
+    context = {}
+    try:
+        playlist_details = Playlist.objects.get(playlist_id=playlist_id)
+        serializer = PlaylistSerializer(playlist_details, many=False)
+        playlist_details = serializer.data
+        context['playlist_data'] = playlist_details
+        context['playlist_data_json'] = json.dumps(playlist_details)
+        return render(request, 'playlists/view.html', context=context)
+    except Exception as e:
+        return HttpResponse(f'{e}')
 
 def user_playlists(request):
     return HttpResponse('Viewing my playlists here')
-
 
 def saved_playlists(request):
     return HttpResponse('Viewing saved playlist here')

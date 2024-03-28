@@ -27,5 +27,5 @@ class PlaylistSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Playlist
-        fields = ['playlist_id', 'tracks', 'playlist_name', 'playlist_description', 'playlist_track_length',
+        fields = ['playlist_id', 'tracks', 'playlist_image', 'playlist_name', 'playlist_description', 'playlist_track_length',
                   'created_at', 'updated_at', 'youtube_playlist_uri', 'apple_playlist_uri', 'spotify_playlist_uri']

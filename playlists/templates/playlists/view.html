@@ -1,24 +1,76 @@
 {% extends "playlists/base.html" %}
 
-{% block title %}SoundCentral Home{% endblock %}
+{% block title %}{{playlist_data.playlist_name|safe}}{% endblock %}
 
 {% block content %}
- <!-- Create a div with class "container" to wrap the heading -->
-<div class="container position-absolute top-50 start-50 translate-middle">
-    <!-- Create a div with class "row" to create a grid row -->
-    <div class="row">
-        <!-- Create a div with class "col" to create a grid column -->
-        <div class="col">
-            <!-- Create a heading element with class "text-center" to center the text horizontally -->
-            {% if not valid_url%}
-            <h1 class="text-center">URL is invalid, try again.</h1>
-            {% else %}
-            <h1 class="text-center">Wow, you made it!</h1>
-            <h1>Platform URL is {{platform}}, and the playlist id is {{playlist_id}}</h1>
-                <p>{{ playlist_data }}</p>
-            {% endif %}
-        </div>
+<style>
+  .playlist-cover {
+    width: 100%;
+    height: auto;
+  }
+  .track-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* This will cover the area, cropping the image if necessary */
+  }
+  .explicit-marker {
+    color: red;
+    font-weight: bold;
+    font-size: 0.75em;
+    margin-left: 5px;
+  }
+</style>
+
+<div class="container mt-5">
+  <!-- Playlist Header -->
+  <div class="row mb-4">
+    <div class="col">
+      <img src="{{playlist_data.playlist_image|safe}}" alt="Playlist Cover" class="playlist-cover">
+      <h1 id="playlistName">{{playlist_data.playlist_name|safe}}</h1>
+      <p id="creatorName">Created by: Creator's Name</p>
+      <p id="playlistDescription">{{playlist_data.playlist_description|safe}}</p>
     </div>
+  </div>
+
+  <!-- Tracks List -->
+  <div class="row">
+    <div class="col">
+      <h2>Tracks</h2>
+      <div id="tracksList">
+        <!-- Track items will be populated here using JavaScript -->
+      </div>
+    </div>
+  </div>
 </div>
-{#<h1>Submitted url is {{ request.GET.playlisturl }}</h1>#}
+
+<script>
+// Example JavaScript to populate the tracks list
+const plalist_dump = {{playlist_data_json | safe}}
+const tracks = plalist_dump.tracks
+
+function populateTracks(tracks) {
+  const tracksList = document.getElementById('tracksList');
+  tracks.forEach(track => {
+    artist_names = []
+    track.artists.forEach(artist =>
+      artist_names.unshift(' '+artist.artist_name)
+    )
+    const explicitMarker = track.explicit ? '<span class="explicit-marker">E</span>' : ''; // Explicit marker
+    const trackHtml = `
+      <div class="row mb-2">
+        <div class="col-1">
+          <img src="${track.album_art_url}" alt="${track.title}" class="track-image">
+        </div>
+        <div class="col">
+          <h5>${track.track_name}${explicitMarker}</h5>
+          <p>${artist_names} - ${track.album_title}</p>
+        </div>
+      </div>
+    `;
+    tracksList.innerHTML += trackHtml;
+  });
+}
+
+populateTracks(tracks);
+</script>
 {% endblock %}
