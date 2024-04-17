@@ -5,8 +5,11 @@ from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 from django.views.decorators.csrf import csrf_exempt
 from urllib.parse import urlparse
-
-
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm  
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout 
+from django.contrib.auth.forms import UserCreationForm
 
 # Create your views here.
 class home(APIView):
@@ -62,7 +65,6 @@ class home(APIView):
         else:
             return render(request, 'playlists/home.html', context=context)
 
-
 def view_playlist(request):
     return HttpResponse('Viewing playlist here')
 
@@ -73,3 +75,20 @@ def user_playlists(request):
 
 def saved_playlists(request):
     return HttpResponse('Viewing saved playlist here')
+
+#HTML page views 
+def topPlaylists(request):
+    return render(request, "playlists/topPlaylists.html")
+def homepage(request):
+    return render(request, "playlists/home.html")
+@login_required(redirect_field_name="my_redirect_field")
+def myPlaylists(request):
+    return render(request, "playlists/myPlaylists.html")
+@login_required(redirect_field_name="my_redirect_field")
+def importPage(request):
+    return render(request, "playlists/import.html")
+def signup(request):
+    return render(request, "registration/signup.html")
+def logout_view(request):
+    logout(request)
+    return redirect("/")

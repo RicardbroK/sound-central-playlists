@@ -1,0 +1,27 @@
+{% extends "playlists/base.html" %}
+
+{% block title %}Import{% endblock %}
+
+{% block content %}
+ <!-- Create a div with class "container" to wrap the heading -->
+<div >
+    <!-- Create a div with class "row" to create a grid row -->
+    <div class="row">
+        <!-- Create a div with class "col" to create a grid column -->
+        <div class="col">
+            <!-- Create a heading element with class "text-center" to center the text horizontally -->
+            <h1 class="text-center">Import Playlist</h1>
+        </div>
+    </div>
+{#    using a get method doesnt pass the information to the back end. also is bad for application security.#}
+{#    additionally get pulls from the webserver, post pushes client information to the backend where we can work with it securely#}
+    <form action="{% url 'create' %}" method='POST' class="row input-group">
+        <!-- Create an input element with class "form-control" and type "text" to create a text field -->
+        <input type="text" name='playlisturl' class="form-control col-auto" placeholder="Enter a public playlist link">
+        <!-- Create a button element with class "btn btn-primary" and type "submit" to create a button -->
+        <button type="submit" class="btn btn-primary col-auto">Go</button>
+    </form>
+</div>
+
+{#<h1>Submitted url is {{ request.GET.playlisturl }}</h1>#}
+{% endblock %}

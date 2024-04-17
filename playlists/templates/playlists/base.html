@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <!--CSS styles-->
     <link rel="stylesheet" href="{% static 'styles.css' %}">
-    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico'%}">
+    <link rel="icon" type="image/x-icon" href="#">
     <!--Title is set dependant on what page is active-->
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="{% url 'home' %}">
             <h1 id="logo">SoundCentral</h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,9 +25,30 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+              </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                  <a class="nav-link" href="{% url 'topPlaylists' %}">Top Playlists</a>
                 </li>
+
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'import' %}">Import</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'myPlaylists' %}">My Playlists</a>
+                 </li>
+                <li class="nav-item">
+                  <form id="logout-form" method="post" action="{% url 'logout' %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn nav-link" href="logout">Logout</button>
+                  </form>
+                </li>
+              {% else %}
+                <li><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+              {% endif %}
+
             </ul>
         </div>
     </nav>
