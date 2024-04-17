@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home.as_view(), name='home'),
     path('playlists/', include('playlists.urls')),
-    path('profile/', include('userprofile.urls'))
+    path('profile/', include('userprofile.urls')),
+    path('callback/', include('userprofile.urls'))
 ]

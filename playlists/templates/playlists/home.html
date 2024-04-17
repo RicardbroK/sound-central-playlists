@@ -1,7 +1,7 @@
 {% extends "playlists/base.html" %}
 
 {% block title %}SoundCentral Home{% endblock %}
-
+{% load static %}
 {% block content %}
  <!-- Create a div with class "container" to wrap the heading -->
 <div class="container position-absolute top-50 start-50 translate-middle">
@@ -27,7 +27,19 @@
         <!-- Create an input element with class "form-control" and type "text" to create a text field -->
         <input type="text" name='playlisturl' class="form-control col-auto" placeholder="Enter a public playlist link">
         <!-- Create a button element with class "btn btn-primary" and type "submit" to create a button -->
-        <button type="submit" class="btn btn-primary col-auto">Go</button>
+        <button type="submit" class="btn btn-primary col-auto" onclick='showLoading()'>Go</button>
     </form>
 </div>
+<script>
+    function showLoading() {
+        // Create a loading div and prepend it to the body
+        const loadingDiv = document.createElement('div');
+        const loadingImg = document.createElement('img');
+        loadingImg.src = '{% static 'loaders/loader.gif' %}'
+        loadingDiv.className = 'loadingDiv'; // You can style this class in your CSS
+        loadingDiv.textContent = 'Loading...';
+        loadingDiv.appendChild(loadingImg);
+        document.body.prepend(loadingDiv);
+      }
+</script>
 {% endblock %}

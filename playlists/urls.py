@@ -4,7 +4,9 @@ from . import views
 
 urlpatterns = [
     path('create/', home.as_view(), name='create'),
-    path('view', views.view_playlist),
+    path('view/<int:playlist_id>', views.view_playlist, name='view'),
+    path('view/save', views.save_playlist),
     path('', views.user_playlists),
-    path('saved/', views.saved_playlists)
+    path('saved/', views.saved_playlists),
+    path('export', views.export_playlist, name='export')
 ]

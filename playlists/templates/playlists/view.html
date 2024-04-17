@@ -1,35 +1,31 @@
 {% extends "playlists/base.html" %}
 
-{% block title %}{{playlist_data.playlist_name|safe}}{% endblock %}
+{% block title %}{{playlist_data.playlist_name}}{% endblock %}
 
 {% block content %}
-<style>
-  .playlist-cover {
-    width: 100%;
-    height: auto;
-  }
-  .track-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover; /* This will cover the area, cropping the image if necessary */
-  }
-  .explicit-marker {
-    color: red;
-    font-weight: bold;
-    font-size: 0.75em;
-    margin-left: 5px;
-  }
-</style>
-
 <div class="container mt-5">
   <!-- Playlist Header -->
-  <div class="row mb-4">
-    <div class="col">
-      <img src="{{playlist_data.playlist_image|safe}}" alt="Playlist Cover" class="playlist-cover">
-      <h1 id="playlistName">{{playlist_data.playlist_name|safe}}</h1>
-      <p id="creatorName">Created by: Creator's Name</p>
-      <p id="playlistDescription">{{playlist_data.playlist_description|safe}}</p>
-    </div>
+  <div class="container-fluid row mb-4">
+      <img src="{{playlist_data.playlist_image|safe}}" alt="Playlist Cover" class="img-max justify-content-start playlist-cover col">
+      <div class='col'>
+        <h1 id="playlistName">{{playlist_data.playlist_name}}</h1>
+        <p id="creatorName">Created by: {{playlist_creator_name}}</p>
+        <p id="playlistDescription">{{playlist_data.playlist_description}}</p>
+        {%if playlist_creator_name != user.get_username %}
+          {% if playlist_saved %}
+            <button id='save' type="button" value="Copy URL" onclick="SavePlaylist()"><i class="fa-solid fa-bookmark"></i></button>
+          {% else  %}
+            <button id='save' type="button" value="Copy URL" onclick="SavePlaylist()"><i class="fa-regular fa-bookmark"></i></button>
+          {% endif %}
+        {% endif %}
+        <button id='copy-url' type="button" value="Copy URL" onclick="Copy();"><i class="fa-solid fa-link"></i></button>
+        <form action='{% url "export" %}' method='get'>
+          <input type="hidden" name="id" value="{{playlist_data.playlist_id}}">
+          <input class='spotify-export-button' type="submit" name='platform' value='spotify'/>
+          <input class='apple-export-button' type="submit" name='platform' value='apple'/>
+          <input class='yt-music-export-button' type="submit" name='platform' value='yt_music'/>
+        </form>
+      </div>
   </div>
 
   <!-- Tracks List -->
@@ -37,40 +33,71 @@
     <div class="col">
       <h2>Tracks</h2>
       <div id="tracksList">
-        <!-- Track items will be populated here using JavaScript -->
+        {% for track in playlist_data.tracks %}
+          <div class="row mb-2">
+            <div class="col-2">
+              <img src="{{track.track.album_art_url}}" alt="{{track.track.track_name}}" class="track-image img-fluid">
+            </div>
+            <div class="col">
+              <h5>{{track.track.track_name}}<span class="explicit-marker">{%if track.track.explicit %}E{%endif%}</span></h5>
+              <p>{% for artist in track.track.artists %}{{' '|add:artist.artist_name}}{% endfor %} - {{track.track.album_title}} - {{track.playlist_position}}</p>
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>
 </div>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
-// Example JavaScript to populate the tracks list
-const plalist_dump = {{playlist_data_json | safe}}
-const tracks = plalist_dump.tracks
+  function Copy() {
+      let url = document.location.href;
+      navigator.clipboard.writeText(url).then(function() {
+          console.log('Copied!');
+      }, function() {
+          console.log('Copy error');
+      });
+  }
 
-function populateTracks(tracks) {
-  const tracksList = document.getElementById('tracksList');
-  tracks.forEach(track => {
-    artist_names = []
-    track.artists.forEach(artist =>
-      artist_names.unshift(' '+artist.artist_name)
-    )
-    const explicitMarker = track.explicit ? '<span class="explicit-marker">E</span>' : ''; // Explicit marker
-    const trackHtml = `
-      <div class="row mb-2">
-        <div class="col-1">
-          <img src="${track.album_art_url}" alt="${track.title}" class="track-image">
-        </div>
-        <div class="col">
-          <h5>${track.track_name}${explicitMarker}</h5>
-          <p>${artist_names} - ${track.album_title}</p>
-        </div>
-      </div>
-    `;
-    tracksList.innerHTML += trackHtml;
-  });
-}
+  function SavePlaylist() {
+    // Open the external website
+    // Make an AJAX call to your Django view
+    //$.get('save?id=' + {{playlist_data.playlist_id}}, function (data) {
+    //});
 
-populateTracks(tracks);
+    function getCookie(name) {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+              const cookie = cookies[i].trim();
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+        return cookieValue;
+    }
+
+    const csrftoken = getCookie('csrftoken');
+    const url = "save"; // Replace with your API endpoint
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify({
+          id: '{{playlist_data.playlist_id}}',
+        }),
+        headers: {
+            'X-CSRFToken':  csrftoken,
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .catch(error => {
+        console.error("Error sending POST request:", error);
+    });
+    setTimeout(function(){
+      window.location.reload(1);
+    }, 1000);
+  }
 </script>
 {% endblock %}
