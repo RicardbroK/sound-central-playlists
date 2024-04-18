@@ -45,11 +45,9 @@
                     <input type="hidden" name="next" value="{{ next }}">
       
                     <a class="btn btn-lg btn-block btn-primary" style="background-color:rgb(85, 114, 243)" href="{% provider_login_url 'google' %}?next=/">Sign in with Google</a>
-
-                    <a class="btn btn-lg btn-block btn-primary" style="background-color:rgb(50, 231, 50)" href="{% provider_login_url 'google' %}?next=/">Sign in with Spotify</a>
       
                   </div>
-                    <p class="mb-0">Don't have an account? <a href="{% url 'signup' %}" class="text-white-50 fw-bold">Sign Up</a>
+                    <p class="mb-0">Don't have an account? <a href="{% provider_login_url 'google' %}?next=/" class="text-white-50 fw-bold">Sign Up</a>
                     </p>
                   
       
@@ -61,4 +59,5 @@
       </section>
   </form>
 
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
 {% endblock %}

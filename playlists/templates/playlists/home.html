@@ -4,6 +4,8 @@
 
 {% block content %}
 <body>
+  {% load socialaccount %}
+  {% load static %}
 
   {% if user.is_authenticated %}
     <h1>Welcome {{ user.get_username }}</h1>
@@ -15,10 +17,13 @@
             <p class="lead">
               <a href="{% url 'login' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-black">Login</a>
             </p>
-            <p>You should probably login motherfucker</p>
-            <p class="mb-0">Don't have an account? <a href="{% url 'signup' %}" class="text-black-50 fw-bold">Sign Up</a>
+            <p class="mb-0">Don't have an account? <a href="{% provider_login_url 'google' %}" class="text-black-50 fw-bold">Sign Up</a>
             </p>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+           <img src="{% static 'playlists/images/wizard.png' %}" alt="">
+           <img src="{% static 'playlists/images/bacon.png' %}" alt="">
+           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     {% endif %}
 </body>
 
