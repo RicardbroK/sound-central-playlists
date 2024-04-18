@@ -3,6 +3,8 @@
 {% block title %}My Saved Playlists{% endblock %}
 
 {% block content %}
+<a href='{% url "myPlaylists" %}'><h2>View my playlists.</h2></a>
+
 <div class='d-flex flex-row flex-wrap'>
     {% for playlist in saved_playlists %}
     <figure class='container p-2 col'>

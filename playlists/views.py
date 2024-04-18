@@ -527,7 +527,7 @@ def topPlaylists(request):
     current_user = request.user
     if current_user.is_authenticated:
         # Get all playlists current user is a fan of
-        top_playlists = Playlist.objects.annotate(num_fans=Count('fans')).all().order_by('-num_fans')[:5]
+        top_playlists = Playlist.objects.annotate(num_fans=Count('fans')).all().order_by('-num_fans')[:50]
         context['top_playlists'] = top_playlists
         return render(request, 'playlists/topPlaylists.html', context=context)
     else:
