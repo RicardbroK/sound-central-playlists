@@ -39,5 +39,5 @@ def spotify_callback(request):
    print(request.META.get('HTTP_REFERER'))
    #page_to_render = HttpResponse('Please close this window.')
    page_to_render = render(request, 'callbacks/callback.html')
-   page_to_render.set_cookie('spotify', token_info, max_age=max_age)
+   request.session['spotify'] = token_info
    return page_to_render
