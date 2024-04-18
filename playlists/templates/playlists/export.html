@@ -1,0 +1,29 @@
+{% extends "playlists/base.html" %}
+
+{% block title %}Exporter{% endblock %}
+
+{% block content %}
+    {% if platform == 'spotify' %}
+        {% if request.COOKIES.spotify is None or spotify_access_expired %}
+            <input type='button' id='oauth-activate' value='Login to spotify'/>
+            <script>
+                const btn = document.querySelector('#oauth-activate');
+
+                btn.onclick = () => {
+                const win = window.open('/profile/get-spotify', 'Spotify Oauth', '_blank','width=500,height=800,toolbar=no,location=no');
+                const timer = setInterval(() => {
+                    if (win.closed) {
+                        window.location.reload();
+                    }
+                }, 500);
+                };
+            </script>
+        {% else %}        
+            {% if success %}
+                <h1>PLAYLIST CREATED!</h1>
+                <script>function OpenPlaylist(){window.open('https://open.spotify.com/playlist/{{spotify_playlist_uri}}')}</script>
+                <input type='button' value='Open Playlist' onclick='OpenPlaylist()'>
+            {%endif%}
+        {% endif %}
+    {% endif %}
+{% endblock%}

@@ -1,20 +1,25 @@
 import os
 from googleapiclient.discovery import build
 from pprint import pprint
-from playlists.models import Artist, Track, Playlist
-import isodate
+from playlists.models import Artist, Track, Playlist, PlaylistTrack
 from datetime import datetime
 import re
-
+import isodate
+import requests
+import json
 
 YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')
+YOUTUBE_OPERATIONAL_API_URL = f"{os.getenv('YOUTUBE_OPERATIONAL_API_HOSTNAME')}:{os.getenv('YOUTUBE_OPERATIONAL_API_PORT')}{os.getenv('YOUTUBE_OPERATIONAL_API_PATH')}"
 youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
+YT_UNOFFICAL_OR_UNKNOWN_ARTIST = 'YT_UNOFFICAL_OR_UNKNOWN_ARTIST'
+UNOFFICAL_ARTIST_URI_STRING = 'DO_NOT_REFERENCE'
 
 
 class youtube_playlist_info(object):
-    def __init__(self, id):
+    def __init__(self, id, user):
         self.id = id
         self.data = self.get_playlist_info()
+        self.creating_user = user
 
     def get_paging(self, token):
         """Recursively fetches full track details from a paginated playlist endpoint."""
@@ -27,23 +32,12 @@ class youtube_playlist_info(object):
         playlist_details = response
         track_ids = []
 
-        # pprint(playlist_details)
         # Function to extract track data
         def extract_track_data(track):
             if 'videoOwnerChannelId' in track['snippet']:
+                print(track)
                 video_id = track['contentDetails']['videoId']
-                artist_channel_id = track['snippet']['videoOwnerChannelId']
-                # Get data from video in playlist
-                youtube_video = youtube.videos().list(
-                    part="contentDetails, snippet",
-                    id=f'{video_id}'
-                ).execute()
-
-                # assign
-                video_duration = youtube_video['items'][0]['contentDetails']['duration']
-                duration = isodate.parse_duration(video_duration)
-                video_duration = int(duration.total_seconds() * 1000)
-                video_description = youtube_video['items'][0]['snippet']['description']
+                video_description = track['snippet']['description']
                 desc_lines = video_description.split('\n')
 
                 # check if description matches common format
@@ -54,56 +48,108 @@ class youtube_playlist_info(object):
 
                 # check if release date is in description
                 date_in_desc = re.search(r'\d{4}-\d{2}-\d{2}', video_description)
-
-                # assign release date to track
-                if date_in_desc and desc_auto_generated:
-                    video_release = datetime.strptime(date_in_desc.group(), '%Y-%m-%d').date()
+                # api to see if video has music
+                yt_operational_api_is_music = f"{YOUTUBE_OPERATIONAL_API_URL}/videos?part=music,explicitLyrics&id={video_id}"
+                print(yt_operational_api_is_music)
+                music_check_response = requests.get(yt_operational_api_is_music)
+                print(music_check_response)
+                if music_check_response.status_code == 200:
+                    music_check_response = music_check_response.json()
+                    print(music_check_response)
+                    is_music = music_check_response['items'][0]['music']['available']
+                    explicit = music_check_response['items'][0]['explicitLyrics']
                 else:
-                    video_release = None
+                    raise ValueError('yt_operational_api is down')
 
-                # assign album and artist name if track description is auto generated
-                if desc_auto_generated:
-                    # video_release = datetime.strptime(youtube_video['items'][0]['snippet']['publishedAt'], "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d")            if is_auto_generated:
-                    album_title = desc_lines[4].strip()  # album title is in 5th line of description
-                    # remove - TOPIC from channel name if it is there.
-                    artist_name = track['snippet']['videoOwnerChannelTitle'].replace(" - Topic", "")
+                # if video is music or it is not sure, continue on
+                if is_music or desc_auto_generated:
+                    artist_channel_id = track['snippet']['videoOwnerChannelId']
+                    # Get data from video in playlist
+                    youtube_video = youtube.videos().list(
+                        part="contentDetails, snippet",
+                        id=f'{video_id}'
+                    ).execute()
+
+                    # assign
+                    more_than_one_artist = False
+                    video_duration = youtube_video['items'][0]['contentDetails']['duration']
+                    duration = isodate.parse_duration(video_duration)
+                    video_duration = int(duration.total_seconds() * 1000)
+
+                    # assign release date to track
+                    if date_in_desc and desc_auto_generated:
+                        video_release = datetime.strptime(date_in_desc.group(), '%Y-%m-%d').date()
+                    else:
+                        video_release = None
+
+                    artist_names = []
+                    # assign album and artist name if track description is auto generated
+                    if desc_auto_generated:
+                        album_title = desc_lines[4].strip()  # album title is in 5th line of description
+                        # remove - TOPIC from channel name if it is there.
+                        artist_name = track['snippet']['videoOwnerChannelTitle'].replace(" - Topic", "")
+
+                        extra_artist_names = desc_lines[2].split(" · ")
+                        extra_artist_names = extra_artist_names[2:]
+                        more_than_one_artist = len(extra_artist_names) > 0
+                        if more_than_one_artist:
+                            for item in extra_artist_names:
+                                artist_names.append({
+                                    "artist_name": item,
+                                    "artist_youtube_uri": None,
+                                    'offical': desc_auto_generated
+                                })
+                    else:
+                        album_title = None
+                        artist_name = YT_UNOFFICAL_OR_UNKNOWN_ARTIST
+
+                    album_art_url = (
+                        youtube_video['items'][0]['snippet']['thumbnails']['maxres']['url']
+                        if 'maxres' in youtube_video['items'][0]['snippet']['thumbnails']
+                        else youtube_video['items'][0]['snippet']['thumbnails']['default']['url']
+                    )
+                    track_data = {
+                        'track_name': track['snippet']['title'],
+                        'track_id': video_id,
+                        'duration_ms': video_duration,
+                        'explicit': explicit,
+                        'youtube_track_uri': track['contentDetails']['videoId'],
+                        'youtube_album_uri': None,
+                        'track_number': None,  # track['snippet']['position'],
+                        'artists': {
+                            'artist0':
+                                {
+                                    "artist_name": artist_name,
+                                    "artist_youtube_uri": artist_channel_id if desc_auto_generated else None,
+                                    'offical': desc_auto_generated
+                                },
+                        },
+                        'album_art': album_art_url,
+                        'album_name': album_title,
+                        'release_date': video_release,
+                        'offical_track': desc_auto_generated
+                    }
+                    if more_than_one_artist:
+                        extra_artist_index = 1
+                        for extra_artist in artist_names:
+                            track_data['artists'][f'atrist{extra_artist_index}'] = extra_artist
+                            extra_artist_index += 1
+                    return track_data
                 else:
-                    album_title = None
-                    artist_name = 'YT_UNOFFICAL_OR_UNKNOWN_ARTIST'
-
-                album_art_url = (
-                    youtube_video['items'][0]['snippet']['thumbnails']['maxres']['url']
-                    if 'maxres' in youtube_video['items'][0]['snippet']['thumbnails']
-                    else youtube_video['items'][0]['snippet']['thumbnails']['default']['url']
-                )
-                track_data = {
-                    'track_name': track['snippet']['title'],
-                    'track_id': video_id,
-                    'duration_ms': video_duration,
-                    'explicit': None,
-                    'youtube_track_uri': track['contentDetails']['videoId'],
-                    'youtube_album_uri': None,
-                    'track_number': None,  # track['snippet']['position'],
-                    'artist': {
-                        "artist_name": artist_name,
-                        "artist_youtube_uri": artist_channel_id if desc_auto_generated else None,
-                        'offical': desc_auto_generated
-                    },
-                    'album_art': album_art_url,
-                    'album_name': album_title,
-                    'release_date': video_release,
-                    'offical_track': desc_auto_generated
-                }
-                return track_data
+                    return False
             else:
                 return False
 
         # Extract track data for each track in the playlist
         tracks = playlist_details['items']
+        tracks_skipped = 0
         for item in tracks:
             track = item
-            if track and extract_track_data(track):  # Ensure the track details are present
-                track_ids.append(extract_track_data(track))
+            track_exists = extract_track_data(track)
+            if track and track_exists:  # Ensure the track details are present
+                track_ids.append(track_exists)
+            else:
+                tracks_skipped + 1
 
         # Handle pagination if there are more tracks to fetch
         next_page = playlist_details['nextPageToken'] if 'nextPageToken' in playlist_details else None
@@ -133,37 +179,50 @@ class youtube_playlist_info(object):
 
     def insert_playlist_db(self):
         playlist_data = self.data
-        UNOFFICAL_ARTIST_STRING = 'DO_NOT_REFERENCE'
-        existing_playlist = Playlist.objects.filter(youtube_playlist_uri=self.data['youtube_playlist_uri']).first()
-        if existing_playlist:
-            print(f"Playlist with Youtube ID {self.data['youtube_playlist_uri']} already exists.")
-            # Optionally update existing_playlist here
-            return existing_playlist.playlist_id
+        if not playlist_data['playlist_tracks']:
+            raise ValueError('No music tracks found')
+        # existing_playlist = Playlist.objects.filter(youtube_playlist_uri=playlist_data['youtube_playlist_uri']).first()
+        # if existing_playlist:
+        #     print(f"Playlist with Youtube ID {self.data['youtube_playlist_uri']} already exists.")
+        #     # Optionally update existing_playlist here
+        #     return existing_playlist.playlist_id
 
         # Continue with adding new playlist, tracks, and albums
         playlist_tracks = []
         for item in playlist_data['playlist_tracks']:
-            offical_artist = item['artist']['offical']
-            artist, _ = Artist.objects.get_or_create(
-                artist_name=item['artist']['artist_name'],
-                defaults={
-                    'youtube_music_channel_uri': item['artist'][
-                        'artist_youtube_uri'] if offical_artist else UNOFFICAL_ARTIST_STRING,
-                    'spotify_artist_uri': UNOFFICAL_ARTIST_STRING if not offical_artist else None,
-                    'apple_music_artist_uri': UNOFFICAL_ARTIST_STRING if not offical_artist else None
-                }
-            )
-            if offical_artist:
-                if artist.youtube_music_channel_uri is None or artist.youtube_music_channel_uri is '':
-                    artist.youtube_music_channel_uri = item['artist']['artist_youtube_uri'] if item['artist'][
-                        'artist_youtube_uri'] else None
-                    artist.save()
+            print(item['artists'])
+            artists = []
+            for artist_key, artist_item in item['artists'].items():
+                offical_artist = artist_item['offical']
+                artist, _ = Artist.objects.get_or_create(
+                    artist_name=artist_item['artist_name'],
+                    defaults={
+                        'youtube_music_channel_uri': artist_item[
+                            'artist_youtube_uri'] if offical_artist else UNOFFICAL_ARTIST_URI_STRING,
+                        'spotify_artist_uri': UNOFFICAL_ARTIST_URI_STRING if not offical_artist else None,
+                        'apple_music_artist_uri': UNOFFICAL_ARTIST_URI_STRING if not offical_artist else None
+                    }
+                )
+                if offical_artist:
+                    if artist.youtube_music_channel_uri is None or artist.youtube_music_channel_uri == '':
+                        artist.youtube_music_channel_uri = artist_item['artist_youtube_uri']
+                        artist.save()
+                print(artist)
+                artists.append(artist)
 
             track, _ = Track.objects.get_or_create(
-                track_id=item['track_id'],
+                track_name=item['track_name'],
+                explicit=item['explicit'],
+                album_title=item['album_name'],
+                duration_ms_rounded=item['duration_ms'],
+                # youtube_music_track_uri = item['youtube_track_uri'] or None,
+                offical_track=item['offical_track'],
+                release_date=item['release_date'],
+                # artists = artists.items(),
                 defaults={
+                    'track_id': item['track_id'],
                     'track_name': item['track_name'],
-                    'duration_ms': item['duration_ms'],
+                    'duration_ms_rounded': item['duration_ms'],
                     'explicit': item['explicit'],
                     'track_number': item['track_number'],
                     'youtube_music_track_uri': item['youtube_track_uri'],
@@ -174,14 +233,25 @@ class youtube_playlist_info(object):
                     'offical_track': item['offical_track']
                 }
             )
-            track.artists.add(artist)
+            if track.youtube_music_track_uri is None or track.youtube_music_track_uri == '':
+                track.youtube_music_track_uri = item['youtube_track_uri']
+                track.save()
+
+            for artist in artists:
+                track.artists.add(artist)
+                track.save()
 
             playlist_tracks.append(track)
 
         playlist, _ = Playlist.objects.get_or_create(
             youtube_playlist_uri=playlist_data['youtube_playlist_uri'],
+            playlist_track_length=len(playlist_tracks),
+            playlist_image=playlist_data['playlist_image'],
+            playlist_description=playlist_data['playlist_description'],
+            user=self.creating_user,
             defaults={
                 'playlist_name': playlist_data['playlist_name'],
+                'user': self.creating_user,
                 'playlist_description': playlist_data['playlist_description'],
                 'playlist_track_length': len(playlist_tracks),  # Updated from 'total_tracks',
                 'playlist_image': playlist_data['playlist_image']
@@ -189,7 +259,15 @@ class youtube_playlist_info(object):
         )
 
         for track in playlist_tracks:
-            playlist.tracks.add(track)
+            playlist_track, _ = PlaylistTrack.objects.get_or_create(
+                track=track,
+                playlist_position=playlist_tracks.index(track),
+                defaults={
+                    'track': track,
+                    'playlist_position': playlist_tracks.index(track)
+                }
+            )
+            playlist.tracks.add(playlist_track)
 
         print(f"Successfully added/updated playlist: {playlist.playlist_name}")
         return playlist.playlist_id

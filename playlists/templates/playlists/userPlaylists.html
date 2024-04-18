@@ -1,0 +1,18 @@
+{% extends "playlists/base.html" %}
+
+{% block title %}My Playlists{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class='d-flex flex-row flex-wrap'>
+    <figure class='container p-2 col' onclick="window.location.href='{% url 'create' %}'")>
+        <img class='img-fixed listed-playlist-image' src="{% static 'icons/plus_box.svg' %}" alt="create" />
+    </figure>
+    {% for playlist in playlists %}
+    <figure class='container p-2 col' onclick="window.location.href='{% url 'view' playlist_id=playlist.playlist_id %}'")>
+        <img class='img-fixed listed-playlist-image' src="{{  playlist.playlist_image }}" alt="" />
+        <figcaption>{{  playlist.playlist_name }}</figcaption>
+    </figure>
+    {% endfor %}
+</div>
+{% endblock %}

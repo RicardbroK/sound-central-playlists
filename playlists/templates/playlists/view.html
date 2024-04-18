@@ -1,7 +1,7 @@
 {% extends "playlists/base.html" %}
 {% load static %}
 
-{% block title %}SoundCentral Home{% endblock %}
+{% block title %}{{playlist_data.playlist_name}}{% endblock %}
 
 {% block content %}
  <!-- Create a div with class "container" to wrap the heading -->
@@ -26,5 +26,101 @@
         </div>
     </div>
 </div>
-{#<h1>Submitted url is {{ request.GET.playlisturl }}</h1>#}
+<div class="container mt-5">
+  <!-- Playlist Header -->
+  <div class="container-fluid row mb-4">
+      <img src="{{playlist_data.playlist_image|safe}}" alt="Playlist Cover" class="img-max justify-content-start playlist-cover col">
+      <div class='col'>
+        <h1 id="playlistName">{{playlist_data.playlist_name}}</h1>
+        <p id="creatorName">Created by: {{playlist_creator_name}}</p>
+        <p id="playlistDescription">{{playlist_data.playlist_description}}</p>
+        {%if playlist_creator_name != user.get_username %}
+          {% if playlist_saved %}
+            <button id='save' type="button" value="Copy URL" onclick="SavePlaylist()"><i class="fa-solid fa-bookmark"></i></button>
+          {% else  %}
+            <button id='save' type="button" value="Copy URL" onclick="SavePlaylist()"><i class="fa-regular fa-bookmark"></i></button>
+          {% endif %}
+        {% endif %}
+        <button id='copy-url' type="button" value="Copy URL" onclick="Copy();"><i class="fa-solid fa-link"></i></button>
+        <form action='{% url "export" %}' method='get'>
+          <input type="hidden" name="id" value="{{playlist_data.playlist_id}}">
+          <input class='spotify-export-button' type="submit" name='platform' value='spotify'/>
+          <input class='apple-export-button' type="submit" name='platform' value='apple'/>
+          <input class='yt-music-export-button' type="submit" name='platform' value='yt_music'/>
+        </form>
+      </div>
+  </div>
+
+  <!-- Tracks List -->
+  <div class="row">
+    <div class="col">
+      <h2>Tracks</h2>
+      <div id="tracksList">
+        {% for track in playlist_data.tracks %}
+          <div class="row mb-2">
+            <div class="col-2">
+              <img src="{{track.track.album_art_url}}" alt="{{track.track.track_name}}" class="track-image img-fluid">
+            </div>
+            <div class="col">
+              <h5>{{track.track.track_name}}<span class="explicit-marker">{%if track.track.explicit %}E{%endif%}</span></h5>
+              <p>{% for artist in track.track.artists %}{{' '|add:artist.artist_name}}{% endfor %} - {{track.track.album_title}} - {{track.playlist_position}}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  function Copy() {
+      let url = document.location.href;
+      navigator.clipboard.writeText(url).then(function() {
+          console.log('Copied!');
+      }, function() {
+          console.log('Copy error');
+      });
+  }
+
+  function SavePlaylist() {
+    // Open the external website
+    // Make an AJAX call to your Django view
+    //$.get('save?id=' + {{playlist_data.playlist_id}}, function (data) {
+    //});
+
+    function getCookie(name) {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+              const cookie = cookies[i].trim();
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+        return cookieValue;
+    }
+
+    const csrftoken = getCookie('csrftoken');
+    const url = "save"; // Replace with your API endpoint
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify({
+          id: '{{playlist_data.playlist_id}}',
+        }),
+        headers: {
+            'X-CSRFToken':  csrftoken,
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .catch(error => {
+        console.error("Error sending POST request:", error);
+    });
+    setTimeout(function(){
+      window.location.reload(1);
+    }, 1000);
+  }
+</script>
 {% endblock %}

@@ -1,5 +1,6 @@
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import AbstractUser
+from django.conf import settings
 from django.db import models
 from django.core.exceptions import ValidationError
 import datetime
@@ -27,7 +28,8 @@ class Track(models.Model):
     album_art_url = models.URLField(blank=True, default='', max_length=2000)  # Stores the album art from Spotify ATM
     artists = models.ManyToManyField(Artist)
     track_name = models.CharField(max_length=255)
-    duration_ms = models.BigIntegerField(blank=True, default=0)
+    duration_ms = models.BigIntegerField(blank=True, null=True)
+    duration_ms_rounded = models.BigIntegerField(blank=True, default=0)
     explicit = models.BooleanField(null=True)
     release_date = models.DateField(null=True)
     spotify_track_uri = models.CharField(max_length=22,blank=True, default='', null=True) # Store Spotify URI for direct linking
@@ -42,13 +44,28 @@ class Track(models.Model):
         return f"{self.track_name} - {artist_names} (ID: {self.track_id})"
 
 
+class PlaylistTrack(models.Model):
+    track = models.ForeignKey(Track, on_delete=models.CASCADE, null = False)
+    playlist_position = models.IntegerField(null=False)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=['track', 'playlist_position'], name='unique_track_posistion'
+            )
+        ]
+
+    def __str__(self):
+        return f"Track [{self.track.track_name}] - (Position: {self.playlist_position})"
+
 class Playlist(models.Model):
     playlist_id = models.AutoField(primary_key=True)
-    user_id = models.CharField(max_length=255, blank=True, default='', null=True)
-    tracks = models.ManyToManyField(Track)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='creator', null=True, default=None)
+    fans = models.ManyToManyField(settings.AUTH_USER_MODEL)
     playlist_name = models.CharField(max_length=255)
     playlist_description = models.TextField(blank=True, default='')
     playlist_image = models.URLField(max_length=2000, null=True)
+    tracks = models.ManyToManyField(PlaylistTrack)
     playlist_track_length = models.IntegerField(blank=True, default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
