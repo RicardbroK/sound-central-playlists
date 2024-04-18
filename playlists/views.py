@@ -13,6 +13,12 @@ from django.core.validators import URLValidator
 from django.core.exceptions import ValidationError
 from urllib.parse import urlparse
 from playlists.models import Playlist, Track, Artist, PlaylistTrack
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm  
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout 
+from django.contrib.auth.forms import UserCreationForm
+from playlists.models import Playlist
 from .serializers import PlaylistSerializer
 from playlists.services.spotify_services.spotify_playlist_info import spotify_playlist_info
 from playlists.services.youtube_services.yt_music_playlist_info import youtube_playlist_info
@@ -22,7 +28,6 @@ import json
 from django.shortcuts import redirect
 from django.contrib.auth.models import User
 import requests
-import ast
 
 
 # Create your views here.
@@ -156,6 +161,7 @@ def view_playlist(request, playlist_id):
         return render(request, 'playlists/view.html', context=context)
     except Exception as e:
         return HttpResponse(f'{e}')
+@login_required(redirect_field_name="my_redirect_field")
 def user_playlists(request):
     context= {}
     current_user = request.user
@@ -166,7 +172,7 @@ def user_playlists(request):
         return render(request, 'playlists/userPlaylists.html', context=context)
     else:
         return HttpResponse(f'User is not authenticated')
-
+@login_required(redirect_field_name="my_redirect_field")
 def saved_playlists(request):
     context = {}
     current_user = request.user
@@ -382,6 +388,7 @@ def export_playlist(request):
             breakpoint
     return render(request, 'playlists/export.html', context=context)
 
+@login_required(redirect_field_name="my_redirect_field")
 def save_playlist(request):
     body_unicode = request.body.decode('utf-8')
     body = json.loads(body_unicode)
@@ -399,4 +406,9 @@ def save_playlist(request):
         return HttpResponse(f'Failed to save')
     else:
         return HttpResponse(f'Failed to save')
-
+    
+def signup(request):
+    return render(request, "registration/signup.html")
+def logout_view(request):
+    logout(request)
+    return redirect("/")
