@@ -18,7 +18,31 @@
             <p>You should probably login motherfucker</p>
             <p class="mb-0">Don't have an account? <a href="{% url 'signup' %}" class="text-black-50 fw-bold">Sign Up</a>
             </p>
+<body>
+
+  {% if user.is_authenticated %}
+    <h1>Welcome {{ user.get_username }}</h1>
+    {% else %}  
+    <div class="container position-absolute top-50 start-50 translate-middle text-center">
+            <h1>Welcome to SoundCentral, your playlist cloud and export hub.</h1>
+            <p class="lead">Want to share a playlist with your friend? We have just the thing! <br>We offer playlist sharing over platforms and a safe place to store 
+                your favorite playlists.</p>
+            <p class="lead">
+              <a href="{% url 'login' %}" class="btn btn-lg btn-secondary fw-bold border-white bg-black">Login</a>
+            </p>
+            <p>You should probably login motherfucker</p>
+            <p class="mb-0">Don't have an account? <a href="{% url 'signup' %}" class="text-black-50 fw-bold">Sign Up</a>
+            </p>
     </div>
+    {% endif %}
+</body>
+
+
+
+
+
+
+
     {% endif %}
 </body>
 
