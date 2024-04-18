@@ -1,4 +1,4 @@
-from .views import home, apple_music_playlist_infofrom, importPlaylist, exportPlaylist
+from .views import apple_music_playlist_info, importPlaylist, exportPlaylist
 from django.urls import include, path
 from django.contrib import admin
 from . import views

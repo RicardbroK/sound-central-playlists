@@ -62,6 +62,7 @@ class Playlist(models.Model):
     playlist_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='creator', null=True, default=None)
     fans = models.ManyToManyField(settings.AUTH_USER_MODEL)
+    num_exports = models.IntegerField(default=0, null=True)
     playlist_name = models.CharField(max_length=255)
     playlist_description = models.TextField(blank=True, default='')
     playlist_image = models.URLField(max_length=2000, null=True)

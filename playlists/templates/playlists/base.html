@@ -23,9 +23,6 @@
 
 </head>
 <body>
-<h1>{{ playlist_id }}</h1>
-<span id="apple_music_token" style="display:none;">{{ token }}</span>
-<span id="apple_music_playlist_id" style="display:none;">{{ playlist_id }}</span>
 
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
@@ -56,30 +53,6 @@
                     {% csrf_token %}
                     <button type="submit" class="btn nav-link" href="logout">Logout</button>
                   </form>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Home</a>
-              </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'topPlaylists' %}">Top Playlists</a>
-                </li>
-
-                {% if user.is_authenticated %}
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'import' %}">Import</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{% url 'myPlaylists' %}">My Playlists</a>
-                 </li>
-                <li class="nav-item">
-                  <form id="logout-form" method="post" action="{% url 'logout' %}">
-                    {% csrf_token %}
-                    <button type="submit" class="btn nav-link" href="logout">Logout</button>
-                  </form>
-                </li>
-              {% else %}
-                <li><a class="nav-link" href="{% url 'login' %}">Login</a></li>
-              {% endif %}
-
               {% else %}
                 <li><a class="nav-link" href="{% url 'login' %}">Login</a></li>
               {% endif %}

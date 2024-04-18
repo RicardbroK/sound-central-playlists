@@ -29,6 +29,7 @@ from django.shortcuts import redirect
 from django.contrib.auth.models import User
 import requests
 import urllib.parse
+from django.db.models import Count
 
 # Create your views here.
 class importPlaylist(APIView):
@@ -48,23 +49,6 @@ class importPlaylist(APIView):
             parsed_url = urlparse(url)
             match parsed_url.hostname:
                 case 'music.apple.com':
-                    # Apple Music token generation logic
-                    time_now = datetime.now()
-                    time_expired = time_now + timedelta(hours=12)
-                    headers = {
-                        "alg": 'ES256',
-                        "kid": str(os.getenv("APPLE_MUSIC_DEV_KEY"))
-                    }
-                    payload = {
-                        "iss": os.getenv("APPLE_MUSIC_TEAM_ID"),
-                        "exp": int(time_expired.timestamp()),
-                        "iat": int(time_now.timestamp())
-                    }
-                    token = jwt.encode(payload, os.getenv("APPLE_MUSIC_API_KEY"), algorithm='ES256', headers=headers)
-                    context['token'] = token
-                    # You might want to use this token for subsequent requests to the Apple Music API
-                    print(token)  # For debugging
-
                     return 'apple_music'
                 case 'www.spotify.com' | 'spotify.com' | 'open.spotify.com':
                     # make sure it is a playlist path
@@ -128,6 +112,23 @@ class importPlaylist(APIView):
                         yur = youtube_playlist_info(playlist_id, request.user)
                         playlist_id = yur.insert_playlist_db()
                     case 'apple_music':
+                        # Apple Music token generation logic
+                        time_now = datetime.now()
+                        time_expired = time_now + timedelta(hours=12)
+                        headers = {
+                            "alg": 'ES256',
+                            "kid": str(os.getenv("APPLE_MUSIC_DEV_KEY"))
+                        }
+                        payload = {
+                            "iss": os.getenv("APPLE_MUSIC_TEAM_ID"),
+                            "exp": int(time_expired.timestamp()),
+                            "iat": int(time_now.timestamp())
+                        }
+                        token = jwt.encode(payload, os.getenv("APPLE_MUSIC_API_KEY"), algorithm='ES256', headers=headers)
+                        context['token'] = token
+                        # You might want to use this token for subsequent requests to the Apple Music API
+                        print(token)  # For debugging
+
                         context['test_variable'] = 'you made it to apple'
                     case _:
                         raise ValueError("Unsupported platform or an error occurred in matching the platform.")
@@ -139,7 +140,7 @@ class importPlaylist(APIView):
                 context['valid_url'] = False
                 return render(request, 'playlists/import.html', context=context)
             context['formatted_data'] = formatted_data
-            return render(request, 'playlists/view.html', context=context)
+            return redirect(view_playlist, playlist_id=playlist_id)#f'/playlists/view?playlist_id={playlist_id}')
         else:
             return render(request, 'playlists/import.html', context=context)
 
@@ -158,9 +159,10 @@ def view_playlist(request, playlist_id):
         playlist_details.pop('fans')
         context['playlist_data'] = playlist_details
         context['playlist_creator_name'] = User.objects.get(id=playlist_details['user']).username
+        context['valid_url'] = True
         return render(request, 'playlists/view.html', context=context)
     except Exception as e:
-        return HttpResponse(f'{e}')
+        return render(request, 'playlists/home.html')
 @login_required(redirect_field_name="my_redirect_field")
 def user_playlists(request):
     context= {}
@@ -319,16 +321,37 @@ class exportPlaylist(APIView):
         playlist_details.pop('fans')
         context['playlist_details'] = playlist_details
         context['confirm_needed'] = True
-        confirmed = request.POST.get('confirm') == 'Confirmed'
-
+        match context['platform']:
+            case 'spotify':
+                spotify_session = request.session.get('spotify')
+                if spotify_session is None:
+                    context['access_expired'] = True
+                    return render(request, 'playlists/export.html', context=context)
+            case _:
+                breakpoint
         return render(request, 'playlists/export.html', context=context)
     
     def post(self, request):
         TRACK_SEARCH_LIMIT = 1
         SPOTIFY_URL_START = 'https://api.spotify.com/v1/search?q='
         SPOTIFY_URL_END = f'&type=track&limit={TRACK_SEARCH_LIMIT}'
+        context = {}
+        context['platform'] = request.GET.get('platform')
+        context['playlist_id'] = request.GET.get('id')
+        confirmed = request.POST.get('confirm') == 'Confirmed'
+        
+        match context['platform']:
+            case 'spotify':
+                spotify_session = request.session.get('spotify')
+                if spotify_session is None:
+                    context['access_expired'] = True
+                    return render(request, 'playlists/export.html', context=context)
+                else:
+                    spotify_token = json.loads(request.session.get('spotify'))['access_token']
+            case _:
+                context['confirm_needed'] = True
+                return render(request, 'playlists/export.html', context=context)
         def search_spotify_uri(track) -> str:
-            spotify_token = json.loads(request.session.get('spotify'))['access_token']
             if track['spotify_track_uri'] == '' or track['spotify_track_uri'] is None:
                 track_name = track['track_name']
                 if track['offical_track'] and track['original_platform'] != 'yt_music':
@@ -421,22 +444,16 @@ class exportPlaylist(APIView):
                         return False
             else:
                 return 'spotify:track:'+track['spotify_track_uri']
-        
-        context = {}
-        context['platform']= request.GET.get('platform')
-        context['playlist_id'] = request.GET.get('id')
 
         playlist_details = PlaylistSerializer(Playlist.objects.get(playlist_id=context['playlist_id'])).data
+        playlist_object = Playlist.objects.get(playlist_id=context['playlist_id'])
         playlist_details.pop('fans')
         context['playlist_details'] = playlist_details
-        confirmed = request.POST.get('confirm') == 'Confirmed'
 
         match context['platform']:
             case 'spotify':
-                spotify_session = request.session.get('spotify')
                 if spotify_session is not None:
                     if confirmed:
-                        spotify_token = json.loads(spotify_session)['access_token']
                         endpoint = 'https://api.spotify.com/v1/me'
                         header= {'Authorization': 'Bearer'+f' {spotify_token}'}
                         response = requests.get(endpoint, headers=header)
@@ -475,9 +492,13 @@ class exportPlaylist(APIView):
                     else:
                         context['confirm_needed'] = True
                 else:
-                    context['spotify_access_expired'] = True
+                    context['access_expired'] = True
             case _:
                 breakpoint
+        if context['success']:
+            playlist_object.num_exports = playlist_object.num_exports+1
+            playlist_object.save()
+
         return render(request, 'playlists/export.html', context=context)
 
 @login_required(redirect_field_name="my_redirect_field")
@@ -502,7 +523,15 @@ def homepage(request):
     return render(request, "playlists/home.html")
 
 def topPlaylists(request):
-    return render(request, "playlists/topPlaylists.html")
+    context = {}
+    current_user = request.user
+    if current_user.is_authenticated:
+        # Get all playlists current user is a fan of
+        top_playlists = Playlist.objects.annotate(num_fans=Count('fans')).all().order_by('-num_fans')[:5]
+        context['top_playlists'] = top_playlists
+        return render(request, 'playlists/topPlaylists.html', context=context)
+    else:
+        return render(request, "playlists/topPlaylists.html")
 
 def signup(request):
     return render(request, "registration/signup.html")

@@ -189,6 +189,7 @@ class youtube_playlist_info(object):
 
         # Continue with adding new playlist, tracks, and albums
         playlist_tracks = []
+        dup_tracks = []
         for item in playlist_data['playlist_tracks']:
             print(item['artists'])
             artists = []
@@ -209,30 +210,68 @@ class youtube_playlist_info(object):
                         artist.save()
                 print(artist)
                 artists.append(artist)
-
-            track, _ = Track.objects.get_or_create(
-                track_name=item['track_name'],
-                explicit=item['explicit'],
-                album_title=item['album_name'],
-                duration_ms_rounded=item['duration_ms'],
-                # youtube_music_track_uri = item['youtube_track_uri'] or None,
-                offical_track=item['offical_track'],
-                release_date=item['release_date'],
-                # artists = artists.items(),
-                defaults={
-                    'track_id': item['track_id'],
-                    'track_name': item['track_name'],
-                    'duration_ms_rounded': item['duration_ms'],
-                    'explicit': item['explicit'],
-                    'track_number': item['track_number'],
-                    'youtube_music_track_uri': item['youtube_track_uri'],
-                    'album_art_url': item['album_art'],
-                    'album_title': item['album_name'],
-                    'release_date': item['release_date'],
-                    'original_platform': 'yt_music',
-                    'offical_track': item['offical_track']
-                }
+            track_search = Track.objects.filter(
+                track_name = item['track_name'],
+                explicit= item['explicit'],
+                album_title = item['album_name'],
+                duration_ms_rounded = item['duration_ms'],
+                offical_track = item['offical_track'],
+                release_date = item['release_date'],
             )
+            if len(track_search) == 2:
+                first_track = track_search.first()
+                last_track = track_search.last()
+
+                if first_track.track_id != item['track_id'] and last_track.track_id == item['track_id']:
+                    track = first_track
+                    track_to_remove = last_track
+                elif first_track.track_id == item['track_id'] and last_track.track_id != item['track_id']:
+                    track = last_track
+                    track_to_remove = first_track
+
+                else:
+                    track_to_remove = False
+                    track_search = []
+                if track_to_remove:
+                    playlist_track_search = PlaylistTrack.objects.filter(
+                        track=track_to_remove
+                    )
+                    for playlist_track in playlist_track_search:
+                        playlist_search = Playlist.objects.filter(
+                            tracks__in = [playlist_track]
+                        )
+                        for playlist in playlist_search:
+                            updated_playlist_track, _ = PlaylistTrack.objects.get_or_create(
+                                track = track,
+                                playlist_position = playlist_track.playlist_position,
+                                defaults={
+                                    'track': track,
+                                    'playlist_position': playlist_track.playlist_position
+                                }
+                            )
+                            playlist.tracks.add(updated_playlist_track)
+                            playlist.save()
+                    dup_tracks.append(track_to_remove)
+                    
+            elif len(track_search) == 1:
+                track = track_search.first()
+            else:
+                track, _ = Track.objects.get_or_create(
+                        track_id = item['track_id'],
+                        defaults = {
+                        'track_id': item['track_id'],
+                        'track_name':  item['track_name'],
+                        'duration_ms_rounded':  item['duration_ms'],
+                        'explicit':  item['explicit'],
+                        'track_number':  item['track_number'],
+                        'youtube_music_track_uri':  item['youtube_track_uri'],
+                        'album_art_url':  item['album_art'],
+                        'album_title':  item['album_name'],
+                        'release_date': item['release_date'],
+                        'original_platform':  'yt_music',
+                        'offical_track': item['offical_track'],
+                    }
+                )
             if track.youtube_music_track_uri is None or track.youtube_music_track_uri == '':
                 track.youtube_music_track_uri = item['youtube_track_uri']
                 track.save()
@@ -269,5 +308,9 @@ class youtube_playlist_info(object):
             )
             playlist.tracks.add(playlist_track)
 
+        for dup_track in dup_tracks:
+            print(dup_track)
+            dup_track.delete()
+            
         print(f"Successfully added/updated playlist: {playlist.playlist_name}")
         return playlist.playlist_id
