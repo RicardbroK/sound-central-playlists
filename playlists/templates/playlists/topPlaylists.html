@@ -14,90 +14,37 @@
         <div class="container">
         <div class="row">
         <!--Start playlist content-->    
-
-            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
-                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
-                    <img
-                    src="{% static 'playlists/images/playlistimage.PNG' %}"
-                    class="card-img-top rounded"
-                    alt="Waterfall"
-                    width="360"
-                    height="260"/>
-                    <div class="card-body white-text">
-                        <h5 class="card-title"style="color: white">Glimpse of Us</h5>
-                        <p class="card-text" style="color: white">
-                            Export to:
-                        </p>
+        {% for playlist in top_playlists %}
+        <div class="col-xl-3 col-lg-4 col-md-5">
+            <div class="card" style="background:linear-gradient(#000000, #2D3436); width: 260px">
+                <img
+                onclick="window.location.href='{% url 'view' playlist_id=playlist.playlist_id %}'"
+                src="{{  playlist.playlist_image }}"
+                class="card-img-top rounded"
+                alt="{{  playlist.playlist_name }}"
+                height="190px"
+                />
+                <div class="card-body white-text">
+                <h5 class="card-title" style="color: white">{{ playlist.playlist_name }}</h5>
+                <p class="card-text" style="color: white">
+                    Export to:
+                </p>
+                <form action='{% url "export" %}' method='get'>
+                    <input type="hidden" name="id" value="{{playlist.playlist_id}}">
+                    <button type='submit' name='platform' value='spotify'>
                         <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
+                    </button>
+                    <button type='submit' name='platform' value='yt_music'>
                         <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
+                    </button>
+                    <button type='submit' name='platform' value='apple'>
                         <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
-                    </div>
+                    </button>
+                <form>
                 </div>
             </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
-                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
-                    <img
-                    src="{% static 'playlists/images/playlistimg2.PNG' %}"
-                    class="card-img-top rounded"
-                    alt="Sunset Over the Sea"
-                    width="360"
-                    height="260"
-                    />
-                    <div class="card-body white-text">
-                        <h5 class="card-title" style="color: white">WHEN WE ALL ...</h5>
-                        <p class="card-text" style="color: white">
-                            Export to:
-                        </p>
-                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
-                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
-                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
-                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
-                    <img
-                    src="{% static 'playlists/images/playlistimg3.PNG' %}"
-                    class="card-img-top rounded"
-                    alt="Sunset over the Sea"
-                    width="360"
-                    height="260"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: white">Confessions</h5>
-                        <p class="card-text" style="color: white">
-                            Export to:
-                        </p>
-                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
-                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
-                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-7">
-                <div class="card" style="background:linear-gradient(#000000, #2D3436)">
-                    <img
-                    src="{% static 'playlists/images/playlistimg4.PNG' %}"
-                    class="card-img-top rounded"
-                    alt="Sunset over the Sea"
-                    width="360"
-                    height="260"
-                    />
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: white">Cannibal</h5>
-                        <p class="card-text" style="color: white">
-                            Export to:
-                        </p>
-                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
-                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
-                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
-                    </div>
-                </div>
-            </div>
-
+        </div>
+        {% endfor %}
         <!--Main divs-->
         </div>    
         </div>    

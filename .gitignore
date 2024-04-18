@@ -7,3 +7,5 @@ playlists/migrations/
 userprofile/migrations/
 *.pyc
 AuthKey_9XUYT8QD7W.p8
+playlists/services/testfile.py
+sample_playlist.txt

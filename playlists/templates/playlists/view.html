@@ -1,8 +1,22 @@
 {% extends "playlists/base.html" %}
+{% load static %}
 
 {% block title %}{{playlist_data.playlist_name}}{% endblock %}
 
 {% block content %}
+ <!-- Create a div with class "container" to wrap the heading -->
+<div class="container position-absolute top-50 start-50 translate-middle">
+    <!-- Create a div with class "row" to create a grid row -->
+    <div class="row">
+        <!-- Create a div with class "col" to create a grid column -->
+        <div class="col">
+            <!-- Create a heading element with class "text-center" to center the text horizontally -->
+            {% if not valid_url%}
+            <h1 class="text-center">URL is invalid, try again.</h1>
+            {% endif %}
+        </div>
+    </div>
+</div>
 <div class="container mt-5">
   <!-- Playlist Header -->
   <div class="container-fluid row mb-4">

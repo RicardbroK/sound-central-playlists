@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.html import format_html
 
 # Register your models here.
 from django.contrib import admin
@@ -24,8 +25,7 @@ class TrackAdmin(admin.ModelAdmin):
 
 @admin.register(Playlist)
 class PlaylistAdmin(admin.ModelAdmin):
-    list_display = ['playlist_id', 'playlist_name', 'playlist_description',
-                    'playlist_track_length', 'created_at', 'updated_at']
+    list_display = ['playlist_id', 'playlist_name', 'playlist_description', 'playlist_track_length', 'created_at', 'updated_at']
     ordering = ['playlist_id', 'playlist_name']
     search_fields = ['playlist_name', 'tracks']
 
@@ -36,3 +36,4 @@ class PlaylistTrackAdmin(admin.ModelAdmin):
     ]
     ordering = ['track', 'playlist_position']
     search_fields = ['track']
+
