@@ -4,7 +4,25 @@ python-dotenv ~=1.0.1
 requests ~= 2.31.0
 djangorestframework~=3.14.0
 psycopg[binary]
+spotipy~=2.23.0
+requests==2.31.0
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+isodate~=0.6.1
+apple-music-python
+js2py
+
+PyJWT~=2.8.0
+cryptography~=42.0.5
+sqlparse
+Django ~=5.0.1
+python-dotenv ~=1.0.1
+requests ~= 2.31.0
+djangorestframework~=3.14.0
+psycopg[binary]
 spotipy
+django-allauth
 requests==2.31.0
 google-api-python-client
 google-auth-oauthlib

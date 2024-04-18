@@ -25,7 +25,7 @@ class Artist(models.Model):
 class Track(models.Model):
     track_id = models.CharField(primary_key=True, max_length=22)
     album_title = models.CharField(max_length=255,blank=True, default='', null=True)
-    album_art_url = models.URLField(blank=True, default='')  # Stores the album art from Spotify ATM
+    album_art_url = models.URLField(blank=True, default='', max_length=2000)  # Stores the album art from Spotify ATM
     artists = models.ManyToManyField(Artist)
     track_name = models.CharField(max_length=255)
     duration_ms = models.BigIntegerField(blank=True, null=True)
@@ -42,7 +42,7 @@ class Track(models.Model):
     def __str__(self):
         artist_names = ', '.join([artist.artist_name for artist in self.artists.all()])
         return f"{self.track_name} - {artist_names} (ID: {self.track_id})"
-    
+
 
 class PlaylistTrack(models.Model):
     track = models.ForeignKey(Track, on_delete=models.CASCADE, null = False)
@@ -64,7 +64,7 @@ class Playlist(models.Model):
     fans = models.ManyToManyField(settings.AUTH_USER_MODEL)
     playlist_name = models.CharField(max_length=255)
     playlist_description = models.TextField(blank=True, default='')
-    playlist_image = models.URLField(null=True)
+    playlist_image = models.URLField(max_length=2000, null=True)
     tracks = models.ManyToManyField(PlaylistTrack)
     playlist_track_length = models.IntegerField(blank=True, default=0)
     created_at = models.DateTimeField(auto_now_add=True)
