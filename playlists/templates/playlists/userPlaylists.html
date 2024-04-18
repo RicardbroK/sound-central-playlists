@@ -4,15 +4,46 @@
 
 {% block content %}
 {% load static %}
-<div class='d-flex flex-row flex-wrap'>
-    <figure class='container p-2 col' onclick="window.location.href='{% url 'create' %}'")>
-        <img class='img-fixed listed-playlist-image' src="{% static 'icons/plus_box.svg' %}" alt="create" />
-    </figure>
-    {% for playlist in playlists %}
-    <figure class='container p-2 col' onclick="window.location.href='{% url 'view' playlist_id=playlist.playlist_id %}'")>
-        <img class='img-fixed listed-playlist-image' src="{{  playlist.playlist_image }}" alt="" />
-        <figcaption>{{  playlist.playlist_name }}</figcaption>
-    </figure>
-    {% endfor %}
+<div class="text-center">
+    <div class="container">
+        <div class="row">
+            <div onclick="window.location.href='{% url 'import' %}'" class="col-xl-3 col-lg-4 col-md-5">
+                <div class="card" style="width: 260px">
+                    <img class='img-fixed listed-playlist-image' src="{% static 'icons/plus_box.svg' %}" alt="create" />
+                </div>
+            </div>
+            {% for playlist in playlists %}
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                <div class="card" style="background:linear-gradient(#000000, #2D3436); width: 260px">
+                    <img
+                    onclick="window.location.href='{% url 'view' playlist_id=playlist.playlist_id %}'"
+                    src="{{  playlist.playlist_image }}"
+                    class="card-img-top rounded"
+                    alt="{{  playlist.playlist_name }}"
+                    height="190px"
+                    />
+                    <div class="card-body white-text">
+                    <h5 class="card-title" style="color: white">{{ playlist.playlist_name }}</h5>
+                    <p class="card-text" style="color: white">
+                        Export to:
+                    </p>
+                    <form action='{% url "export" %}' method='get'>
+                        <input type="hidden" name="id" value="{{playlist.playlist_id}}">
+                        <button type='submit' name='platform' value='spotify'>
+                            <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
+                        </button>
+                        <button type='submit' name='platform' value='yt_music'>
+                            <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
+                        </button>
+                        <button type='submit' name='platform' value='apple'>
+                            <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
+                        </button>
+                    <form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 {% endblock %}

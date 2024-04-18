@@ -3,6 +3,22 @@
 {% block title %}SoundCentral Home{% endblock %}
 {% load static %}
 {% block content %}
+ <!-- Create a div with class "container" to wrap the heading -->
+<div class="container position-absolute top-50 start-50 translate-middle">
+    <!-- Create a div with class "row" to create a grid row -->
+    <div class="row">
+        <!-- Create a div with class "col" to create a grid column -->
+        <div class="col">
+            {# Check if URL has been validated #}
+            {% if valid_url and platform == 'unsupported' %}
+                <h1 class="text-center">Oops, that website is not supported.</h1>
+            {% elif valid_url == False %}
+                <h2>{{ valid_url }} , {{ platform }}</h2>
+                <h1 class="text-center">Oops, that URL didn't work.</h1>
+            {% else %}
+            <h1 class="text-center">SoundCentral</h1>
+            {% endif %}
+        </div>
 <body>
 
   {% if user.is_authenticated %}

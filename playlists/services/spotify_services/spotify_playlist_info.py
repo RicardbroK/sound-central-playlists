@@ -14,6 +14,7 @@ load_dotenv()
 SPOTIPY_CLIENT_ID = os.getenv("SPOTIPY_CLIENT_ID")
 SPOTIPY_CLIENT_SECRET = os.getenv("SPOTIPY_CLIENT_SECRET")
 
+
 class spotify_playlist_info(object):
     def __init__(self, url, user):
         self.url = url
@@ -105,7 +106,7 @@ class spotify_playlist_info(object):
                 release_date = datetime.strptime(f"{year}-01-01", "%Y-%m-%d")
 
             artists = []
-            for artist_key,artist_value  in item['artists'].items():
+            for artist_key, artist_value in item['artists'].items():
                 artist, _ = Artist.objects.get_or_create(
                     artist_name=artist_value['artist_name'],
                     defaults={'spotify_artist_uri': artist_value['artist_spotify_uri']}
@@ -115,7 +116,7 @@ class spotify_playlist_info(object):
                     artist.spotify_artist_uri = artist_value['artist_spotify_uri']
                     artist.save()
                 artists.append(artist)
-            
+
             track, _ = Track.objects.get_or_create(
                 track_id=item['track_id'],
                 defaults={
@@ -137,13 +138,13 @@ class spotify_playlist_info(object):
                 track.artists.add(artist)
 
             playlist_tracks.append(track)
-        
+
         playlist, _ = Playlist.objects.get_or_create(
             spotify_playlist_uri=playlist_data['spotify_playlist_id'],
-            playlist_track_length = len(playlist_tracks),
-            playlist_image = playlist_data['playlist_image'],
-            playlist_description = playlist_data['playlist_description'],
-            user = self.creating_user,
+            playlist_track_length=len(playlist_tracks),
+            playlist_image=playlist_data['playlist_image'],
+            playlist_description=playlist_data['playlist_description'],
+            user=self.creating_user,
             defaults={
                 'playlist_name': playlist_data['playlist_name'],
                 'user': self.creating_user,
@@ -155,8 +156,8 @@ class spotify_playlist_info(object):
 
         for track in playlist_tracks:
             playlist_track, _ = PlaylistTrack.objects.get_or_create(
-                track = track,
-                playlist_position = playlist_tracks.index(track),
+                track=track,
+                playlist_position=playlist_tracks.index(track),
                 defaults={
                     'track': track,
                     'playlist_position': playlist_tracks.index(track)
