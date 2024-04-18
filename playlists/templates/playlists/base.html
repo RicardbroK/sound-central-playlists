@@ -11,10 +11,20 @@
     <!--CSS styles-->
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico'%}">
-    <!--Title is set dependant on what page is active-->
+    <!-- Inside your <head> tag in the HTML template -->
+    <script src="https://js-cdn.music.apple.com/musickit/v3/musickit.js" async></script>
+    <!--add jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Title is set dependent on what page is active-->
     <title>{% block title %}{% endblock %}</title>
+    <meta name="csrf-token" content="{{ csrf_token }}">
+
 </head>
 <body>
+<h1>{{ playlist_id }}</h1>
+<span id="apple_music_token" style="display:none;">{{ token }}</span>
+<span id="apple_music_playlist_id" style="display:none;">{{ playlist_id }}</span>
+
     <!--Nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
         <a class="navbar-brand" href="">
@@ -32,6 +42,9 @@
         </div>
     </nav>
     <!--MAIN CONTENT BLOCK IS REPLACED WITH OTHER TEMPLATES-->
+
+
+
     <main class="container min-vh-100">
         {% block content %}{% endblock %}
     </main>
@@ -53,6 +66,8 @@
           </div>
         </div>
       </footer>
+    <!--script for MusicKit auth -->
+    <script src="{% static 'musickit_integration.js' %}"></script>
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

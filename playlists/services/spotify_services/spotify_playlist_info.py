@@ -90,7 +90,7 @@ class spotify_playlist_info(object):
         # Check for existing playlist
         existing_playlist = Playlist.objects.filter(spotify_playlist_uri=playlist_data['spotify_playlist_id']).first()
         if existing_playlist:
-            print(f"Playlist with Spotify ID {playlist_data['spotify_playlist_id']} already exists.")
+            print(f"redirect to the spotify playlist {playlist_data['spotify_playlist_id']} as it already exists.")
             # Optionally update existing_playlist here
             return existing_playlist.playlist_id
 

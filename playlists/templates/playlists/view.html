@@ -1,4 +1,5 @@
 {% extends "playlists/base.html" %}
+{% load static %}
 
 {% block title %}SoundCentral Home{% endblock %}
 
@@ -12,10 +13,15 @@
             <!-- Create a heading element with class "text-center" to center the text horizontally -->
             {% if not valid_url%}
             <h1 class="text-center">URL is invalid, try again.</h1>
+            {% elif platform == 'apple' %}
+                    <!--script for MusicKit auth -->
+                <script src="{% static 'musickit_integration.js' %}"></script>
+                <h1>Platform URL is {{platform}}, and the playlist id is {{playlist_id}}</h1>
+                <h1 class="text-center">Wow, you made it!</h1>
             {% else %}
-            <h1 class="text-center">Wow, you made it!</h1>
-            <h1>Platform URL is {{platform}}, and the playlist id is {{playlist_id}}</h1>
+                <h1>Platform URL is {{platform}}, and the playlist id is {{playlist_id}}</h1>
                 <p>{{ playlist_data }}</p>
+                <h1 class="text-center">Wow, you made it!</h1>
             {% endif %}
         </div>
     </div>

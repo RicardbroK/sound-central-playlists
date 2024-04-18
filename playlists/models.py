@@ -24,7 +24,7 @@ class Artist(models.Model):
 class Track(models.Model):
     track_id = models.CharField(primary_key=True, max_length=22)
     album_title = models.CharField(max_length=255,blank=True, default='', null=True)
-    album_art_url = models.URLField(blank=True, default='')  # Stores the album art from Spotify ATM
+    album_art_url = models.URLField(blank=True, default='', max_length=2000)  # Stores the album art from Spotify ATM
     artists = models.ManyToManyField(Artist)
     track_name = models.CharField(max_length=255)
     duration_ms = models.BigIntegerField(blank=True, default=0)
@@ -48,7 +48,7 @@ class Playlist(models.Model):
     tracks = models.ManyToManyField(Track)
     playlist_name = models.CharField(max_length=255)
     playlist_description = models.TextField(blank=True, default='')
-    playlist_image = models.URLField(null=True)
+    playlist_image = models.URLField(max_length=2000, null=True)
     playlist_track_length = models.IntegerField(blank=True, default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
