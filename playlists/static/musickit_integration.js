@@ -1,4 +1,4 @@
-document.addEventListener('musickitloaded', async function () {
+StartImport = async function() {
     try {
         console.log("Fetching developer token...");
         const response = await fetch('/playlists/apple/generateToken', {
@@ -65,10 +65,11 @@ document.addEventListener('musickitloaded', async function () {
             },
             data: JSON.stringify({
                 playlist_attributes: JSON.stringify(playlist_attributes),
-                playlist_songs: JSON.stringify(tracks)
+                playlist_songs: JSON.stringify(tracks),
             }),
             success: function(response) {
                 console.log('Data sent successfully', response);
+                window.location.href  = ('/playlists/view/'+response['created_playlist'])
             },
             error: function(error) {
                 console.error('Error sending data', error);
@@ -78,4 +79,4 @@ document.addEventListener('musickitloaded', async function () {
         console.error('MusicKit configuration or processing error:', err);
         alert("Error during MusicKit initialization or operation. Please check the console for more details.");
     }
-});
+};

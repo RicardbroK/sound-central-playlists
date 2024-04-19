@@ -2,12 +2,8 @@ from datetime import datetime, timedelta
 import os
 import jwt
 from django.conf import settings
-key =  """-----BEGIN PRIVATE KEY-----
-MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQg0Axj1v8HVpfFrkUB
-JbMufw5cPBH41Z3uXldymbVu+HegCgYIKoZIzj0DAQehRANCAAQ+BrvFxjEwlC4A
-vG+PTrWALsj+GzjwpP7u1twT73+P4uLMwnNZyZO2gGttUSGINpq/pj1+gplaHftu
-w0p84lsz
------END PRIVATE KEY-----"""
+key =  os.getenv('APPLE_MUSIC_API_KEY').replace('\\n','\n' )
+print(key)
 def generate_apple_music_token():
     # Current time
     time_now = datetime.now()

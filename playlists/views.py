@@ -119,7 +119,7 @@ class importPlaylist(APIView):
                         playlist_id = yur.insert_playlist_db()
                     case 'apple_music':
                         context['test_variable'] = 'you made it to apple'
-                        return render(request, 'playlists/view.html', context=context)
+                        return render(request, 'playlists/apple.html', context=context)
                     case _:
                         raise ValueError("Unsupported platform or an error occurred in matching the platform.")
                 playlist_details = Playlist.objects.get(playlist_id=playlist_id)
@@ -175,15 +175,16 @@ def saved_playlists(request):
     else:
         return HttpResponse(f'User is not authenticated')
     
-def import_playlist(output_data):
+def import_playlist(output_data, creating_user):
     # Check for existing playlist
     existing_playlist = Playlist.objects.filter(
         apple_playlist_uri=output_data['playlist_information']['apple_playlist_uri'])
-    if existing_playlist:
+    if existing_playlist.first():
+        print(existing_playlist)
         print(
-            f"redirect to the apple playlist {output_data['playlist_information']['apple_playlist_id']} as it already exists.")
+            f"redirect to the apple playlist {output_data['playlist_information']['apple_playlist_uri']} as it already exists.")
         # Optionally update existing_playlist here
-        return existing_playlist.playlist_id
+        return existing_playlist.first().playlist_id
 
     # Continue with adding new playlist, tracks, and albums
     playlist_tracks = []
@@ -208,7 +209,8 @@ def import_playlist(output_data):
                 'album_art_url': item['album_art_url'],
                 'album_title': item['album_title'],
                 'release_date': release_date,
-                'original_platform': 'apple'
+                'original_platform': 'apple',
+                'offical_track': True
             }
         )
 
@@ -235,7 +237,8 @@ def import_playlist(output_data):
             }
         )
         playlist.tracks.add(playlist_track)
-
+        playlist.user = creating_user
+        playlist.save()
     print(f"Successfully added/updated playlist: {playlist.playlist_name}")
     return playlist.playlist_id
 
@@ -243,7 +246,6 @@ def import_playlist(output_data):
 @csrf_exempt
 @require_http_methods(["POST"])
 def apple_music_playlist_info(request):
-
     try:
         data = json.loads(request.body)
         print(data)
@@ -298,8 +300,9 @@ def apple_music_playlist_info(request):
                 'tracks': formatted_data
             }
             pprint.pprint(output_data)
-            import_playlist(output_data)
-            return JsonResponse({'message': 'Input playlist successfully'})
+            current_user = request.user
+            id = import_playlist(output_data, current_user)
+            return JsonResponse({'message': 'Input playlist successfully', 'created_playlist': id})
     except json.JSONDecodeError:
         return JsonResponse({'error': 'Error processing JSON data'}, status=400)
 

@@ -1,3 +1,11 @@
-<span id='playlist_id'>{{playlist_id}}</span>
+{% extends "playlists/base.html" %}
 
+{% block title %}Apple{% endblock %}
+
+{% load static %}
+{% block content %}
+<h1>You will need to login to apple to import this playlist.<h1>
+<input type='button' value='login' onclick='StartImport()'/>
+<span style='display:none' id='playlist_id'>{{playlist_id}}</span>
 <script src="{% static 'musickit_integration.js' %}"></script>
+{% endblock %}
