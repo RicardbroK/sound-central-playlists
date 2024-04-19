@@ -12,7 +12,6 @@ google-auth-httplib2
 isodate~=0.6.1
 apple-music-python
 js2py
-
 PyJWT~=2.8.0
 cryptography~=42.0.5
 sqlparse

@@ -17,7 +17,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm  
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout 
-from django.contrib.auth.forms import UserCreationForm
 from playlists.models import Playlist
 from .serializers import PlaylistSerializer
 from playlists.services.spotify_services.spotify_playlist_info import spotify_playlist_info
@@ -30,9 +29,16 @@ from django.contrib.auth.models import User
 import requests
 import urllib.parse
 from django.db.models import Count
+from playlists.services.apple_services.apple_token import generate_apple_music_token
 
+class apple_generate_token(APIView):
+    def get(self, request):
+        token = generate_apple_music_token()
+        return JsonResponse({'apple_music_token': token}, status=200)
+ 
 # Create your views here.
 class importPlaylist(APIView):
+    
     def get(self, request):
         return render(request, 'playlists/import.html')
 
@@ -112,24 +118,8 @@ class importPlaylist(APIView):
                         yur = youtube_playlist_info(playlist_id, request.user)
                         playlist_id = yur.insert_playlist_db()
                     case 'apple_music':
-                        # Apple Music token generation logic
-                        time_now = datetime.now()
-                        time_expired = time_now + timedelta(hours=12)
-                        headers = {
-                            "alg": 'ES256',
-                            "kid": str(os.getenv("APPLE_MUSIC_DEV_KEY"))
-                        }
-                        payload = {
-                            "iss": os.getenv("APPLE_MUSIC_TEAM_ID"),
-                            "exp": int(time_expired.timestamp()),
-                            "iat": int(time_now.timestamp())
-                        }
-                        token = jwt.encode(payload, os.getenv("APPLE_MUSIC_API_KEY"), algorithm='ES256', headers=headers)
-                        context['token'] = token
-                        # You might want to use this token for subsequent requests to the Apple Music API
-                        print(token)  # For debugging
-
                         context['test_variable'] = 'you made it to apple'
+                        return render(request, 'playlists/view.html', context=context)
                     case _:
                         raise ValueError("Unsupported platform or an error occurred in matching the platform.")
                 playlist_details = Playlist.objects.get(playlist_id=playlist_id)
@@ -143,7 +133,6 @@ class importPlaylist(APIView):
             return redirect(view_playlist, playlist_id=playlist_id)#f'/playlists/view?playlist_id={playlist_id}')
         else:
             return render(request, 'playlists/import.html', context=context)
-
 
 def view_playlist(request, playlist_id):
     context = {}
@@ -185,6 +174,7 @@ def saved_playlists(request):
         return render(request, 'playlists/savedPlaylists.html', context=context)
     else:
         return HttpResponse(f'User is not authenticated')
+    
 def import_playlist(output_data):
     # Check for existing playlist
     existing_playlist = Playlist.objects.filter(
@@ -253,8 +243,10 @@ def import_playlist(output_data):
 @csrf_exempt
 @require_http_methods(["POST"])
 def apple_music_playlist_info(request):
+
     try:
         data = json.loads(request.body)
+        print(data)
         playlist_info = data.get('playlist_attributes')
         playlist_songs = data.get('playlist_songs')
 

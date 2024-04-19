@@ -13,5 +13,6 @@ urlpatterns = [
     path('saved/', views.saved_playlists, name = 'saved_playlists'),
     path('apple/', views.apple_music_playlist_info, name='apple_playlist_import'),
     path('export', exportPlaylist.as_view(), name='export'),
-    path('logout/', views.logout)
+    path('logout/', views.logout),
+    path('apple/generateToken/', views.apple_generate_token.as_view(), name='apple_generate_token'),
 ]

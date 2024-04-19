@@ -31,15 +31,15 @@
                 </p>
                 <form action='{% url "export" %}' method='get'>
                     <input type="hidden" name="id" value="{{playlist.playlist_id}}">
-                    <button type='submit' name='platform' value='spotify'>
-                        <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px">
-                    </button>
-                    <button type='submit' name='platform' value='yt_music'>
-                        <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px">
-                    </button>
-                    <button type='submit' name='platform' value='apple'>
-                        <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px">
-                    </button>
+                    <input type='submit' name='platform' value='spotify'>
+                        {% comment %} <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px"> {% endcomment %}
+                    {% comment %} </button> {% endcomment %}
+                    <input type='submit' name='platform' value='yt_music'>
+                        {% comment %} <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px"> {% endcomment %}
+                    {% comment %} </button> {% endcomment %}
+                    <input type='submit' name='platform' value='apple'>
+                        {% comment %} <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px"> {% endcomment %}
+                    {% comment %} </button> {% endcomment %}
                 <form>
                 </div>
             </div>

@@ -26,11 +26,13 @@
         <p id="creatorName">Created by: {{playlist_creator_name}}</p>
         <p id="playlistDescription">{{playlist_data.playlist_description}}</p>
         {%if playlist_creator_name != user.get_username %}
+          <button id='save' type="button" value="Copy URL" onclick="SavePlaylist()"><i class="
           {% if playlist_saved %}
-            <button id='save' type="button" value="Copy URL" onclick="SavePlaylist()"><i class="fa-solid fa-bookmark"></i></button>
+            fa-solid 
           {% else  %}
-            <button id='save' type="button" value="Copy URL" onclick="SavePlaylist()"><i class="fa-regular fa-bookmark"></i></button>
+            fa-regular
           {% endif %}
+          fa-bookmark"></i></button>
         {% endif %}
         <button id='copy-url' type="button" value="Copy URL" onclick="Copy();"><i class="fa-solid fa-link"></i></button>
         <form action='{% url "export" %}' method='get'>
@@ -62,6 +64,7 @@
     </div>
   </div>
 </div>
+<span id='playlist_id'>{{playlist_id}}</span>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
   function Copy() {
