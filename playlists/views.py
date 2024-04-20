@@ -40,7 +40,9 @@ class apple_generate_token(APIView):
 class importPlaylist(APIView):
     
     def get(self, request):
-        return render(request, 'playlists/import.html')
+        context = {}
+        context['valid_url'] = not request.GET.get('failed')
+        return render(request, 'playlists/import.html', context=context)
 
     def post(self, request):
         playlist_url = request.POST.get('playlisturl')

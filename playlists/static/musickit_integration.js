@@ -36,8 +36,13 @@ StartImport = async function() {
         const playlistId = document.getElementById('playlist_id').textContent;
         const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
         console.log("Playlist ID: ", playlistId);
-
+        
+        try {
         let playlist_info = await music.api.music(`/v1/catalog/us/playlists/${playlistId}`);
+        } catch {
+            console.log('Failed to get playlist, might not exist.')
+            window.location.href  = ('../?failed=true')
+        }
         let playlist_attributes = playlist_info.data.data[0];
         console.log('Playlist Attributes:', playlist_attributes);
         
@@ -77,7 +82,7 @@ StartImport = async function() {
         });
     } catch (err) {
         console.error('MusicKit configuration or processing error:', err);
-        alert("Error during MusicKit initialization or operation. Please check the console for more details.");
+        //alert("Error during MusicKit initialization or operation. Please check the console for more details.");
     }
 };
 document.addEventListener('musickitloaded', StartImport())
