@@ -90,5 +90,17 @@
     <!--<script src="{% static 'musickit_integration.js' %}"></script>-->
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      function imageNotFound(event) {
+        const imgElement = event.target;
+        console.error(`Image not found: ${imgElement.src}`);
+        // Handle the image load failure (e.g., display a placeholder or show an error message)
+        event.target.src = '{% static "default_image.png" %}'
+      }
+      const imageNodes = document.getElementsByTagName('img');
+    for (let i = 0; i < imageNodes.length; i++) {
+        imageNodes[i].addEventListener('error', imageNotFound);
+    }
+    </script>
 </body>
 </html>
