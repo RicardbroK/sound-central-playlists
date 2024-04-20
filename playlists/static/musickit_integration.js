@@ -37,8 +37,9 @@ StartImport = async function() {
         const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
         console.log("Playlist ID: ", playlistId);
         
+        let playlist_info = ''
         try {
-        let playlist_info = await music.api.music(`/v1/catalog/us/playlists/${playlistId}`);
+            playlist_info = await music.api.music(`/v1/catalog/us/playlists/${playlistId}`);
         } catch {
             console.log('Failed to get playlist, might not exist.')
             window.location.href  = ('../?failed=true')
