@@ -75,7 +75,7 @@
       });
   }
 
-  function SavePlaylist() {
+  async function SavePlaylist() {
     // Open the external website
     // Make an AJAX call to your Django view
     //$.get('save?id=' + {{playlist_data.playlist_id}}, function (data) {
@@ -98,7 +98,7 @@
 
     const csrftoken = getCookie('csrftoken');
     const url = "save"; // Replace with your API endpoint
-    fetch(url, {
+    const save_playlist_response = await fetch(url, {
         method: "POST",
         body: JSON.stringify({
           id: '{{playlist_data.playlist_id}}',
@@ -111,9 +111,17 @@
     .catch(error => {
         console.error("Error sending POST request:", error);
     });
-    setTimeout(function(){
-      window.location.reload(1);
-    }, 1000);
+    save_playlist_response_status = await save_playlist_response.status;
+    console.log(save_playlist_response_status)
+    if (save_playlist_response_status == 200){
+        console.log('good')
+        window.location.reload()
+    }
+    else if (save_playlist_response_status == 403){
+      console.log('bad')
+      window.location.href = ('/signup/login')
+    }
+
   }
 </script>
 {% endblock %}

@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}{% endblock %}
+    <!--add jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Google fonts-->
@@ -14,9 +17,7 @@
     <link rel="stylesheet" href="{% static 'styles.css' %}">
     <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico'%}">
     <!-- Inside your <head> tag in the HTML template -->
-    <script src="https://js-cdn.music.apple.com/musickit/v3/musickit.js" async></script>
-    <!--add jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--<script src="https://js-cdn.music.apple.com/musickit/v3/musickit.js" async></script>-->
     <!--Title is set dependent on what page is active-->
     <title>{% block title %}{% endblock %}</title>
     <meta name="csrf-token" content="{{ csrf_token }}">
@@ -40,11 +41,10 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'topPlaylists' %}">Top Playlists</a>
                 </li>
-
-                {% if user.is_authenticated %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'import' %}">Import</a>
                 </li>
+                {% if user.is_authenticated %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'myPlaylists' %}">My Playlists</a>
                  </li>
@@ -85,6 +85,7 @@
           </div>
         </div>
       </footer>
+      {% block bottom %}{% endblock %}
     <!--script for MusicKit auth -->
     <!--<script src="{% static 'musickit_integration.js' %}"></script>-->
     <!--Bootstrap JS-->

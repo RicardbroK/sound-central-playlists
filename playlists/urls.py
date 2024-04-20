@@ -5,6 +5,7 @@ from . import views
 
 urlpatterns = [
     path('import/', importPlaylist.as_view(), name='import'),
+    path('import/apple/<str:apple_playlist_id>', views.apple_import_view, name='import_apple_confirm'),
     path('view/<int:playlist_id>', views.view_playlist, name='view'),
     path('view/save', views.save_playlist),
     path('', views.user_playlists, name='myPlaylists'),

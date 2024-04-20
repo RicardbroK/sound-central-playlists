@@ -12,15 +12,14 @@
                 const h1 = document.createElement('h1')
                 h1.textContent = 'Please reload this page.' 
                         
-                btn.onclick = () => {
-                        
-                const win = window.open('{% url 'get-spotify' %}', 'Spotify Oauth', '_blank','width=500,height=800,toolbar=no,location=no');
-                const timer = setInterval(() => {
-                    if (win.closed) {
-                        document.body.prepend(h1)
-                        window.location.reload()
-                    }
-                }, 1000);
+                btn.onclick = async () => {
+                    document.body.prepend(h1)
+                    const win = window.open('{% url 'get-spotify' %}', 'Spotify Oauth', '_blank','width=500,height=800,toolbar=no,location=no');
+                    const timer = setInterval(() => {
+                        if ( win.closed) {
+                            //window.location.reload()
+                        }
+                    }, 1000);
                 };
             </script>
             {% endif %}

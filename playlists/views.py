@@ -46,10 +46,9 @@ class importPlaylist(APIView):
         playlist_url = request.POST.get('playlisturl')
         context = {}
         playlist_id = 0
-
-        # #don't allow guests to make playlists
-        # if not request.user.is_authenticated:
-        #     return render(request, 'playlists/home.html', context=context)
+        #don't allow guests to make playlists, prompt them to login
+        if not request.user.is_authenticated:
+            return redirect('/signup/login')
 
         def get_platform_name(url) -> str:
             parsed_url = urlparse(url)
@@ -118,8 +117,11 @@ class importPlaylist(APIView):
                         yur = youtube_playlist_info(playlist_id, request.user)
                         playlist_id = yur.insert_playlist_db()
                     case 'apple_music':
+                        request.GET._mutable = True
+                        request.GET['apple'] = 'apple-import'
                         context['test_variable'] = 'you made it to apple'
-                        return render(request, 'playlists/apple.html', context=context)
+                        #return render(request, 'playlists/apple.html', context=context)
+                        return redirect(apple_import_view, apple_playlist_id=playlist_id)
                     case _:
                         raise ValueError("Unsupported platform or an error occurred in matching the platform.")
                 playlist_details = Playlist.objects.get(playlist_id=playlist_id)
@@ -152,6 +154,7 @@ def view_playlist(request, playlist_id):
         return render(request, 'playlists/view.html', context=context)
     except Exception as e:
         return render(request, 'playlists/home.html')
+    
 @login_required(redirect_field_name="my_redirect_field")
 def user_playlists(request):
     context= {}
@@ -163,6 +166,7 @@ def user_playlists(request):
         return render(request, 'playlists/userPlaylists.html', context=context)
     else:
         return HttpResponse(f'User is not authenticated')
+    
 @login_required(redirect_field_name="my_redirect_field")
 def saved_playlists(request):
     context = {}
@@ -177,14 +181,18 @@ def saved_playlists(request):
     
 def import_playlist(output_data, creating_user):
     # Check for existing playlist
-    existing_playlist = Playlist.objects.filter(
-        apple_playlist_uri=output_data['playlist_information']['apple_playlist_uri'])
-    if existing_playlist.first():
-        print(existing_playlist)
-        print(
-            f"redirect to the apple playlist {output_data['playlist_information']['apple_playlist_uri']} as it already exists.")
-        # Optionally update existing_playlist here
-        return existing_playlist.first().playlist_id
+    try:
+        existing_playlist = Playlist.objects.get(
+            apple_playlist_uri=output_data['playlist_information']['apple_playlist_uri'], user=creating_user)
+        if existing_playlist:
+            print(existing_playlist)
+            print(
+                f"redirect to the apple playlist {output_data['playlist_information']['apple_playlist_uri']} as it already exists.")
+            # Optionally update existing_playlist here
+            if existing_playlist.user == creating_user:
+                return existing_playlist.playlist_id
+    except:
+        print('No existing playlist')
 
     # Continue with adding new playlist, tracks, and albums
     playlist_tracks = []
@@ -218,7 +226,9 @@ def import_playlist(output_data, creating_user):
 
     playlist, _ = Playlist.objects.get_or_create(
         apple_playlist_uri=output_data['playlist_information']['apple_playlist_uri'],
+        user = creating_user,
         defaults={
+            'user': creating_user,
             'playlist_name': output_data['playlist_information']['playlist_name'],
             'playlist_description': output_data['playlist_information']['playlist_description'],
             'playlist_track_length': len(playlist_tracks),  # Updated from 'total_tracks'
@@ -237,11 +247,13 @@ def import_playlist(output_data, creating_user):
             }
         )
         playlist.tracks.add(playlist_track)
-        playlist.user = creating_user
-        playlist.save()
     print(f"Successfully added/updated playlist: {playlist.playlist_name}")
     return playlist.playlist_id
 
+def apple_import_view(request, apple_playlist_id):
+    context = {}
+    context['apple_playlist_id'] = apple_playlist_id
+    return render(request, 'playlists/apple.html', context=context)
 
 @csrf_exempt
 @require_http_methods(["POST"])
@@ -346,6 +358,7 @@ class exportPlaylist(APIView):
             case _:
                 context['confirm_needed'] = True
                 return render(request, 'playlists/export.html', context=context)
+            
         def search_spotify_uri(track) -> str:
             if track['spotify_track_uri'] == '' or track['spotify_track_uri'] is None:
                 track_name = track['track_name']
@@ -372,7 +385,7 @@ class exportPlaylist(APIView):
                                 return response.json()['tracks']['items'][0]['uri']
                             except Exception as e:
                                 print(response.content)
-                                print('First search failed.')
+                                print('Second search failed.')
                                 try:
                                     searchterms= urllib.parse.quote(f'q={track_name} {artist} artist:{artist}').replace('%20', '+')
                                     endpoint = SPOTIFY_URL_START+searchterms+SPOTIFY_URL_END
@@ -388,7 +401,7 @@ class exportPlaylist(APIView):
                             print(track_name)
                             print(endpoint)
                             print('Track skipped.')
-                            return False   
+                            return False
                 elif track['offical_track']:
                     artist = track['artists'][0]['artist_name']
                     track_album_title = track['album_title']
@@ -484,6 +497,8 @@ class exportPlaylist(APIView):
                                 context['success'] = True
                                 context['spotify_playlist_uri'] = spotify_playlist_uri
                                 context['confirm_needed'] = True
+                        else:
+                            context['access_expired'] = True
                     else:
                         context['confirm_needed'] = True
                 else:
@@ -496,37 +511,43 @@ class exportPlaylist(APIView):
 
         return render(request, 'playlists/export.html', context=context)
 
-@login_required(redirect_field_name="my_redirect_field")
 def save_playlist(request):
-    body_unicode = request.body.decode('utf-8')
-    body = json.loads(body_unicode)
-    playlist_to_save = body['id']
-    current_user = request.user
-    if request.user.is_authenticated and playlist_to_save is not None:
+    try:
+        body_unicode = request.body.decode('utf-8')
+        body = json.loads(body_unicode)
+        playlist_to_save = body['id']
+    except:
+        return JsonResponse({'error': 'Must send JSON request.'}, status=400)
+    try:
+        current_user = request.user
+    except:
+        return JsonResponse({'error': 'Failed to save, no user'}, status=401)
+    
+    if playlist_to_save is None:
+        return JsonResponse({'error': 'Failed to save, no playlist provided'}, status=500)
+    
+    if request.user.is_authenticated:
         playlist = Playlist.objects.get(playlist_id=playlist_to_save)
         if not (playlist.user == current_user):
             if current_user in playlist.fans.all():
                 playlist.fans.remove(current_user)
-                return HttpResponse(f'{current_user.username} has removed themselves from playlist {playlist_to_save}')
+                return JsonResponse({'user': f'{current_user.username}', 'saved': False, 'playlist_id': f'{playlist_to_save}'}, status=200)
             else:
                 playlist.fans.add(current_user)
-                return HttpResponse(f'{current_user.username} has saved playlist {playlist_to_save}')
-        return HttpResponse(f'Failed to save')
+                return JsonResponse({'user': f'{current_user.username}', 'saved': True, 'playlist_id': f'{playlist_to_save}'}, status=200)
+        return JsonResponse({'error': 'Failed to save, user does not have access to this playlist.'})
     else:
-        return HttpResponse(f'Failed to save')
+        return JsonResponse({'error': 'Failed to save, user not authenticated.'}, status=403)
+
 def homepage(request):
     return render(request, "playlists/home.html")
 
 def topPlaylists(request):
     context = {}
-    current_user = request.user
-    if current_user.is_authenticated:
-        # Get all playlists current user is a fan of
-        top_playlists = Playlist.objects.annotate(num_fans=Count('fans')).all().order_by('-num_fans')[:50]
-        context['top_playlists'] = top_playlists
-        return render(request, 'playlists/topPlaylists.html', context=context)
-    else:
-        return render(request, "playlists/topPlaylists.html")
+    # Get all playlists and sort by saves (num of fans)
+    top_playlists = Playlist.objects.annotate(num_fans=Count('fans')).all().order_by('-num_fans')[:50]
+    context['top_playlists'] = top_playlists
+    return render(request, 'playlists/topPlaylists.html', context=context)
 
 def signup(request):
     return render(request, "registration/signup.html")

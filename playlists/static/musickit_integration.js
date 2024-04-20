@@ -80,3 +80,4 @@ StartImport = async function() {
         alert("Error during MusicKit initialization or operation. Please check the console for more details.");
     }
 };
+document.addEventListener('musickitloaded', StartImport())
