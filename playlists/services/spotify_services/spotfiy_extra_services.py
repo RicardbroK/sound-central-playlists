@@ -32,6 +32,7 @@ def refresh_spotify_token(refresh_token:str) -> str:
     else:
         raise Exception(f"Error refreshing token: {data.get('error_description', 'Unknown error')}")
     
+
 def search_spotify_uri(track:dict, accuss_token:str) -> Union[str, bool]:
             """
                 Searches for the Spotify URI of a given track.
@@ -42,7 +43,7 @@ def search_spotify_uri(track:dict, accuss_token:str) -> Union[str, bool]:
 
                 Returns:
                     str: The Spotify URI of the track.
-                    bool: False if could not be found
+                    bool: False if URI could not be found
             """
             TRACK_SEARCH_LIMIT = 1
             SPOTIFY_URL_START = 'https://api.spotify.com/v1/search?q='
@@ -131,6 +132,7 @@ def search_spotify_uri(track:dict, accuss_token:str) -> Union[str, bool]:
                 else:
                     # If track not official, search only by title
                     searchterms= urllib.parse.quote(f'{track_name}').replace('%20', '+')
+                    print(searchterms)
                     endpoint = SPOTIFY_URL_START+searchterms+SPOTIFY_URL_END
                     header = {'Authorization': 'Bearer'+f' {spotify_token}'}
                     response = requests.get(endpoint, headers=header)

@@ -14,6 +14,50 @@ youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
 YT_UNOFFICAL_OR_UNKNOWN_ARTIST = 'YT_UNOFFICAL_OR_UNKNOWN_ARTIST'
 UNOFFICAL_ARTIST_URI_STRING = 'DO_NOT_REFERENCE'
 
+def clean_track_name(track_name:str) -> str:
+    """
+        Args:
+            str: An unofficial track name
+        Returns:
+            str: Track title cleaned of common junk phrases
+    """
+    # Define a list of common junk phrases to remove from the track name
+    junk_phrases = [
+        'Official Music Video',
+        'Official Video',
+        'official video',
+        'official music video',
+        'OFFICIAL VIDEO',
+        'Official Lyric Video',
+        'Official 4K Video',
+        'Official HD Video',
+        '4K Remaster',
+        'Remastered in 4K',
+        'Offical Audio',
+        'offical audio',
+        'OFFICAL AUDIO',
+        'Lyric Video',
+        'Official Visualizer',
+        '(MUSIC VIDEO)',
+        '(Video)',
+        '(OFFICIAL)',
+        '(Official)',
+        '(official)',
+        '[HD]',
+        '(HD)',
+        '(4K)',
+        '[4K]',
+        '()',
+        '[]'
+    ]
+
+    # Remove each junk phrase from the track name
+    for phrase in junk_phrases:
+        track_name = track_name.replace(phrase, '')
+
+    # Strip any leading or trailing whitespace
+    return track_name.strip()
+
 
 class youtube_playlist_info(object):
     def __init__(self, id, user):
@@ -109,7 +153,7 @@ class youtube_playlist_info(object):
                         else youtube_video['items'][0]['snippet']['thumbnails']['default']['url']
                     )
                     track_data = {
-                        'track_name': track['snippet']['title'],
+                        'track_name': track['snippet']['title'] if desc_auto_generated else clean_track_name(track['snippet']['title']),
                         'track_id': video_id,
                         'duration_ms': video_duration,
                         'explicit': explicit,

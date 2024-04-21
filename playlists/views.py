@@ -1,11 +1,10 @@
-import os
+import math
 from django.urls import reverse
 import pprint
 import json
 from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
-from rest_framework.parsers import JSONParser
 from rest_framework.views import APIView
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
@@ -21,14 +20,13 @@ from playlists.models import Playlist
 from .serializers import PlaylistSerializer
 from playlists.services.spotify_services import spotfiy_extra_services, spotify_playlist_info
 from playlists.services.youtube_services.yt_music_playlist_info import youtube_playlist_info
-from playlists.services.apple_services.apple_music_playlist_info import apple_music_playlist_info
+from playlists.services.apple_services.apple_token import generate_apple_music_token
 from django.conf import settings
 import json
 from django.shortcuts import redirect
 from django.contrib.auth.models import User
 import requests
 from django.db.models import Count
-from playlists.services.apple_services.apple_token import generate_apple_music_token
 
 class apple_generate_token(APIView):
     def get(self, request):
@@ -54,8 +52,6 @@ class importPlaylist(APIView):
         def get_platform_name(url) -> str:
             parsed_url = urlparse(url)
             match parsed_url.hostname:
-                case 'music.apple.com':
-                    return 'apple_music'
                 case 'www.spotify.com' | 'spotify.com' | 'open.spotify.com':
                     # make sure it is a playlist path
                     match parsed_url.path.split('/')[1:]:
@@ -72,9 +68,11 @@ class importPlaylist(APIView):
                             return 'unsupported'
                 case 'music.apple.com':
                     # make sure it is a playlist path
-                    match parsed_url.path.split('us/')[1:][0].split('/')[0:]:
+                    match parsed_url.path.split('/')[2:][0].split('/')[0:]:
                         case ['playlist', *_]:
-                            return 'apple_music'
+                            if url.split('/')[2:][1] != 'library':
+                                return 'apple_music'
+                            return 'unsupported'
                         case _:
                             return 'unsupported'
                 # all other hostname will be unsupported
@@ -101,15 +99,21 @@ class importPlaylist(APIView):
                 case 'yt_music':
                     return url.split("?list=")[1]
                 case 'apple_music':
-                    return url.split('playlist/')[1].split('/')[1]
+                    print(url.split('/')[2:])
+                    if url.split('/')[2:][1] != 'library':
+                        return url.split('playlist/')[1].split('/')[1]
+                    else:
+                        return False
                 case _:
-                    return 'unknown'
+                    return False
         context['valid_url'] = url_is_valid = valid_url(playlist_url)
         context['platform'] = url_platform = get_platform_name(playlist_url)
         if url_is_valid and url_platform != 'unsupported': #and request.user.is_authenticated:
-            context['playlist_id'] = playlist_id = get_playlist_id(playlist_url)
             # make sure that url is fully working
             try:
+                context['playlist_id'] = playlist_id = get_playlist_id(playlist_url)
+                if not playlist_id:
+                    raise ValueError('Could not parse playlist ID.')
                 match url_platform:
                     case 'spotify':
                         sur = spotify_playlist_info.spotify_playlist_info(playlist_url, request.user)
@@ -213,6 +217,7 @@ def import_playlist(output_data, creating_user):
             defaults={
                 'track_name': item['track_name'],
                 'duration_ms': item['duration_ms'],
+                'duration_ms_rounded': math.ceil(item['duration_ms'] / 1000) * 1000,
                 'track_number': item['track_number'],
                 'apple_music_track_uri': item['apple_music_track_uri'],
                 'album_art_url': item['album_art_url'],
@@ -426,7 +431,7 @@ class exportPlaylist(APIView):
                             header.update({'Content-Type': 'application/json'})
                             data = json.dumps({ 
                                     'name': f"{playlist_details['playlist_name']}",
-                                    "description": f"{playlist_details['playlist_description']}"+DESC_ADDON_PROMOTER,
+                                    "description": f"{playlist_details['playlist_description'][:300-len(DESC_ADDON_PROMOTER)]}{DESC_ADDON_PROMOTER}".replace('\n', ' '),
                                     "public": 'false' 
                             })
                             response = requests.post(endpoint, headers=header, data=data)
@@ -445,8 +450,7 @@ class exportPlaylist(APIView):
                                 print(track_uri_list_chunks)
                                 for track_uri_list_chunk in track_uri_list_chunks:
                                     data = json.dumps({
-                                            'uris': track_uri_list_chunk,
-                                            'position': 0
+                                            'uris': track_uri_list_chunk
                                     })
                                     response = requests.post(endpoint, headers=header, data=data)
                                 context['success'] = success = True
