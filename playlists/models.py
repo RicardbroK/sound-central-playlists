@@ -74,5 +74,11 @@ class Playlist(models.Model):
     apple_playlist_uri = models.CharField(max_length=22,blank=True, default='', null=True)
     youtube_playlist_uri = models.CharField(max_length=55,blank=True, default='', null=True)
 
+    def save(self, *args, **kwargs):
+        if self.playlist_id is not None:
+            if self.user in self.fans.all():
+                raise ValueError("Creator cannot be a fan of their own playlist.")
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return f"{self.playlist_name} - (ID: {self.playlist_id})"

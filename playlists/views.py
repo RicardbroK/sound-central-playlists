@@ -1,8 +1,8 @@
 import os
+from django.urls import reverse
 import pprint
 import json
-from datetime import datetime, timedelta
-import jwt
+from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
 from rest_framework.parsers import JSONParser
@@ -19,7 +19,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout 
 from playlists.models import Playlist
 from .serializers import PlaylistSerializer
-from playlists.services.spotify_services.spotify_playlist_info import spotify_playlist_info
+from playlists.services.spotify_services import spotfiy_extra_services, spotify_playlist_info
 from playlists.services.youtube_services.yt_music_playlist_info import youtube_playlist_info
 from playlists.services.apple_services.apple_music_playlist_info import apple_music_playlist_info
 from django.conf import settings
@@ -27,7 +27,6 @@ import json
 from django.shortcuts import redirect
 from django.contrib.auth.models import User
 import requests
-import urllib.parse
 from django.db.models import Count
 from playlists.services.apple_services.apple_token import generate_apple_music_token
 
@@ -113,7 +112,7 @@ class importPlaylist(APIView):
             try:
                 match url_platform:
                     case 'spotify':
-                        sur = spotify_playlist_info(playlist_url, request.user)
+                        sur = spotify_playlist_info.spotify_playlist_info(playlist_url, request.user)
                         playlist_id = sur.fetch_playlist_info()
                     case 'yt_music':
                         yur = youtube_playlist_info(playlist_id, request.user)
@@ -322,170 +321,124 @@ def apple_music_playlist_info(request):
 
 class exportPlaylist(APIView):
     def get(self, request):
-        context = {}
-        context['platform']= request.GET.get('platform')
-        context['playlist_id'] = request.GET.get('id')
+        """
+        Handles the GET request for exporting a playlist to a specific platform.
 
-        playlist_details = PlaylistSerializer(Playlist.objects.get(playlist_id=context['playlist_id'])).data
-        playlist_details.pop('fans')
+        Args:
+            request: The HTTP request object.
+
+        Returns:
+            A rendered response with context information for the export process.
+        """
+        context = {}
+        try:
+            context['platform']= request.GET.get('platform')
+            context['playlist_id'] = request.GET.get('id')
+            playlist_details = PlaylistSerializer(Playlist.objects.get(playlist_id=context['playlist_id'])).data
+            playlist_details.pop('fans')
+        except:
+            # Redirect to the homepage if an exception occurs (e.g., invalid playlist ID)
+            return redirect('/')
         context['playlist_details'] = playlist_details
         context['confirm_needed'] = True
+        # Check the platform and handle accordingly
         match context['platform']:
             case 'spotify':
+                # Check if there is an active Spotify session
                 spotify_session = request.session.get('spotify')
+                present_date = datetime.now()
+                timestamp = int(datetime.timestamp(present_date))
+
+                # Check if Spotify access token is still valid or exists
+                print(spotify_session)
+                # If none, access needs to be retrieved
                 if spotify_session is None:
                     context['access_expired'] = True
                     return render(request, 'playlists/export.html', context=context)
+                
+                # If the access token has expired, attempt to refresh it without user needing to log in again
+                # Otherwise, access needs to be retrieved
+                if 'expires_at' in spotify_session:
+                    if timestamp > spotify_session['expires_at']:
+                        if 'refresh_token' in spotify_session:
+                            try:
+                                request.session['spotify'] = spotfiy_extra_services.refresh_spotify_token(spotify_session['refresh_token'])
+                            except:
+                                context['access_expired'] = True
+                                return render(request, 'playlists/export.html', context=context)
             case _:
+                # Placeholder for handling other platforms (breakpoint for debugging)
                 breakpoint
         return render(request, 'playlists/export.html', context=context)
     
     def post(self, request):
-        TRACK_SEARCH_LIMIT = 1
-        SPOTIFY_URL_START = 'https://api.spotify.com/v1/search?q='
-        SPOTIFY_URL_END = f'&type=track&limit={TRACK_SEARCH_LIMIT}'
+        """
+        Handles the POST request for exporting a playlist to a specific platform.
+
+        Args:
+            request: The HTTP request object.
+
+        Returns:
+            A rendered response with context information for the export process.
+        """
+        DESC_ADDON_PROMOTER = '... This playlist was generated by SoundCentral.'
         context = {}
         context['platform'] = request.GET.get('platform')
         context['playlist_id'] = request.GET.get('id')
         confirmed = request.POST.get('confirm') == 'Confirmed'
-        
+        # Check the platform and handle accordingly
         match context['platform']:
             case 'spotify':
+                # Check if there is an active Spotify session
                 spotify_session = request.session.get('spotify')
                 if spotify_session is None:
                     context['access_expired'] = True
                     return render(request, 'playlists/export.html', context=context)
                 else:
-                    spotify_token = json.loads(request.session.get('spotify'))['access_token']
+                    spotify_token = spotify_session['access_token']
             case _:
                 context['confirm_needed'] = True
                 return render(request, 'playlists/export.html', context=context)
-            
-        def search_spotify_uri(track) -> str:
-            if track['spotify_track_uri'] == '' or track['spotify_track_uri'] is None:
-                track_name = track['track_name']
-                if track['offical_track'] and track['original_platform'] != 'yt_music':
-                    isrc = track['track_id']
-                    endpoint = f'{SPOTIFY_URL_START}isrc%3A{isrc}{SPOTIFY_URL_END}'
-                    header = {'Authorization': 'Bearer'+f' {spotify_token}'}
-                    response = requests.get(endpoint, headers=header)
-                    print(response.content)
-                    try:
-                        return response.json()['tracks']['items'][0]['uri']
-                    except:
-                        print('Offical track, ISRC not found, finding alternative.')
-                        artist = track['artists'][0]['artist_name']
-                        track_name = track['track_name']
-                        track_album_title = track['album_title']
-                        searchterms=  urllib.parse.quote(f'{track_name} {artist} artist:{artist} album:{track_album_title}').replace('%20', '+')
-                        endpoint = SPOTIFY_URL_START+searchterms+SPOTIFY_URL_END
-                        header = {'Authorization': 'Bearer'+f' {spotify_token}'}
-                        response = requests.get(endpoint, headers=header)
-                        print(response.status_code)
-                        if response.status_code == 200:
-                            try:
-                                return response.json()['tracks']['items'][0]['uri']
-                            except Exception as e:
-                                print(response.content)
-                                print('Second search failed.')
-                                try:
-                                    searchterms= urllib.parse.quote(f'q={track_name} {artist} artist:{artist}').replace('%20', '+')
-                                    endpoint = SPOTIFY_URL_START+searchterms+SPOTIFY_URL_END
-                                    header = {'Authorization': 'Bearer'+f' {spotify_token}'}
-                                    response = requests.get(endpoint, headers=header)
-                                    return response.json()['tracks']['items'][0]['uri']
-                                except:
-                                    print(response.content)
-                                    print('Final search failed, skipping.')
-                                    return False
-                        else:
-                            print(response.content)
-                            print(track_name)
-                            print(endpoint)
-                            print('Track skipped.')
-                            return False
-                elif track['offical_track']:
-                    artist = track['artists'][0]['artist_name']
-                    track_album_title = track['album_title']
-                    searchterms= urllib.parse.quote(f'{track_name} {artist} artist:{artist} album:{track_album_title}').replace('%20', '+')
-                    endpoint = SPOTIFY_URL_START+searchterms+SPOTIFY_URL_END
-                    header = {'Authorization': 'Bearer'+f' {spotify_token}'}
-                    response = requests.get(endpoint, headers=header)
-                    print(response.status_code)
-                    if response.status_code == 200:
-                        try:
-                            return response.json()['tracks']['items'][0]['uri']
-                        except Exception as e:
-                            print(response.content)
-                            print('First search failed.')
-                            try:
-                                searchterms= urllib.parse.quote(f'{track_name} {artist} artist:{artist}').replace('%20', '+')
-                                endpoint = SPOTIFY_URL_START+searchterms+SPOTIFY_URL_END
-                                header = {'Authorization': 'Bearer'+f' {spotify_token}'}
-                                response = requests.get(endpoint, headers=header)
-                                return response.json()['tracks']['items'][0]['uri']
-                            except:
-                                print(response.content)
-                                print('Final search failed, skipping.')
-                                return False
-                    else:
-                        print(response.content)
-                        print(track_name)
-                        print(endpoint)
-                        print('Track skipped.')
-                        return False
-                else:
-                    searchterms= urllib.parse.quote(f'{track_name}').replace('%20', '+')
-                    endpoint = SPOTIFY_URL_START+searchterms+SPOTIFY_URL_END
-                    header = {'Authorization': 'Bearer'+f' {spotify_token}'}
-                    response = requests.get(endpoint, headers=header)
-                    print(response.status_code)
-                    if response.status_code == 200:
-                        try:
-                            return response.json()['tracks']['items'][0]['uri']
-                        except Exception as e:
-                            print('Unofficial track, no track found, skipping.')
-                            return False
-                    else:
-                        print(response.content)
-                        print(track_name)
-                        print(endpoint)
-                        print('Track skipped.')
-                        return False
-            else:
-                return 'spotify:track:'+track['spotify_track_uri']
-
+        # Get playlist details
         playlist_details = PlaylistSerializer(Playlist.objects.get(playlist_id=context['playlist_id'])).data
         playlist_object = Playlist.objects.get(playlist_id=context['playlist_id'])
         playlist_details.pop('fans')
         context['playlist_details'] = playlist_details
-
+        #Default success value
+        success = None
+        
         match context['platform']:
+            # Export to Spotify
             case 'spotify':
                 if spotify_session is not None:
+                    #Check if user confirmed the export
                     if confirmed:
+                        # Get user data from Spotify
                         endpoint = 'https://api.spotify.com/v1/me'
                         header= {'Authorization': 'Bearer'+f' {spotify_token}'}
                         response = requests.get(endpoint, headers=header)
-                        print(response)
+                        print(response.json())
                         if response.status_code == 200: 
+                            # Create a new Spotify playlist
                             spotify_user_data = response.json()
                             spotify_user_uri = spotify_user_data['uri'].split(':')[2]
                             endpoint = f'https://api.spotify.com/v1/users/{spotify_user_uri}/playlists'
                             header.update({'Content-Type': 'application/json'})
                             data = json.dumps({ 
                                     'name': f"{playlist_details['playlist_name']}",
-                                    "description": f"{playlist_details['playlist_description']}",
+                                    "description": f"{playlist_details['playlist_description']}"+DESC_ADDON_PROMOTER,
                                     "public": 'false' 
                             })
                             response = requests.post(endpoint, headers=header, data=data)
+                            print(response)
                             spotify_playlist_uri = response.json()['uri'].split(':')[2]
                             if response.status_code == 201:
+                                # Add tracks to the new playlist
                                 endpoint = f'https://api.spotify.com/v1/playlists/{spotify_playlist_uri}/tracks'
                                 full_track_uri_list = []
                                 for playlist_track in playlist_details['tracks']:
                                     track = playlist_track['track']
-                                    uri = search_spotify_uri(track)
+                                    uri = spotfiy_extra_services.search_spotify_uri(track, spotify_token)
                                     if uri:
                                         full_track_uri_list.append(f'{uri}')
                                 track_uri_list_chunks = [full_track_uri_list[i:i + 100] for i in range(0, len(full_track_uri_list), 100)]
@@ -496,7 +449,7 @@ class exportPlaylist(APIView):
                                             'position': 0
                                     })
                                     response = requests.post(endpoint, headers=header, data=data)
-                                context['success'] = True
+                                context['success'] = success = True
                                 context['spotify_playlist_uri'] = spotify_playlist_uri
                                 context['confirm_needed'] = True
                         else:
@@ -507,7 +460,12 @@ class exportPlaylist(APIView):
                     context['access_expired'] = True
             case _:
                 breakpoint
-        if context['success']:
+        # If export is a success, update number of playlist exports on playlist object.
+        # Also save playlist for user.
+        if success:
+            if request.user.is_authenticated:
+                if playlist_object.user != request.user:
+                    playlist_object.fans.add(request.user)
             playlist_object.num_exports = playlist_object.num_exports+1
             playlist_object.save()
 

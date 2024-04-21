@@ -7,18 +7,43 @@
 
 <div class='d-flex flex-row flex-wrap'>
     {% for playlist in saved_playlists %}
-    <figure class='container p-2 col'>
-        <img class='img-fixed listed-playlist-image' onclick="window.location.href='{% url 'view' playlist_id=playlist.playlist_id %}'") src="{{  playlist.playlist_image }}" alt="" />
-        <button id='save' type="button" value="Copy URL" onclick="SavePlaylist({{playlist.playlist_id}})"><i class="fa-solid fa-bookmark"></i></button>
-        <figcaption>{{  playlist.playlist_name }}</figcaption>
-    </figure>
+    <div class="col-xl-3 col-lg-4 col-md-5">
+        <div class="card" style="background:linear-gradient(#000000, #2D3436); width: 260px">
+            <img
+            onclick="window.location.href='{% url 'view' playlist_id=playlist.playlist_id %}'"
+            src="{{  playlist.playlist_image }}"
+            class="card-img-top rounded"
+            alt="{{  playlist.playlist_name }}"
+            height="190px"
+            />
+            <div class="card-body white-text">
+            <h5 class="card-title" style="color: white">{{ playlist.playlist_name }}</h5>
+            <p class="card-text" style="color: white">
+                Export to:
+            </p>
+            <form action='{% url "export" %}' method='get'>
+                <input type="hidden" name="id" value="{{playlist.playlist_id}}">
+                <input type='submit' name='platform' value='spotify'>
+                    {% comment %} <img src="{% static 'playlists/images/spotify_icon.PNG' %}" alt="Spotify favicon" class="rounded"  width="30px" height="30px"> {% endcomment %}
+                {% comment %} </button> {% endcomment %}
+                <input type='submit' name='platform' value='yt_music'>
+                    {% comment %} <img src="{% static 'playlists/images/YouTubeMusic_icon.PNG' %}" alt="YouTube Music favicon" class="rounded"  width="30px" height="30px"> {% endcomment %}
+                {% comment %} </button> {% endcomment %}
+                <input type='submit' name='platform' value='apple'>
+                    {% comment %} <img src="{% static 'playlists/images/AppleMusic_icon.PNG' %}" alt="Apple Music favicon" class="rounded"  width="30px" height="30px"> {% endcomment %}
+                {% comment %} </button> {% endcomment %}
+            <form>
+            <button id='save' type="button" value="Copy URL" onclick="SavePlaylist({{playlist.playlist_id}})"><i class="fa-solid fa-bookmark"></i></button>
+            </div>
+        </div>
+    </div>
     {% endfor %}
 </div>
 <script>
     function SavePlaylist(id) {
         // Open the external website
         // Make an AJAX call to your Django view
-        //$.get('save?id=' + {{playlist_data.playlist_id}}, function (data) {
+        {% comment %} //$.get('save?id=' + {{playlist_data.playlist_id}}, function (data) { {% endcomment %}
         //});
     
         function getCookie(name) {
