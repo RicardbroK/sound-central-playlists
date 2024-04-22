@@ -39,6 +39,10 @@ class Track(models.Model):
     offical_track = models.BooleanField(null=True)
     original_platform = models.CharField(max_length=10, default='')
 
+    def get_artist_names(self):
+        artist_names = ', '.join([artist.artist_name for artist in self.artists.all()])
+        return artist_names
+
     def __str__(self):
         artist_names = ', '.join([artist.artist_name for artist in self.artists.all()])
         return f"{self.track_name} - {artist_names} (ID: {self.track_id})"
@@ -54,7 +58,9 @@ class PlaylistTrack(models.Model):
                 fields=['track', 'playlist_position'], name='unique_track_posistion'
             )
         ]
-
+    def get_artist_names(self):
+        return self.track.get_artist_names()
+    
     def __str__(self):
         return f"Track [{self.track.track_name}] - (Position: {self.playlist_position})"
 
@@ -74,6 +80,12 @@ class Playlist(models.Model):
     apple_playlist_uri = models.CharField(max_length=22,blank=True, default='', null=True)
     youtube_playlist_uri = models.CharField(max_length=55,blank=True, default='', null=True)
 
+    def get_num_fans(self):
+        return len(self.fans.all())
+
+    def get_playlist_tracks(self):
+        return " | ".join([str(track) for track in self.tracks.all()])
+    
     def save(self, *args, **kwargs):
         if self.playlist_id is not None:
             if self.user in self.fans.all():
