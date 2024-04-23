@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% block head %}{% endblock %}
     <!--add jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -21,7 +21,6 @@
     <!--Title is set dependent on what page is active-->
     <title>{% block title %}{% endblock %}</title>
     <meta name="csrf-token" content="{{ csrf_token }}">
-
 </head>
 <body>
 
@@ -31,7 +30,7 @@
             <h1 id="logo">SoundCentral</h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
