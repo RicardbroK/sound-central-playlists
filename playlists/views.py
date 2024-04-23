@@ -355,7 +355,6 @@ class exportPlaylist(APIView):
                 timestamp = int(datetime.timestamp(present_date))
 
                 # Check if Spotify access token is still valid or exists
-                print(spotify_session)
                 # If none, access needs to be retrieved
                 if spotify_session is None:
                     context['access_expired'] = True
@@ -435,7 +434,7 @@ class exportPlaylist(APIView):
                                     "public": 'false' 
                             })
                             response = requests.post(endpoint, headers=header, data=data)
-                            print(response)
+                            print(response.json())
                             spotify_playlist_uri = response.json()['uri'].split(':')[2]
                             if response.status_code == 201:
                                 # Add tracks to the new playlist
@@ -481,7 +480,7 @@ def save_playlist(request):
         body = json.loads(body_unicode)
         playlist_to_save = body['id']
     except:
-        return JsonResponse({'error': 'Must send JSON request.'}, status=400)
+        return JsonResponse({'error': 'Bad Request'}, status=400)
     try:
         current_user = request.user
     except:
@@ -492,6 +491,8 @@ def save_playlist(request):
     
     if request.user.is_authenticated:
         playlist = Playlist.objects.get(playlist_id=playlist_to_save)
+        if current_user == playlist.user:
+            return JsonResponse({'error': 'Failed to save, user is the creator of this playlist'}, status=403)
         if not (playlist.user == current_user):
             if current_user in playlist.fans.all():
                 playlist.fans.remove(current_user)
@@ -501,7 +502,7 @@ def save_playlist(request):
                 return JsonResponse({'user': f'{current_user.username}', 'saved': True, 'playlist_id': f'{playlist_to_save}'}, status=200)
         return JsonResponse({'error': 'Failed to save, user does not have access to this playlist.'})
     else:
-        return JsonResponse({'error': 'Failed to save, user not authenticated.'}, status=403)
+        return JsonResponse({'error': 'Failed to save, user not authenticated.'}, status=401)
 
 def homepage(request):
     return render(request, "playlists/home.html")

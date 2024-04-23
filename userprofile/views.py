@@ -150,13 +150,13 @@ def spotify_callback(request) -> HttpResponse:
          # Get the current timestamp
          present_date = datetime.now()
          timestamp = int(datetime.timestamp(present_date))
-         data['expires_at'] = timestamp + data['expires_in']
-         token_info.add({'expires'})
+         token_info['expires_at'] = timestamp + token_info['expires_in']
          request.session['spotify'] = token_info
       else:
          raise Exception(f'No access token in response: {token_info}')
 
    except Exception as e:
       # Handle exceptions and set status code to 400
+         print(e)
          page_to_render.status_code = 400
    return page_to_render
