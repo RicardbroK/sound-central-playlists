@@ -2,8 +2,9 @@ from datetime import datetime, timedelta
 import os
 import jwt
 from django.conf import settings
-key =  os.getenv('APPLE_MUSIC_API_KEY').replace('\\n','\n' )
-print(key)
+
+APPLE_MUSIC_API_KEY =  os.getenv('APPLE_MUSIC_API_KEY').replace('\\n','\n' )
+
 def generate_apple_music_token():
     # Current time
     time_now = datetime.now()
@@ -22,9 +23,8 @@ def generate_apple_music_token():
         "exp": int(time_expired.timestamp()),
         "iat": int(time_now.timestamp())
     }
-    print(key)
     # Generate the JWT token
-    token = jwt.encode(payload, key, algorithm='ES256',
+    token = jwt.encode(payload, APPLE_MUSIC_API_KEY, algorithm='ES256',
                        headers=headers)
 
     return token
