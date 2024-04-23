@@ -97,7 +97,7 @@ class importPlaylist(APIView):
                 case 'spotify':
                     return url.split("playlist/")[1].split("?si=")[0]
                 case 'yt_music':
-                    return url.split("?list=")[1]
+                    return url.split("?list=")[1].split("&si=")[0]
                 case 'apple_music':
                     print(url.split('/')[2:])
                     if url.split('/')[2:][1] != 'library':
